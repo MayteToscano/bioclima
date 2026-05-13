@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.ebv-feature-view - EBV Feature View
-Generated 2026-05-13T16:46:52.953308+00:00
+Generated 2026-05-13T16:56:49.678651+00:00
 === Files ===
 Using examples/finland-vap-features.json from examples
 JSON-LD context is present - uplifting
