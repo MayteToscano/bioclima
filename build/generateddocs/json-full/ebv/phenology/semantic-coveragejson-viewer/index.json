@@ -22,8 +22,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.covjson-coverage",
-    "syke.ebv.phenology.ebv-ontology"
+    "syke.ebv.phenology.ebv-ontology",
+    "syke.ebv.phenology.covjson-coverage"
   ],
   "tags": [
     "viewer",
