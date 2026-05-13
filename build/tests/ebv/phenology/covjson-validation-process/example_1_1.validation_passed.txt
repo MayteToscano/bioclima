@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.covjson-validation-process - Semantic CoverageJSON validation process
-Generated 2026-05-13T19:15:41.655287+00:00
+Generated 2026-05-13T19:16:38.782608+00:00
 === Files ===
 Using examples/covjson-validation-process.jsonld from examples
 JSON-LD context is present - uplifting

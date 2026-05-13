@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-05-13",
+  "dateOfLastChange": "2024-01-01",
   "sources": [
     {
       "title": "OGC CoverageJSON 21-069r2 \u00a77.2",
