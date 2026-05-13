@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage
-Generated 2026-05-13T18:01:03.961789+00:00
+Generated 2026-05-13T18:02:52.860051+00:00
 === Files ===
 Using method/pci-method.jsonld from examples
 JSON-LD context is present - uplifting

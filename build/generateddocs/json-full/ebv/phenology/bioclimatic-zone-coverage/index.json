@@ -13,9 +13,9 @@
   "dateOfLastChange": "2026-05-13",
   "dependsOn": [
     "syke.ebv.phenology.covjson-range",
-    "syke.ebv.phenology.ebv-ontology",
     "syke.ebv.phenology.covjson-parameter",
-    "syke.ebv.phenology.covjson-coverage"
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.ebv-ontology"
   ],
   "tags": [
     "bioclimatic-zones",
