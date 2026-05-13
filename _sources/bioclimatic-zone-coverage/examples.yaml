@@ -1,0 +1,5 @@
+- title: Finland bioclimatic zones categorical CoverageJSON
+  content: examples/finland-bioclimatic-zones.covjson
+  snippets:
+    - language: json
+      ref: examples/finland-bioclimatic-zones.covjson

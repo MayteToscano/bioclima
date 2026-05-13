@@ -1,0 +1,20 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Semantic CoverageJSON profile for categorical bioclimatic zones.
+type: object
+required: [type, domain, parameters, ranges]
+properties:
+  type:
+    type: string
+    const: Coverage
+  domain:
+    type: object
+  parameters:
+    type: object
+    required: [bioclimatic_zone]
+    properties:
+      bioclimatic_zone:
+        type: object
+        required: [type, observedProperty, categories, categoryEncoding]
+  ranges:
+    type: object
+    required: [bioclimatic_zone]

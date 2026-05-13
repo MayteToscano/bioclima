@@ -1,0 +1,26 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Bioclimatic Zone Categorical Coverage",
+  "abstract": "Semantic CoverageJSON profile for categorical bioclimatic zones aligned with the Finland phenology grid.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-13T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-05-13",
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.covjson-parameter",
+    "syke.ebv.phenology.covjson-range",
+    "syke.ebv.phenology.ebv-ontology"
+  ],
+  "tags": [
+    "bioclimatic-zones",
+    "categorical",
+    "coveragejson",
+    "semantic"
+  ],
+  "group": "Environmental Context",
+  "highlighted": true,
+  "ldContext": "context.jsonld"
+}

@@ -1,0 +1,7 @@
+- title: Bioclimatic zone CoverageJSON generation process definition
+  content: examples/bioclimatic-zone-generation-process.jsonld
+  snippets:
+    - language: json
+      ref: examples/bioclimatic-zone-generation-process.jsonld
+    - language: python
+      ref: snippets/generate_bioclimatic_zones.py
