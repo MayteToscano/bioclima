@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.policy-alignment - Policy Alignment
-Generated 2026-05-13T18:09:19.194147+00:00
+Generated 2026-05-13T19:15:46.839592+00:00
 === Files ===
 Using examples/finland-phenology-policy-alignment.json from examples
 JSON-LD context is present - uplifting
