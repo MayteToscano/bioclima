@@ -1,62 +1,119 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>BioClima CoverageJSON Viewer</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <header class="topbar">
-    <div>
-      <h1 data-i18n="appTitle">BioClima CoverageJSON Viewer</h1>
-      <p data-i18n="appSubtitle">Generic catalog-driven viewer for observations, indicators and categorical coverages encoded as CoverageJSON.</p>
-    </div>
-    <div class="language-box">
-      <label for="languageSelect" data-i18n="language">Language</label>
-      <select id="languageSelect" aria-label="Language"></select>
-    </div>
-  </header>
-  <main class="layout">
-    <aside class="panel">
-      <label for="coverageSelect" data-i18n="coverage">Coverage</label>
-      <select id="coverageSelect"></select>
-      <label for="parameterSelect" data-i18n="parameter">Parameter</label>
-      <select id="parameterSelect"></select>
-      <label for="opacity" data-i18n="opacity">Opacity</label>
-      <input id="opacity" type="range" min="0" max="1" value="0.78" step="0.02">
-      <section class="card">
-        <h2 data-i18n="semanticDescription">Semantic description</h2>
-        <p id="semanticTitle" class="semantic-title">—</p>
+  <div class="viewer-layout">
+    <aside class="sidebar">
+      <h1 data-i18n="appTitle">Visor CoverageJSON BioClima</h1>
+
+      <p data-i18n="appSubtitle">
+        Visor genérico basado en catálogo para observaciones, indicadores y coberturas categóricas codificadas como CoverageJSON.
+      </p>
+
+      <section class="controls">
+        <label>
+          <span data-i18n="language">Idioma</span>
+          <select id="languageSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="coverage">Cobertura</span>
+          <select id="coverageSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="parameter">Parámetro</span>
+          <select id="parameterSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="opacity">Opacidad</span>
+          <input id="opacity" type="range" min="0" max="1" step="0.05" value="0.85" />
+        </label>
+      </section>
+
+      <section class="semantic-card">
+        <h2 data-i18n="semanticDescription">Descripción semántica</h2>
+
+        <h3 id="semanticTitle">—</h3>
         <p id="semanticDescription">—</p>
-        <dl class="semantic-dl">
-          <dt data-i18n="semanticUri">Semantic URI</dt><dd><a id="semanticLink" target="_blank" rel="noopener">—</a></dd>
-          <dt data-i18n="ontologyClass">Ontology type</dt><dd id="ontologyType">—</dd>
-          <dt data-i18n="unit">Unit</dt><dd id="unitLabel">—</dd>
-          <dt data-i18n="buildingBlock">Building Block</dt><dd id="buildingBlock">—</dd>
-        </dl>
-      </section>
-      <section class="card">
-        <h2 data-i18n="layerSummary">Layer summary</h2>
+
         <dl>
-          <dt data-i18n="type">Type</dt><dd id="kind">—</dd>
-          <dt data-i18n="validCells">Valid cells</dt><dd id="validCells">—</dd>
-          <dt data-i18n="min">Min</dt><dd id="minVal">—</dd>
-          <dt data-i18n="mean">Mean</dt><dd id="meanVal">—</dd>
-          <dt data-i18n="max">Max</dt><dd id="maxVal">—</dd>
+          <dt data-i18n="semanticUri">URI semántica</dt>
+          <dd>
+            <a id="semanticLink" class="semantic-uri" href="#" target="_blank" rel="noopener">—</a>
+          </dd>
+
+          <dt data-i18n="ontologyClass">Tipo ontológico</dt>
+          <dd id="ontologyType">—</dd>
+
+          <dt data-i18n="unit">Unidad</dt>
+          <dd id="unitLabel">—</dd>
+
+          <dt data-i18n="buildingBlock">Building Block</dt>
+          <dd id="buildingBlock">—</dd>
         </dl>
       </section>
-      <section class="card">
-        <h2 data-i18n="legend">Legend</h2>
-        <canvas id="legend" width="260" height="20"></canvas>
-        <div class="legend-labels"><span id="legendMin">—</span><span id="legendMax">—</span></div>
+
+      <section class="summary-card">
+        <h2 data-i18n="layerSummary">Resumen de la capa</h2>
+
+        <dl>
+          <dt data-i18n="type">Tipo</dt>
+          <dd id="kind">—</dd>
+
+          <dt data-i18n="validCells">Celdas válidas</dt>
+          <dd id="validCells">—</dd>
+
+          <dt data-i18n="min">Mínimo</dt>
+          <dd id="minVal">—</dd>
+
+          <dt data-i18n="mean">Media</dt>
+          <dd id="meanVal">—</dd>
+
+          <dt data-i18n="max">Máximo</dt>
+          <dd id="maxVal">—</dd>
+        </dl>
       </section>
-      <p class="hint" data-i18n="hint">To add a new observation or indicator, add its CoverageJSON file to data/ and register it in data/catalog.json. The viewer will detect the parameters automatically.</p>
+
+      <section class="legend-card">
+        <h2 data-i18n="legend">Leyenda</h2>
+
+        <canvas id="legend" width="260" height="24"></canvas>
+
+        <div class="legend-values">
+          <span id="legendMin">—</span>
+          <span id="legendMax">—</span>
+        </div>
+      </section>
+
+      <p class="hint" data-i18n="hint">
+        Para añadir una nueva observación o indicador, añade su archivo CoverageJSON a data/ y regístralo en data/catalog.json. El visor detectará los parámetros automáticamente.
+      </p>
     </aside>
-    <section id="map" aria-label="CoverageJSON map"></section>
-  </main>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js"></script>
+
+    <main class="map-panel">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script src="./app.js"></script>
 </body>
 </html>
