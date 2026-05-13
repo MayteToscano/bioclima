@@ -1,0 +1,91 @@
+{
+  "title": "BioClima EBV CoverageJSON Catalog",
+  "description": "Catalog-driven list of observations, multitemporal observations, indicators and categorical coverages encoded as CoverageJSON.",
+  "vocab": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+  "coverages": [
+    {
+      "id": "finland-vap-coniferous-2001-2018",
+      "title": {
+        "en": "VAP coniferous 2001-2018 time series",
+        "es": "VAP coníferas 2001-2018 serie temporal"
+      },
+      "kind": "observation",
+      "entity": "coniferous",
+      "url": "observations/finland-vap-coniferous-2001-2018.covjson",
+      "buildingBlock": "syke.ebv.phenology.covjson-coverage",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy",
+      "temporal": true
+    },
+    {
+      "id": "finland-vap-deciduous-2001-2018",
+      "title": {
+        "en": "VAP deciduous 2001-2018 time series",
+        "es": "VAP caducifolias 2001-2018 serie temporal"
+      },
+      "kind": "observation",
+      "entity": "deciduous",
+      "url": "observations/finland-vap-deciduous-2001-2018.covjson",
+      "buildingBlock": "syke.ebv.phenology.covjson-coverage",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy",
+      "temporal": true
+    },
+    {
+      "id": "finland-vap-coniferous-2001-crop",
+      "title": {
+        "en": "VAP coniferous 2001 crop",
+        "es": "VAP coníferas 2001 recorte"
+      },
+      "kind": "observation",
+      "entity": "coniferous",
+      "url": "observations/finland-vap-coniferous-2001-crop.covjson",
+      "buildingBlock": "syke.ebv.phenology.covjson-coverage",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy"
+    },
+    {
+      "id": "finland-pci-coniferous-2001-2018",
+      "title": {
+        "en": "PCI coniferous 2001-2018",
+        "es": "PCI coníferas 2001-2018"
+      },
+      "kind": "indicator",
+      "entity": "coniferous",
+      "url": "indicators/finland-pci-coniferous-2001-2018.covjson",
+      "buildingBlock": "syke.ebv.phenology.phenological-change-indicator",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#PhenologicalChangeIndicator"
+    },
+    {
+      "id": "finland-pci-deciduous-2001-2018",
+      "title": {
+        "en": "PCI deciduous 2001-2018",
+        "es": "PCI caducifolias 2001-2018"
+      },
+      "kind": "indicator",
+      "entity": "deciduous",
+      "url": "indicators/finland-pci-deciduous-2001-2018.covjson",
+      "buildingBlock": "syke.ebv.phenology.phenological-change-indicator",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#PhenologicalChangeIndicator"
+    },
+    {
+      "id": "finland-bioclimatic-zones",
+      "title": {
+        "en": "Finland bioclimatic zones",
+        "es": "Zonas bioclimáticas de Finlandia"
+      },
+      "kind": "categorical",
+      "url": "categorical/finland-bioclimatic-zones.covjson",
+      "buildingBlock": "syke.ebv.phenology.bioclimatic-zone-coverage",
+      "observedProperty": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone"
+    }
+  ],
+  "ontologyIndex": "ontology-index.json",
+  "languagePolicy": {
+    "mode": "browser-auto-with-selector",
+    "supportedLanguages": [
+      "en",
+      "es",
+      "fi",
+      "ro",
+      "zh"
+    ]
+  }
+}
