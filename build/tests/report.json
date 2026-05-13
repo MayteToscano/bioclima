@@ -10,7 +10,7 @@
       "title": "Validation report for syke.ebv.phenology.ebv-ontology - EBV Phenology Ontology",
       "bblockName": "EBV Phenology Ontology",
       "bblockId": "syke.ebv.phenology.ebv-ontology",
-      "generated": "2026-05-13T16:26:15.107838+00:00",
+      "generated": "2026-05-13T16:27:18.022231+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-axis - CovJSON Axis",
       "bblockName": "CovJSON Axis",
       "bblockId": "syke.ebv.phenology.covjson-axis",
-      "generated": "2026-05-13T16:26:15.114197+00:00",
+      "generated": "2026-05-13T16:27:18.028835+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +38,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-reference-system - CovJSON Reference System",
       "bblockName": "CovJSON Reference System",
       "bblockId": "syke.ebv.phenology.covjson-reference-system",
-      "generated": "2026-05-13T16:26:15.119398+00:00",
+      "generated": "2026-05-13T16:27:18.034088+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -52,7 +52,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-ndarray - CovJSON NdArray",
       "bblockName": "CovJSON NdArray",
       "bblockId": "syke.ebv.phenology.covjson-ndarray",
-      "generated": "2026-05-13T16:26:15.125416+00:00",
+      "generated": "2026-05-13T16:27:18.040168+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -66,7 +66,7 @@
       "title": "Validation report for syke.ebv.phenology.ebv-profile - EBV Dataset Profile",
       "bblockName": "EBV Dataset Profile",
       "bblockId": "syke.ebv.phenology.ebv-profile",
-      "generated": "2026-05-13T16:26:15.132306+00:00",
+      "generated": "2026-05-13T16:27:18.047277+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -80,7 +80,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-parameter - CovJSON Parameter",
       "bblockName": "CovJSON Parameter",
       "bblockId": "syke.ebv.phenology.covjson-parameter",
-      "generated": "2026-05-13T16:26:15.141912+00:00",
+      "generated": "2026-05-13T16:27:18.057269+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -94,7 +94,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-domain - CovJSON Domain",
       "bblockName": "CovJSON Domain",
       "bblockId": "syke.ebv.phenology.covjson-domain",
-      "generated": "2026-05-13T16:26:15.148290+00:00",
+      "generated": "2026-05-13T16:27:18.063893+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -108,7 +108,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-tiled-ndarray - CovJSON TiledNdArray",
       "bblockName": "CovJSON TiledNdArray",
       "bblockId": "syke.ebv.phenology.covjson-tiled-ndarray",
-      "generated": "2026-05-13T16:26:15.154855+00:00",
+      "generated": "2026-05-13T16:27:18.070783+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -122,7 +122,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-parameter-group - CovJSON Parameter Group",
       "bblockName": "CovJSON Parameter Group",
       "bblockId": "syke.ebv.phenology.covjson-parameter-group",
-      "generated": "2026-05-13T16:26:15.160794+00:00",
+      "generated": "2026-05-13T16:27:18.077080+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -136,7 +136,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-range - CovJSON Range",
       "bblockName": "CovJSON Range",
       "bblockId": "syke.ebv.phenology.covjson-range",
-      "generated": "2026-05-13T16:26:15.168466+00:00",
+      "generated": "2026-05-13T16:27:18.085262+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -150,7 +150,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-coverage - CovJSON Coverage",
       "bblockName": "CovJSON Coverage",
       "bblockId": "syke.ebv.phenology.covjson-coverage",
-      "generated": "2026-05-13T16:26:15.199341+00:00",
+      "generated": "2026-05-13T16:27:18.116640+00:00",
       "result": true,
       "items": [
         {
@@ -220,7 +220,7 @@
       "title": "Validation report for syke.ebv.phenology.bioclimatic-zone-coverage - Bioclimatic Zone Categorical Coverage",
       "bblockName": "Bioclimatic Zone Categorical Coverage",
       "bblockId": "syke.ebv.phenology.bioclimatic-zone-coverage",
-      "generated": "2026-05-13T16:26:15.590232+00:00",
+      "generated": "2026-05-13T16:27:18.480908+00:00",
       "result": false,
       "items": [
         {
@@ -290,7 +290,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-coverage-collection - CovJSON Coverage Collection",
       "bblockName": "CovJSON Coverage Collection",
       "bblockId": "syke.ebv.phenology.covjson-coverage-collection",
-      "generated": "2026-05-13T16:26:15.598498+00:00",
+      "generated": "2026-05-13T16:27:18.489332+00:00",
       "result": true,
       "items": [
         {
@@ -341,7 +341,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-validation-process - Semantic CoverageJSON validation process",
       "bblockName": "Semantic CoverageJSON validation process",
       "bblockId": "syke.ebv.phenology.covjson-validation-process",
-      "generated": "2026-05-13T16:26:15.610145+00:00",
+      "generated": "2026-05-13T16:27:18.501392+00:00",
       "result": true,
       "items": [
         {
@@ -411,7 +411,7 @@
       "title": "Validation report for syke.ebv.phenology.data-provenance - Data Provenance",
       "bblockName": "Data Provenance",
       "bblockId": "syke.ebv.phenology.data-provenance",
-      "generated": "2026-05-13T16:26:15.639430+00:00",
+      "generated": "2026-05-13T16:27:18.531879+00:00",
       "result": true,
       "items": [
         {
@@ -536,7 +536,7 @@
       "title": "Validation report for syke.ebv.phenology.data-quality - Data Quality",
       "bblockName": "Data Quality",
       "bblockId": "syke.ebv.phenology.data-quality",
-      "generated": "2026-05-13T16:26:15.646430+00:00",
+      "generated": "2026-05-13T16:27:18.538778+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -550,7 +550,7 @@
       "title": "Validation report for syke.ebv.phenology.semantic-coveragejson-viewer - Semantic CoverageJSON map viewer",
       "bblockName": "Semantic CoverageJSON map viewer",
       "bblockId": "syke.ebv.phenology.semantic-coveragejson-viewer",
-      "generated": "2026-05-13T16:26:15.657772+00:00",
+      "generated": "2026-05-13T16:27:18.550507+00:00",
       "result": true,
       "items": [
         {
@@ -620,7 +620,7 @@
       "title": "Validation report for syke.ebv.phenology.bioclimatic-zone-generation-process - Bioclimatic zone CoverageJSON generation process",
       "bblockName": "Bioclimatic zone CoverageJSON generation process",
       "bblockId": "syke.ebv.phenology.bioclimatic-zone-generation-process",
-      "generated": "2026-05-13T16:26:15.670300+00:00",
+      "generated": "2026-05-13T16:27:18.563406+00:00",
       "result": true,
       "items": [
         {
@@ -690,7 +690,7 @@
       "title": "Validation report for syke.ebv.phenology.ebv-feature-view - EBV Feature View",
       "bblockName": "EBV Feature View",
       "bblockId": "syke.ebv.phenology.ebv-feature-view",
-      "generated": "2026-05-13T16:26:17.022851+00:00",
+      "generated": "2026-05-13T16:27:19.841702+00:00",
       "result": false,
       "items": [
         {
@@ -762,13 +762,7 @@
                 {
                   "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
                   "focusNodes": {
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
                     "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
@@ -776,10 +770,16 @@
                     },
                     "geojson:FeatureShape": {
                       "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -854,7 +854,7 @@
       "title": "Validation report for syke.ebv.phenology.ecosystem-services - Ecosystem Services Link",
       "bblockName": "Ecosystem Services Link",
       "bblockId": "syke.ebv.phenology.ecosystem-services",
-      "generated": "2026-05-13T16:26:17.030654+00:00",
+      "generated": "2026-05-13T16:27:19.849579+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -868,7 +868,7 @@
       "title": "Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage",
       "bblockName": "Phenological Change Indicator Coverage",
       "bblockId": "syke.ebv.phenology.phenological-change-indicator",
-      "generated": "2026-05-13T16:26:20.317394+00:00",
+      "generated": "2026-05-13T16:27:22.888961+00:00",
       "result": false,
       "items": [
         {
@@ -1050,7 +1050,7 @@
       "title": "Validation report for syke.ebv.phenology.policy-alignment - Policy Alignment",
       "bblockName": "Policy Alignment",
       "bblockId": "syke.ebv.phenology.policy-alignment",
-      "generated": "2026-05-13T16:26:20.331069+00:00",
+      "generated": "2026-05-13T16:27:22.902471+00:00",
       "result": true,
       "items": [
         {
@@ -1120,7 +1120,7 @@
       "title": "Validation report for syke.ebv.phenology.pci-computation-process - PCI computation process",
       "bblockName": "PCI computation process",
       "bblockId": "syke.ebv.phenology.pci-computation-process",
-      "generated": "2026-05-13T16:26:20.343584+00:00",
+      "generated": "2026-05-13T16:27:22.915105+00:00",
       "result": true,
       "items": [
         {
