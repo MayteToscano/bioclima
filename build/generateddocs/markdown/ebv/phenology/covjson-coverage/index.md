@@ -5504,9 +5504,9 @@ Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for co
                 [ ],
                 [ ] ;
             covjson:domainType covjsondt:Grid ;
-            covjson:referencing [ covjson:referenceSystem [ a inspiregloss:TemporalReferenceSystem ;
-                            covjson:calendar <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ] ],
-                [ covjson:referenceSystem <http://www.opengis.net/def/crs/OGC/1.3/CRS84> ] ] ;
+            covjson:referencing [ covjson:referenceSystem <http://www.opengis.net/def/crs/OGC/1.3/CRS84> ],
+                [ covjson:referenceSystem [ a inspiregloss:TemporalReferenceSystem ;
+                            covjson:calendar <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ] ] ] ;
     covjson:parameter [ a covjson:Parameter ;
             dct:description "Start of Vegetation Active Period for coniferous forests derived from MODIS Fractional Snow Cover."@en,
                 "Inicio del Periodo Activo de Vegetación para bosques de coníferas derivado de cobertura fraccional de nieve MODIS."@es,
