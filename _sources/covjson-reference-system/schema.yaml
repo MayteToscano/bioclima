@@ -1,0 +1,10 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: CoverageJSON Reference System
+type: object
+required: [type]
+properties:
+  type:
+    type: string
+    enum: [GeographicCRS, ProjectedCRS, VerticalCRS, TemporalRS, IdentifierRS]
+  id: {type: string}
+  calendar: {type: string}

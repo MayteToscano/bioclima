@@ -1,0 +1,17 @@
+- title: Finland PCI coniferous 2001-2018 CoverageJSON
+  content: examples/finland-pci-coniferous-2001-2018.covjson
+  snippets:
+    - language: json
+      ref: examples/finland-pci-coniferous-2001-2018.covjson
+
+- title: Finland PCI deciduous 2001-2018 CoverageJSON
+  content: examples/finland-pci-deciduous-2001-2018.covjson
+  snippets:
+    - language: json
+      ref: examples/finland-pci-deciduous-2001-2018.covjson
+
+- title: PCI semantic method definition
+  content: method/pci-method.jsonld
+  snippets:
+    - language: json
+      ref: method/pci-method.jsonld

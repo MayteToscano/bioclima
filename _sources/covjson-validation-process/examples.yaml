@@ -1,0 +1,7 @@
+- title: Semantic CoverageJSON validation process definition
+  content: examples/covjson-validation-process.jsonld
+  snippets:
+    - language: json
+      ref: examples/covjson-validation-process.jsonld
+    - language: python
+      ref: snippets/validate_covjson.py

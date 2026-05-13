@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "source_dataset": "dcterms:source",
+    "agents": "prov:Agent",
+    "entities": "prov:Entity",
+    "activities": "prov:Activity",
+    "lineage": "prov:wasDerivedFrom",
+    "derived_indicator_summary": "ebv:derived_indicator_summary",
+    "quality_and_limitations": "ebv:quality_and_limitations"
+  }
+}

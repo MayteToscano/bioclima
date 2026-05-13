@@ -1,0 +1,81 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Semantic CoverageJSON profile for a Phenological Change Indicator coverage.
+type: object
+required:
+  - type
+  - domain
+  - parameters
+  - parameterGroups
+  - ranges
+properties:
+  type:
+    type: string
+    const: Coverage
+  domain:
+    type: object
+  parameters:
+    type: object
+    required:
+      - trend
+      - anomaly
+      - changepoint_year
+      - changepoint_pvalue
+    properties:
+      trend: {$ref: '#/$defs/semanticParameter'}
+      anomaly: {$ref: '#/$defs/semanticParameter'}
+      changepoint_year: {$ref: '#/$defs/semanticParameter'}
+      changepoint_pvalue: {$ref: '#/$defs/semanticParameter'}
+  parameterGroups:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [type, observedProperty, members]
+      properties:
+        type:
+          const: ParameterGroup
+        observedProperty:
+          type: object
+          required: [id]
+        members:
+          type: array
+          contains:
+            const: trend
+  ranges:
+    type: object
+    required:
+      - trend
+      - anomaly
+      - changepoint_year
+      - changepoint_pvalue
+    properties:
+      trend: {$ref: '#/$defs/ndarray'}
+      anomaly: {$ref: '#/$defs/ndarray'}
+      changepoint_year: {$ref: '#/$defs/ndarray'}
+      changepoint_pvalue: {$ref: '#/$defs/ndarray'}
+$defs:
+  semanticParameter:
+    type: object
+    required: [type, observedProperty]
+    properties:
+      type:
+        const: Parameter
+      observedProperty:
+        type: object
+        required: [id, label]
+      unit:
+        type: object
+  ndarray:
+    type: object
+    required: [type, dataType, axisNames, shape, values]
+    properties:
+      type:
+        const: NdArray
+      dataType:
+        type: string
+      axisNames:
+        type: array
+      shape:
+        type: array
+      values:
+        type: array

@@ -1,0 +1,35 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Semantic CoverageJSON map viewer",
+  "abstract": "Catalog-driven map viewer that renders CoverageJSON grids and resolves parameter attributes against a multilingual ontology index.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-13T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-05-13",
+  "sources": [
+    {
+      "title": "W3C PROV",
+      "link": "https://www.w3.org/TR/prov-o/"
+    },
+    {
+      "title": "CoverageJSON",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.ebv-ontology"
+  ],
+  "tags": [
+    "viewer",
+    "coveragejson",
+    "ontology",
+    "multilingual",
+    "map"
+  ],
+  "group": "Applications",
+  "highlighted": false,
+  "ldContext": "context.jsonld"
+}

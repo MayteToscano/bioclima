@@ -1,0 +1,40 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Phenological Change Indicator Coverage",
+  "abstract": "Semantic CoverageJSON profile for the Phenological Change Indicator (PCI), represented as one Coverage with four parameters: trend, anomaly, changepoint_year and changepoint_pvalue.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-13T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-05-13",
+  "sources": [
+    {
+      "title": "CoverageJSON",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    },
+    {
+      "title": "W3C PROV",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.covjson-parameter",
+    "syke.ebv.phenology.covjson-parameter-group",
+    "syke.ebv.phenology.covjson-range",
+    "syke.ebv.phenology.ebv-ontology",
+    "syke.ebv.phenology.data-provenance"
+  ],
+  "tags": [
+    "ebv",
+    "phenology",
+    "indicator",
+    "coveragejson",
+    "semantic",
+    "pci"
+  ],
+  "group": "EBV Indicators",
+  "highlighted": true,
+  "ldContext": "context.jsonld"
+}

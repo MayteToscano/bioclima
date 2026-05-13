@@ -1,0 +1,5 @@
+- title: Policy alignment for Finland EBV phenology data
+  content: examples/finland-phenology-policy-alignment.json
+  snippets:
+    - language: json
+      ref: examples/finland-phenology-policy-alignment.json

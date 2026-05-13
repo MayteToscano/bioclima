@@ -1,0 +1,33 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: CoverageJSON Parameter with i18n and observedProperty
+type: object
+required: [type, observedProperty]
+properties:
+  type:
+    type: string
+    const: Parameter
+  description:
+    type: object
+    description: i18n multi-language description
+  unit:
+    type: object
+    properties:
+      label: {type: object}
+      symbol:
+        type: object
+        properties:
+          value: {type: string}
+          type: {type: string}
+  observedProperty:
+    type: object
+    required: [label]
+    properties:
+      id: {type: string}
+      label: {type: object}
+      description: {type: object}
+      categories:
+        type: array
+        items:
+          type: object
+  categoryEncoding:
+    type: object

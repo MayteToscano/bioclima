@@ -1,0 +1,39 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Semantic process or software component definition encoded as JSON-LD.
+type: object
+required:
+  - '@context'
+  - '@id'
+  - '@type'
+  - title
+  - implementedBy
+properties:
+  '@context': {}
+  '@id':
+    type: string
+  '@type': {}
+  title: {}
+  description: {}
+  usesOntology:
+    type: string
+  input:
+    type: array
+  output:
+    type: array
+  implementedBy:
+    type: object
+    required:
+      - language
+      - path
+    properties:
+      language:
+        type: string
+      path:
+        type: string
+      role:
+        type: string
+  method:
+    type: string
+  provenance:
+    type: string
+additionalProperties: true

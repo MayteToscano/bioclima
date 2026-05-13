@@ -1,0 +1,8 @@
+examples:
+  - title: Finland VAP collection (coniferous + deciduous)
+    content: |
+      CoverageCollection with two entity coverages. ParameterGroup semantically links 
+      both under EcosystemPhenology. Maps to the EBV Data Cube (lon, lat, time, entity).
+    snippets:
+      - language: json
+        ref: examples/finland-vap-all-entities.json

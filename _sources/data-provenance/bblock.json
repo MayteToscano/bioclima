@@ -1,0 +1,28 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Data Provenance",
+  "abstract": "Lineage and provenance information for EBV phenology datasets and derived phenology indicators.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "W3C PROV-O",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage"
+  ],
+  "tags": [
+    "provenance",
+    "prov",
+    "lineage",
+    "phenology"
+  ],
+  "group": "EBV Specific",
+  "highlighted": true
+}

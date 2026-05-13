@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@id": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#covjson-validation-process",
+  "@type": [
+    "prov:Plan",
+    "ebv:ValidationProcess"
+  ],
+  "title": {
+    "en": "Semantic CoverageJSON validation process",
+    "es": "Proceso de validación semántica de CoverageJSON"
+  },
+  "description": {
+    "en": "Checks that each CoverageJSON parameter has a matching range and an observedProperty.id linked to the vocabulary.",
+    "es": "Comprueba que cada parámetro CoverageJSON tenga un range asociado y un observedProperty.id vinculado al vocabulario."
+  },
+  "usesOntology": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+  "input": [
+    "CoverageJSON files"
+  ],
+  "output": [
+    "validation report"
+  ],
+  "implementedBy": {
+    "language": "python",
+    "path": "scripts/validate_covjson.py",
+    "role": "validation helper"
+  }
+}

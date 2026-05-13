@@ -1,0 +1,60 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Derived phenology indicators calculated from multi-year EBV phenology coverages.
+type: object
+
+properties:
+  type:
+    type: string
+    const: PhenologyIndicatorCollection
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#indicator_collection_type
+
+  title:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/title
+
+  description:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/description
+
+  source_dataset:
+    type: object
+    x-jsonld-id: http://purl.org/dc/terms/source
+
+  methodology:
+    type: object
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#methodology
+
+  indicators:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenology_indicator
+    items:
+      type: object
+      properties:
+        entity:
+          type: string
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type
+        entity_label:
+          type: string
+          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+        time_series:
+          type: array
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#time_series
+        linear_trend:
+          type: object
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#linear_trend
+        anomaly_index:
+          type: object
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly_index
+        change_point:
+          type: object
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#change_point
+        acceleration:
+          type: object
+          x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#acceleration
+
+required:
+  - type
+  - title
+  - source_dataset
+  - methodology
+  - indicators

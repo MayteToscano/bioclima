@@ -1,0 +1,11 @@
+- title: Finland EBV phenology indicators derived from full 2001–2018 time series
+  content: examples/finland-phenology-indicators-full-series.json
+  snippets:
+    - language: json
+      ref: examples/finland-phenology-indicators-full-series.json
+
+- title: Provenance for Finland EBV phenology indicators
+  content: examples/finland-phenology-indicators-provenance.json
+  snippets:
+    - language: json
+      ref: examples/finland-phenology-indicators-provenance.json

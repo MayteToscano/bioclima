@@ -1,0 +1,9 @@
+- title: Semantic CoverageJSON map viewer definition
+  content: examples/semantic-coveragejson-viewer.jsonld
+  snippets:
+    - language: json
+      ref: examples/semantic-coveragejson-viewer.jsonld
+    - language: javascript
+      ref: snippets/app.js
+    - language: html
+      ref: snippets/index.html

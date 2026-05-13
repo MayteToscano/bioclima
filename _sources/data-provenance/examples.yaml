@@ -1,0 +1,11 @@
+- title: Provenance for Finland EBV phenology indicators
+  content: examples/finland-phenology-indicators-provenance.json
+  snippets:
+    - language: json
+      ref: examples/finland-phenology-indicators-provenance.json
+
+- title: Provenance for Finland EBV phenology indicators (JSON-LD)
+  content: examples/finland-phenology-indicators-provenance.jsonld
+  snippets:
+    - language: json
+      ref: examples/finland-phenology-indicators-provenance.jsonld

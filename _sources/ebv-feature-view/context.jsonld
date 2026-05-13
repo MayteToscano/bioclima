@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "entity_type": {
+      "@id": "ebv:entity_type",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#"
+      }
+    },
+    "year": {
+      "@id": "ebv:year",
+      "@type": "xsd:integer"
+    },
+    "vap_doy": {
+      "@id": "ebv:vap_doy",
+      "@type": "xsd:integer"
+    },
+    "mean_doy": {
+      "@id": "ebv:mean_doy",
+      "@type": "xsd:decimal"
+    },
+    "min_doy": {
+      "@id": "ebv:min_doy",
+      "@type": "xsd:integer"
+    },
+    "max_doy": {
+      "@id": "ebv:max_doy",
+      "@type": "xsd:integer"
+    },
+    "stddev": {
+      "@id": "ebv:stddev",
+      "@type": "xsd:decimal"
+    },
+    "valid_percent": {
+      "@id": "ebv:valid_percent",
+      "@type": "xsd:decimal"
+    },
+    "crs": {
+      "@id": "ebv:crs"
+    },
+    "grid_width": {
+      "@id": "ebv:grid_width",
+      "@type": "xsd:integer"
+    },
+    "grid_height": {
+      "@id": "ebv:grid_height",
+      "@type": "xsd:integer"
+    },
+    "sensor": {
+      "@id": "ebv:sensor"
+    },
+    "algorithm": {
+      "@id": "ebv:algorithm"
+    },
+    "trend_slope": {
+      "@id": "ebv:trend_slope",
+      "@type": "xsd:decimal"
+    },
+    "anomaly": {
+      "@id": "ebv:anomaly"
+    }
+  }
+}

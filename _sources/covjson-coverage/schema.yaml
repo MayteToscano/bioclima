@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: CoverageJSON Coverage - composite of Domain + Parameters + Ranges
+type: object
+required: [type, domain, parameters, ranges]
+properties:
+  type:
+    type: string
+    const: Coverage
+  domain:
+    type: object
+    required: [type, axes]
+  parameters:
+    type: object
+  parameterGroups:
+    type: array
+    items:
+      type: object
+  ranges:
+    type: object

@@ -1,0 +1,32 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "EBV Feature View",
+  "abstract": "Discovery layer: GeoJSON Feature with EBV phenology properties linked to CoverageJSON building blocks via semantic context. Enables map visualization in OGC BB viewer.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+      "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+    }
+  ],
+  "dependsOn": [
+    "ogc.geo.features.feature",
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.ebv-profile",
+    "syke.ebv.phenology.data-provenance"
+  ],
+  "tags": [
+    "feature",
+    "map",
+    "discovery",
+    "geojson"
+  ],
+  "group": "EBV Specific",
+  "highlighted": true,
+  "ldContext": "context.jsonld"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "covjson": "https://covjson.org/def/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "observedProperty": "covjson:observedProperty",
+    "parameterGroups": "covjson:parameterGroups",
+    "members": "covjson:members"
+  }
+}

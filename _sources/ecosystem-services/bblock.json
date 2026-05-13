@@ -1,0 +1,24 @@
+{
+  "$schema": "metaschema.yaml",
+  "name": "Ecosystem Services Link",
+  "abstract": "Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.data-provenance"
+  ],
+  "tags": [
+    "ecosystem-services",
+    "pollination",
+    "carbon",
+    "phenology"
+  ],
+  "group": "Policy",
+  "highlighted": false
+}

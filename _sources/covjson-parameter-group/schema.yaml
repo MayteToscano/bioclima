@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: CoverageJSON ParameterGroup - semantic association of parameters
+type: object
+required: [type, members]
+properties:
+  type:
+    type: string
+    const: ParameterGroup
+  label: {type: object}
+  description: {type: object}
+  observedProperty:
+    type: object
+    properties:
+      id: {type: string}
+      label: {type: object}
+  members:
+    type: array
+    items: {type: string}

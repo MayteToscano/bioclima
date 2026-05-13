@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: EBV Feature extending OGC Feature with phenology properties
+$defs:
+  EBVFeature:
+    allOf:
+      - $ref: bblocks://ogc.geo.features.feature
+      - properties:
+          properties:
+            $ref: schema.yaml
+anyOf:
+  - $ref: "#/$defs/EBVFeature"

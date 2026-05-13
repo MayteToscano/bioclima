@@ -1,0 +1,49 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Policy alignment record for EBV phenology data and derived indicators.
+type: object
+
+properties:
+  type:
+    type: string
+    const: PolicyAlignment
+    x-jsonld-id: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+  title:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/title
+
+  description:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/description
+
+  source_dataset:
+    type: object
+    x-jsonld-id: http://purl.org/dc/terms/source
+
+  policy_relevance:
+    type: object
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#policy_relevance
+
+  aligned_policy_themes:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#aligned_policy_theme
+
+  linked_building_blocks:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#linked_building_block
+
+  interpretation_guidance:
+    type: object
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#interpretation_guidance
+
+  representativeness_assessment:
+    type: object
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#representativeness_assessment
+
+required:
+  - type
+  - title
+  - source_dataset
+  - policy_relevance
+  - aligned_policy_themes
+  - interpretation_guidance

@@ -1,0 +1,53 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Data provenance and lineage information for EBV phenology products and derived phenology indicators.
+type: object
+
+properties:
+  type:
+    type: string
+    x-jsonld-id: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+  title:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/title
+
+  description:
+    type: string
+    x-jsonld-id: http://purl.org/dc/terms/description
+
+  source_dataset:
+    type: object
+    x-jsonld-id: http://purl.org/dc/terms/source
+
+  agents:
+    type: array
+    x-jsonld-id: http://www.w3.org/ns/prov#Agent
+
+  entities:
+    type: array
+    x-jsonld-id: http://www.w3.org/ns/prov#Entity
+
+  activities:
+    type: array
+    x-jsonld-id: http://www.w3.org/ns/prov#Activity
+
+  lineage:
+    type: array
+    x-jsonld-id: http://www.w3.org/ns/prov#wasDerivedFrom
+
+  derived_indicator_summary:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#derived_indicator_summary
+
+  quality_and_limitations:
+    type: object
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#quality_and_limitations
+
+required:
+  - type
+  - title
+  - source_dataset
+  - agents
+  - entities
+  - activities
+  - lineage

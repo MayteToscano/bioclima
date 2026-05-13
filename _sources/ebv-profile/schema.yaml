@@ -1,0 +1,15 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: EBV Dataset Profile
+type: object
+required: [ebv_class, ebv_name, entities]
+properties:
+  ebv_class: {type: string, enum: ["Genetic composition","Species populations","Species traits","Community composition","Ecosystem structure","Ecosystem functioning"]}
+  ebv_name: {type: string}
+  entities: {type: array, items: {type: string}}
+  metric: {type: string}
+  scope: {type: string, enum: [Local, Regional, National, Continental, Global]}
+  doi: {type: string}
+  ebv_portal_id: {type: integer}
+  creator: {type: string}
+  institution: {type: string}
+  license: {type: string}
