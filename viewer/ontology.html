@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>BioClima ontology term</title>
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #d9e2ec;
+      --accent: #0f766e;
+      --danger: #991b1b;
+      --danger-bg: #fee2e2;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    body {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    .term-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 0 28px;
+      font-size: 1rem;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 14px 22px;
+      margin: 0;
+    }
+
+    dt {
+      font-weight: 800;
+      color: #334155;
+    }
+
+    dd {
+      margin: 0;
+      color: #334155;
+    }
+
+    .uri {
+      word-break: break-all;
+      color: #0369a1;
+    }
+
+    .definition {
+      font-size: 1.05rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .error {
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #fecaca;
+      background: var(--danger-bg);
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .lang-switch {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    select {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 24px 14px;
+      }
+
+      dl {
+        grid-template-columns: 1fr;
+        gap: 6px 0;
+      }
+
+      dt {
+        margin-top: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lang-switch">
+    <label>
+      Language
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fi">Suomi</option>
+        <option value="ro">Română</option>
+        <option value="zh">中文</option>
+      </select>
+    </label>
+  </div>
+
+  <main class="term-card">
+    <a class="back" href="./" id="backLink">← Back to viewer</a>
+
+    <h1 id="label">Ontology term</h1>
+    <p class="subtitle" id="subtitle">Semantic definition from BioClima ontology index</p>
+
+    <div id="errorBox" class="error" hidden></div>
+
+    <dl id="termDetails">
+      <dt id="definitionLabel">Definition</dt>
+      <dd id="definition" class="definition">—</dd>
+
+      <dt id="typeLabel">Ontology type</dt>
+      <dd>
+        <span id="type" class="badge">—</span>
+      </dd>
+
+      <dt id="buildingBlockLabel">Building Block</dt>
+      <dd id="buildingBlock">—</dd>
+
+      <dt id="semanticUriLabel">Semantic URI</dt>
+      <dd>
+        <a id="uriLink" class="uri" href="#" target="_blank" rel="noopener">—</a>
+      </dd>
+
+      <dt id="rawJsonLabel">Raw ontology index</dt>
+      <dd>
+        <a href="../data/ontology-index.json" target="_blank" rel="noopener">
+          ../data/ontology-index.json
+        </a>
+      </dd>
+    </dl>
+  </main>
+
+  <script>
+    const I18N = {
+      en: {
+        back: "← Back to viewer",
+        subtitle: "Semantic definition from BioClima ontology index",
+        definition: "Definition",
+        type: "Ontology type",
+        buildingBlock: "Building Block",
+        semanticUri: "Semantic URI",
+        rawJson: "Raw ontology index",
+        notFound: "No definition found for this URI in ontology-index.json.",
+        missingUri: "No URI was provided in the URL.",
+        term: "Ontology term"
+      },
+      es: {
+        back: "← Volver al visor",
+        subtitle: "Definición semántica desde el índice ontológico de BioClima",
+        definition: "Definición",
+        type: "Tipo ontológico",
+        buildingBlock: "Building Block",
+        semanticUri: "URI semántica",
+        rawJson: "Índice ontológico bruto",
+        notFound: "No se ha encontrado una definición para esta URI en ontology-index.json.",
+        missingUri: "No se ha proporcionado ninguna URI en la URL.",
+        term: "Término ontológico"
+      },
+      fi: {
+        back: "← Takaisin katselimeen",
+        subtitle: "Semanttinen määritelmä BioClima-ontologiaindeksistä",
+        definition: "Määritelmä",
+        type: "Ontologinen tyyppi",
+        buildingBlock: "Building Block",
+        semanticUri: "Semanttinen URI",
+        rawJson: "Raaka ontologiaindeksi",
+        notFound: "Tälle URI-tunnisteelle ei löytynyt määritelmää ontology-index.json-tiedostosta.",
+        missingUri: "URL-osoitteessa ei annettu URI-tunnistetta.",
+        term: "Ontologian termi"
+      },
+      ro: {
+        back: "← Înapoi la vizualizator",
+        subtitle: "Definiție semantică din indexul ontologic BioClima",
+        definition: "Definiție",
+        type: "Tip ontologic",
+        buildingBlock: "Building Block",
+        semanticUri: "URI semantic",
+        rawJson: "Index ontologic brut",
+        notFound: "Nu s-a găsit nicio definiție pentru acest URI în ontology-index.json.",
+        missingUri: "Nu a fost furnizat niciun URI în URL.",
+        term: "Termen ontologic"
+      },
+      zh: {
+        back: "← 返回查看器",
+        subtitle: "来自 BioClima 本体索引的语义定义",
+        definition: "定义",
+        type: "本体类型",
+        buildingBlock: "Building Block",
+        semanticUri: "语义 URI",
+        rawJson: "原始本体索引",
+        notFound: "在 ontology-index.json 中未找到该 URI 的定义。",
+        missingUri: "URL 中未提供 URI。",
+        term: "本体术语"
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const uri = params.get("uri");
+
+    let lang =
+      params.get("lang") ||
+      (navigator.languages && navigator.languages[0]) ||
+      navigator.language ||
+      "en";
+
+    lang = normaliseLang(lang);
+
+    const els = {
+      languageSelect: document.getElementById("languageSelect"),
+      backLink: document.getElementById("backLink"),
+      label: document.getElementById("label"),
+      subtitle: document.getElementById("subtitle"),
+      errorBox: document.getElementById("errorBox"),
+      termDetails: document.getElementById("termDetails"),
+      definitionLabel: document.getElementById("definitionLabel"),
+      definition: document.getElementById("definition"),
+      typeLabel: document.getElementById("typeLabel"),
+      type: document.getElementById("type"),
+      buildingBlockLabel: document.getElementById("buildingBlockLabel"),
+      buildingBlock: document.getElementById("buildingBlock"),
+      semanticUriLabel: document.getElementById("semanticUriLabel"),
+      uriLink: document.getElementById("uriLink"),
+      rawJsonLabel: document.getElementById("rawJsonLabel")
+    };
+
+    let ontology = null;
+    let currentTerm = null;
+
+    init();
+
+    async function init() {
+      els.languageSelect.value = lang;
+      els.languageSelect.addEventListener("change", () => {
+        lang = els.languageSelect.value;
+        render();
+      });
+
+      applyStaticTranslations();
+
+      if (!uri) {
+        showError(t("missingUri"));
+        return;
+      }
+
+      try {
+        const response = await fetch("../data/ontology-index.json", { cache: "no-cache" });
+
+        if (!response.ok) {
+          throw new Error(`Cannot load ../data/ontology-index.json: ${response.status}`);
+        }
+
+        ontology = await response.json();
+        currentTerm = findTerm(uri, ontology);
+
+        if (!currentTerm) {
+          showError(`${t("notFound")} ${uri}`);
+          els.uriLink.textContent = uri;
+          els.uriLink.href = uri;
+          return;
+        }
+
+        render();
+      } catch (error) {
+        showError(error.message || String(error));
+      }
+    }
+
+    function render() {
+      document.documentElement.lang = lang;
+      applyStaticTranslations();
+
+      if (!currentTerm) return;
+
+      const label = text(currentTerm.label) || uriFragment(uri) || t("term");
+      const definition =
+        text(currentTerm.definition) ||
+        text(currentTerm.description) ||
+        "—";
+
+      els.label.textContent = label;
+      document.title = `${label} — BioClima ontology`;
+
+      els.definition.textContent = definition;
+      els.type.textContent = currentTerm.type || currentTerm["@type"] || "—";
+      els.buildingBlock.textContent = currentTerm.buildingBlock || "—";
+      els.uriLink.textContent = uri;
+      els.uriLink.href = uri;
+    }
+
+    function applyStaticTranslations() {
+      els.backLink.textContent = t("back");
+      els.subtitle.textContent = t("subtitle");
+      els.definitionLabel.textContent = t("definition");
+      els.typeLabel.textContent = t("type");
+      els.buildingBlockLabel.textContent = t("buildingBlock");
+      els.semanticUriLabel.textContent = t("semanticUri");
+      els.rawJsonLabel.textContent = t("rawJson");
+    }
+
+    function showError(message) {
+      els.errorBox.hidden = false;
+      els.errorBox.textContent = message;
+    }
+
+    function findTerm(termUri, ontologyIndex) {
+      const terms = ontologyIndex.terms || {};
+
+      if (terms[termUri]) return terms[termUri];
+
+      const fragment = uriFragment(termUri);
+
+      if (terms[fragment]) return terms[fragment];
+
+      return Object.values(terms).find((term) => {
+        const id = term.id || term.uri || term["@id"];
+        return (
+          id === termUri ||
+          id?.endsWith(`#${fragment}`) ||
+          id?.endsWith(`/${fragment}`)
+        );
+      });
+    }
+
+    function uriFragment(value) {
+      if (!value) return "";
+      return value.includes("#") ? value.split("#").pop() : value.split("/").pop();
+    }
+
+    function text(value) {
+      if (!value) return "";
+      if (typeof value === "string") return value;
+
+      return (
+        value[lang] ||
+        value.en ||
+        value.es ||
+        Object.values(value)[0] ||
+        ""
+      );
+    }
+
+    function t(key) {
+      return I18N[lang]?.[key] || I18N.en[key] || key;
+    }
+
+    function normaliseLang(value) {
+      const short = String(value || "en").toLowerCase().split("-")[0];
+      return I18N[short] ? short : "en";
+    }
+  </script>
+</body>
+</html>

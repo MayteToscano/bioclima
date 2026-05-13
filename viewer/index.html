@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>BioClima CoverageJSON Viewer</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="./style.css?v=final-3" />
+</head>
+
+<body>
+  <div class="viewer-layout">
+    <aside class="sidebar">
+      <h1 data-i18n="appTitle">BioClima CoverageJSON Viewer</h1>
+
+      <p data-i18n="appSubtitle">
+        Generic catalogue-based viewer for observations, indicators and categorical coverages encoded as CoverageJSON.
+      </p>
+
+      <section class="controls">
+        <label>
+          <span data-i18n="language">Language</span>
+          <select id="languageSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="coverage">Coverage</span>
+          <select id="coverageSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="parameter">Parameter</span>
+          <select id="parameterSelect"></select>
+        </label>
+
+        <label>
+          <span data-i18n="opacity">Opacity</span>
+          <input id="opacity" type="range" min="0" max="1" step="0.05" value="0.85" />
+        </label>
+      </section>
+
+      <section class="semantic-card">
+        <h2 data-i18n="semanticDescription">Semantic description</h2>
+
+        <h3 id="semanticTitle">—</h3>
+        <p id="semanticDescriptionText">—</p>
+
+        <dl>
+          <dt data-i18n="semanticUri">Semantic URI</dt>
+          <dd>
+            <a id="semanticLink" class="semantic-uri" href="#" target="_blank" rel="noopener">—</a>
+          </dd>
+
+          <dt data-i18n="ontologyClass">Ontology type</dt>
+          <dd id="ontologyType">—</dd>
+
+          <dt data-i18n="unit">Unit</dt>
+          <dd id="unitLabel">—</dd>
+
+          <dt data-i18n="buildingBlock">Building Block</dt>
+          <dd id="buildingBlock">—</dd>
+        </dl>
+      </section>
+
+      <section class="summary-card">
+        <h2 data-i18n="layerSummary">Layer summary</h2>
+
+        <dl>
+          <dt data-i18n="type">Type</dt>
+          <dd id="kind">—</dd>
+
+          <dt data-i18n="validCells">Valid cells</dt>
+          <dd id="validCells">—</dd>
+
+          <dt data-i18n="min">Minimum</dt>
+          <dd id="minVal">—</dd>
+
+          <dt data-i18n="mean">Mean</dt>
+          <dd id="meanVal">—</dd>
+
+          <dt data-i18n="max">Maximum</dt>
+          <dd id="maxVal">—</dd>
+        </dl>
+      </section>
+
+      <section class="legend-card">
+        <h2 data-i18n="legend">Legend</h2>
+
+        <canvas id="legend" width="260" height="24"></canvas>
+
+        <div class="legend-values">
+          <span id="legendMin">—</span>
+          <span id="legendMax">—</span>
+        </div>
+      </section>
+
+      <p class="hint" data-i18n="hint">
+        To add a new observation or indicator, add its CoverageJSON file to data/ and register it in data/catalog.json.
+      </p>
+    </aside>
+
+    <main class="map-panel">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script src="./app.js?v=final-3"></script>
+</body>
+</html>
