@@ -13,8 +13,8 @@
   "dateOfLastChange": "2026-04-30",
   "sources": [],
   "dependsOn": [
-    "syke.ebv.phenology.data-provenance",
-    "syke.ebv.phenology.covjson-coverage"
+    "syke.ebv.phenology.covjson-coverage",
+    "syke.ebv.phenology.data-provenance"
   ],
   "tags": [
     "policy",
