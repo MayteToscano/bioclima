@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.semantic-coveragejson-viewer - Semantic CoverageJSON map viewer
-Generated 2026-05-13T17:45:24.461506+00:00
+Generated 2026-05-13T17:46:21.844651+00:00
 === Files ===
 Using examples/semantic-coveragejson-viewer.jsonld from examples
 JSON-LD context is present - uplifting
