@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.covjson-coverage-collection - CovJSON Coverage Collection
-Generated 2026-05-13T18:02:48.285241+00:00
+Generated 2026-05-13T18:07:21.780878+00:00
 === Files ===
 Using examples/finland-vap-all-entities.json from examples
 === End Files ===
