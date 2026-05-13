@@ -22,8 +22,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.ebv-ontology",
-    "syke.ebv.phenology.bioclimatic-zone-coverage"
+    "syke.ebv.phenology.bioclimatic-zone-coverage",
+    "syke.ebv.phenology.ebv-ontology"
   ],
   "tags": [
     "process",
