@@ -14,8 +14,8 @@
   "dependsOn": [
     "syke.ebv.phenology.covjson-coverage",
     "syke.ebv.phenology.ebv-ontology",
-    "syke.ebv.phenology.covjson-range",
-    "syke.ebv.phenology.covjson-parameter"
+    "syke.ebv.phenology.covjson-parameter",
+    "syke.ebv.phenology.covjson-range"
   ],
   "tags": [
     "bioclimatic-zones",

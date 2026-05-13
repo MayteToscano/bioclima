@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.bioclimatic-zone-generation-process - Bioclimatic zone CoverageJSON generation process
-Generated 2026-05-13T15:32:15.896550+00:00
+Generated 2026-05-13T15:39:18.238229+00:00
 === Files ===
 Using examples/bioclimatic-zone-generation-process.jsonld from examples
 JSON-LD context is present - uplifting
