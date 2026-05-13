@@ -1,0 +1,930 @@
+{
+  "name": "BioClima EBV Phenology Finland OGC Blocks",
+  "abstract": "Complete OGC Blocks for EBV phenology raster data. Models the full \nCoverageJSON UML (9 classes) plus 7 EBV-specific blocks = 17 total.\nMulti-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.\n",
+  "description": "## About this Register: BioClima EBV Phenology Finland OGC Blocks\n\nThis register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.\n\nThis register specifically focuses on EBV Phenology, utilizing a dataset of vegetation trends in Finland to demonstrate how complex environmental observations can be structured using OGC standards and CoverageJSON. By integrating EBV-specific blocks, the repository aligns raw scientific data with global policy frameworks like the Sustainable Development Goals and international biodiversity targets. Ultimately, the resource provides a sophisticated framework for documenting data provenance, quality, and ontology, ensuring that ecological indicators are interoperable and accessible across different languages and platforms.\n\n### **Who is this register for?**\nThis register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:\n*   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.\n*   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.\n*   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.\n*   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.\n\n### **What does this register contain?**\nThe register includes **17 OGC Blocks** designed to provide a comprehensive framework for environmental data. It features:\n*   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.\n*   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).\n*   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.\n*   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.\n\n### **When should this register be used?**\nThis register is most relevant in the following scenarios and workflows:\n*   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.\n*   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.\n*   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.\n*   **Reporting:** When aligning environmental data with international frameworks such as **GBF**  \n\n### **Where does this register fit?**\nThis register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable \"building blocks\". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.\n\n### **Why does this register exist?**\nThe register exists to fill critical gaps in current environmental monitoring:\n*   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.\n*   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.\n*   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.\n\n### **How is this register structured and implemented?**\nThe register is structured as a series of modular **OGC Blocks** managed via GitHub:\n*   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).\n*   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.\n*   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.\n*   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.\n\n### **For Developers**\n*   **[GitHub Repository](https://github.com/ogcincubator/bblocks-ebv-bioclima)**\n*   **[OGC Blocks Documentation](https://ogcincubator.github.io/bblocks-docs/)**\n*   **[OGC Blocks Tutorials](https://ogcincubator.github.io/bblocks-tutorial/)**\n*   **[OGC Blocks Examples](https://ogcincubator.github.io/bblocks-examples/)**\n",
+  "modified": "2026-05-13T07:21:43.737245",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
+      "shortCommitId": "\"6b01f1",
+      "date": "2026-05-12T22:31:51+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/",
+  "baseURL": "https://ogcincubator.github.io/bblocks-ebv-bioclima/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-ebv-bioclima/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/report.html",
+  "validationReportJson": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-axis",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Axis",
+      "abstract": "Single coordinate axis of a coverage domain: spatial (x,y,z) or temporal (t). Defines start, stop, num for regular axes or explicit values.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a77.2",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "tags": [
+        "covjson",
+        "axis",
+        "coordinate",
+        "grid"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-axis/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-axis/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-axis/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-axis/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-axis"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-reference-system",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Reference System",
+      "abstract": "Coordinate reference system binding axes to real-world coordinates. Supports GeographicCRS, ProjectedCRS, TemporalRS, VerticalCRS.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a77.4",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "tags": [
+        "covjson",
+        "crs",
+        "reference",
+        "coordinate"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-reference-system/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-reference-system/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-reference-system"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-ndarray",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON NdArray",
+      "abstract": "N-dimensional array holding actual coverage data values. Defines dataType, shape, axisNames, and the flat values array.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a79",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "tags": [
+        "covjson",
+        "ndarray",
+        "data",
+        "pixels",
+        "values"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": true,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-ndarray/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-ndarray/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-ndarray/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-ndarray"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.ebv-ontology",
+      "$schema": "metaschema.yaml",
+      "name": "EBV Phenology Ontology",
+      "abstract": "OWL/SKOS ontology with multilingual labels (EN, ES, ZH, RO). Linked from CovJSON observedProperty URIs.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C OWL 2",
+          "link": "https://www.w3.org/TR/owl2-overview/"
+        }
+      ],
+      "tags": [
+        "ontology",
+        "owl",
+        "multilingual",
+        "i18n"
+      ],
+      "group": "Semantics",
+      "highlighted": true,
+      "shaclShapes": {},
+      "ontology": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-ontology/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-ontology/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-ontology"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.ebv-profile",
+      "$schema": "metaschema.yaml",
+      "name": "EBV Dataset Profile",
+      "abstract": "Identity of an EBV dataset: class, name, entities, metric, scope, DOI. Following GEO BON framework.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "GEO BON EBV Framework",
+          "link": "https://geobon.org/ebvs/"
+        }
+      ],
+      "tags": [
+        "ebv",
+        "profile",
+        "geobon",
+        "identity"
+      ],
+      "group": "EBV Specific",
+      "highlighted": true,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-profile/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-profile/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-profile/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-profile/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-profile"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-domain",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Domain",
+      "abstract": "Coverage domain defining spatial/temporal extent via axes and reference systems. Supports Grid, PointSeries, Trajectory and other domain types.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a77",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-axis",
+        "syke.ebv.phenology.covjson-reference-system"
+      ],
+      "tags": [
+        "covjson",
+        "domain",
+        "grid",
+        "spatiotemporal"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": true,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-domain/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-domain/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-domain/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-domain/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-domain"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-tiled-ndarray",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON TiledNdArray",
+      "abstract": "Tiled range encoding that partitions data spatially/temporally via URI templates, enabling efficient partial loading.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a79.2",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-ndarray"
+      ],
+      "tags": [
+        "covjson",
+        "tiled",
+        "tiles",
+        "streaming"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-tiled-ndarray/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-tiled-ndarray/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-tiled-ndarray"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-parameter",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Parameter",
+      "abstract": "Describes what is measured: observed property with multi-language labels, unit of measure, and optional category encoding.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a78",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.ebv-ontology"
+      ],
+      "tags": [
+        "covjson",
+        "parameter",
+        "observable",
+        "unit",
+        "i18n"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": true,
+      "ldContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-range",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Range",
+      "abstract": "Container for data values of a single parameter. Contains NdArray (inline) or TiledNdArray (tiled/external).",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a79",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-ndarray",
+        "syke.ebv.phenology.covjson-tiled-ndarray"
+      ],
+      "tags": [
+        "covjson",
+        "range",
+        "values",
+        "encoding"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-range/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-range/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-range"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-parameter-group",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Parameter Group",
+      "abstract": "Semantic grouping of related parameters, e.g., velocity = speed + direction, or coniferous + deciduous VAP.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a78.3",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-parameter"
+      ],
+      "tags": [
+        "covjson",
+        "parameter",
+        "group",
+        "semantic"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter-group/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter-group/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter-group"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-coverage",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Coverage",
+      "abstract": "Complete coverage composing Domain, Parameters, ParameterGroups and Ranges. The core CoverageJSON object for raster data.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a76",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-domain",
+        "syke.ebv.phenology.covjson-parameter",
+        "syke.ebv.phenology.covjson-parameter-group",
+        "syke.ebv.phenology.covjson-range"
+      ],
+      "tags": [
+        "covjson",
+        "coverage",
+        "raster",
+        "composite"
+      ],
+      "group": "CoverageJSON Composites",
+      "highlighted": true,
+      "ldContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-coverage-collection",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Coverage Collection",
+      "abstract": "Collection of coverages grouping multiple entities. Maps to the EBV Data Cube with 4 dimensions: lon, lat, time, entity.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a76.3",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "covjson",
+        "collection",
+        "datacube",
+        "entities"
+      ],
+      "group": "CoverageJSON Composites",
+      "highlighted": true,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage-collection/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage-collection/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage-collection/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage-collection"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.data-provenance",
+      "$schema": "metaschema.yaml",
+      "name": "Data Provenance",
+      "abstract": "Lineage and provenance information for EBV phenology datasets and derived phenology indicators.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C PROV-O",
+          "link": "https://www.w3.org/TR/prov-o/"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "provenance",
+        "prov",
+        "lineage",
+        "phenology"
+      ],
+      "group": "EBV Specific",
+      "highlighted": true,
+      "shaclShapes": {},
+      "ldContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/data-provenance/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/data-provenance/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/data-provenance/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.data-provenance"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.data-quality",
+      "$schema": "metaschema.yaml",
+      "name": "Data Quality",
+      "abstract": "Uncertainty, validation, bias, gaps.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "quality",
+        "uncertainty",
+        "validation"
+      ],
+      "group": "EBV Specific",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-quality/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-quality/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/data-quality/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/data-quality/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.data-quality"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.ebv-feature-view",
+      "$schema": "metaschema.yaml",
+      "name": "EBV Feature View",
+      "abstract": "Discovery layer: GeoJSON Feature with EBV phenology properties linked to CoverageJSON building blocks via semantic context. Enables map visualization in OGC BB viewer.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.ebv-profile",
+        "ogc.geo.features.feature",
+        "syke.ebv.phenology.covjson-coverage",
+        "syke.ebv.phenology.data-provenance"
+      ],
+      "tags": [
+        "feature",
+        "map",
+        "discovery",
+        "geojson"
+      ],
+      "group": "EBV Specific",
+      "highlighted": true,
+      "ldContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/",
+      "validationPassed": false,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/ebv-feature-view/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-feature-view/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-feature-view"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.ecosystem-services",
+      "$schema": "metaschema.yaml",
+      "name": "Ecosystem Services Link",
+      "abstract": "Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-coverage",
+        "syke.ebv.phenology.data-provenance"
+      ],
+      "tags": [
+        "ecosystem-services",
+        "pollination",
+        "carbon",
+        "phenology"
+      ],
+      "group": "Policy",
+      "highlighted": false,
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ecosystem-services/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ecosystem-services/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ecosystem-services/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ecosystem-services"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.policy-alignment",
+      "$schema": "metaschema.yaml",
+      "name": "Policy Alignment",
+      "abstract": "Policy-relevance and alignment record for EBV phenology data and derived indicators.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [],
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-coverage",
+        "syke.ebv.phenology.data-provenance"
+      ],
+      "tags": [
+        "policy",
+        "alignment",
+        "biodiversity",
+        "phenology"
+      ],
+      "group": "Policy",
+      "highlighted": true,
+      "ldContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/policy-alignment/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/policy-alignment/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/policy-alignment/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.policy-alignment"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ]
+}

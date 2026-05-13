@@ -1,0 +1,104 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<activity:aggregate-annual-spatial-means> a prov:Activity ;
+    prov:generated <entity:annual-spatial-means> ;
+    prov:used <entity:source-netcdf> ;
+    prov:wasAssociatedWith <agent:phenology-indicator-script> ;
+    ebv:method_parameters [ prov:Entity "Coniferous",
+                "Deciduous" ] .
+
+<activity:compute-phenology-indicators> a prov:Activity ;
+    prov:generated <entity:phenology-indicators-json> ;
+    prov:used <entity:annual-spatial-means> ;
+    prov:wasAssociatedWith <agent:phenology-indicator-script> ;
+    ebv:method_parameters [ ] .
+
+<activity:derive-vap-products> a prov:Activity ;
+    prov:generated <entity:source-netcdf> ;
+    prov:used <entity:modis-observations> ;
+    prov:wasAssociatedWith <agent:syke> ;
+    ebv:method_summary "Cloud covered observations were removed.",
+        "For coniferous forest, FSC time series were used as proxy for VAP onset.",
+        "For deciduous vegetation, NDWI time series were used.",
+        "Fractional Snow Cover (FSC) and NDWI were calculated.",
+        "MODIS Level 1B data were calibrated to top-of-atmosphere reflectances.",
+        "Yearly VAP maps were smoothed with a median filter and open water areas were masked." .
+
+<activity:publish-building-block-examples> a prov:Activity ;
+    prov:used <entity:phenology-indicators-json>,
+        <entity:phenology-indicators-provenance> ;
+    prov:wasAssociatedWith <agent:ogc-bblocks-workflow> .
+
+<activity:read-source-cube> a prov:Activity ;
+    prov:used <entity:source-metadata-json>,
+        <entity:source-netcdf> ;
+    prov:wasAssociatedWith <agent:phenology-indicator-script> ;
+    ebv:method_parameters [ ] .
+
+<activity:remote-sensing-acquisition> a prov:Activity ;
+    prov:generated <entity:modis-observations> ;
+    prov:wasAssociatedWith <agent:modis-terra> .
+
+<agent:kristin-bottcher> a <file:///github/workspace/Person> .
+
+<file:///github/workspace/geobon-dataset-10-v2> dcterms:title "Vegetation Phenology in Finland" ;
+    ebv: [ ] .
+
+<agent:modis-terra> a <file:///github/workspace/InstrumentPlatform> .
+
+<agent:ogc-bblocks-workflow> a <file:///github/workspace/SoftwareAgent> .
+
+<entity:phenology-indicators-provenance> a prov:Entity .
+
+<entity:source-metadata-json> a prov:Entity ;
+    prov:wasAttributedTo <agent:syke> .
+
+<entity:annual-spatial-means> a prov:Entity ;
+    dcterms:description "Intermediate table with one national-scale annual mean VAP day-of-year per EBV entity." .
+
+<entity:modis-observations> a prov:Entity ;
+    dcterms:description "Remote sensing observations used as source input for the original VAP products." .
+
+<entity:phenology-indicators-json> a prov:Entity .
+
+<agent:phenology-indicator-script> a <file:///github/workspace/SoftwareAgent> .
+
+<agent:syke> a <file:///github/workspace/Organization> .
+
+<entity:source-netcdf> a prov:Entity ;
+    prov:wasAttributedTo <agent:syke> .
+
+[] a <file:///github/workspace/PhenologyIndicatorProvenance> ;
+    dcterms:description "Lineage record describing how the Phenology Indicators example was derived from the original NetCDF EBV phenology dataset using national-scale annual spatial aggregation and temporal analysis." ;
+    dcterms:source <file:///github/workspace/geobon-dataset-10-v2> ;
+    dcterms:title "Provenance for Finland EBV phenology indicators" ;
+    prov:Activity <activity:aggregate-annual-spatial-means>,
+        <activity:compute-phenology-indicators>,
+        <activity:derive-vap-products>,
+        <activity:publish-building-block-examples>,
+        <activity:read-source-cube>,
+        <activity:remote-sensing-acquisition> ;
+    prov:Agent <agent:kristin-bottcher>,
+        <agent:modis-terra>,
+        <agent:ogc-bblocks-workflow>,
+        <agent:phenology-indicator-script>,
+        <agent:syke> ;
+    prov:Entity <entity:annual-spatial-means>,
+        <entity:modis-observations>,
+        <entity:phenology-indicators-json>,
+        <entity:phenology-indicators-provenance>,
+        <entity:source-metadata-json>,
+        <entity:source-netcdf> ;
+    prov:wasDerivedFrom [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    ebv:derived_indicator_summary [ ],
+        [ ] ;
+    ebv:quality_and_limitations [ ] .
+
