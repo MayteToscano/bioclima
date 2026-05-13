@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EBV Phenology Vocabulary</title>
+<style>
+:root { --fg:#17202a; --muted:#5d6d7e; --border:#d6dbdf; --bg:#f8f9f9; --card:#fff; --accent:#1f618d; }
+body { margin:0; font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.55; color:var(--fg); background:var(--bg); }
+header { background:var(--card); border-bottom:1px solid var(--border); padding:2rem 1.25rem; }
+main { max-width:980px; margin:0 auto; padding:1.5rem 1.25rem 3rem; }
+h1 { margin:0 0 .5rem; font-size:2rem; }
+a { color:var(--accent); }
+code { background:#eef2f3; padding:.12rem .3rem; border-radius:.25rem; word-break:break-word; }
+.muted { color:var(--muted); }
+.panel, .term { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1.25rem; margin:1rem 0; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+.toc ul { columns:2; padding-left:1.2rem; }
+dl { display:grid; grid-template-columns:160px 1fr; gap:.35rem .75rem; }
+dt { font-weight:700; }
+dd { margin:0; }
+.controls { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:1rem; }
+button { border:1px solid var(--border); background:#fff; border-radius:999px; padding:.45rem .8rem; cursor:pointer; }
+button.active { border-color:var(--accent); color:var(--accent); font-weight:700; }
+.i18n { display:none; }
+@media (max-width:700px) { .toc ul { columns:1; } dl { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header id="top">
+  <div style="max-width:980px;margin:0 auto;">
+    <h1>EBV Phenology Vocabulary</h1>
+    <p class="muted"><span class="tr" data-key="intro"></span></p>
+    <p><strong><span class="tr" data-key="baseuri"></span></strong> <code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#</code></p>
+    <div class="controls">
+      <span class="muted"><span class="tr" data-key="language"></span></span>
+      <button data-set-lang="en">English</button>
+      <button data-set-lang="es">Español</button>
+      <button data-set-lang="ro">Română</button>
+      <button data-set-lang="zh">中文</button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="panel toc">
+    <h2><span class="tr" data-key="terms"></span></h2>
+    <ul><li><a href="#entity_type">entity_type</a></li>
+<li><a href="#year">year</a></li>
+<li><a href="#vap_doy">vap_doy</a></li>
+<li><a href="#mean_doy">mean_doy</a></li>
+<li><a href="#min_doy">min_doy</a></li>
+<li><a href="#max_doy">max_doy</a></li>
+<li><a href="#stddev">stddev</a></li>
+<li><a href="#valid_percent">valid_percent</a></li>
+<li><a href="#crs">crs</a></li>
+<li><a href="#grid_width">grid_width</a></li>
+<li><a href="#grid_height">grid_height</a></li>
+<li><a href="#sensor">sensor</a></li>
+<li><a href="#algorithm">algorithm</a></li>
+<li><a href="#trend_slope">trend_slope</a></li>
+<li><a href="#anomaly">anomaly</a></li>
+<li><a href="#ConiferousForest">ConiferousForest</a></li>
+<li><a href="#DeciduousForest">DeciduousForest</a></li></ul>
+  </section>
+  
+<section class="term" id="entity_type">
+  <h2><span class="i18n" data-lang="en">Forest Entity Type</span><span class="i18n" data-lang="es">Tipo de entidad forestal</span><span class="i18n" data-lang="ro">Tip de entitate forestieră</span><span class="i18n" data-lang="zh">森林实体类型</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Object property</span><span class="i18n" data-lang="es">Propiedad de objeto</span><span class="i18n" data-lang="ro">Proprietate de obiect</span><span class="i18n" data-lang="zh">对象属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Forest Entity Type</span><span class="i18n" data-lang="es">Tipo de entidad forestal</span><span class="i18n" data-lang="ro">Tip de entitate forestieră</span><span class="i18n" data-lang="zh">森林实体类型</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">The ecosystem entity type for which the phenology metric is derived. Values may identify forest entities such as coniferous or deciduous forest.</span><span class="i18n" data-lang="es">Tipo de entidad ecosistémica para la que se deriva la métrica fenológica. Puede identificar entidades forestales como bosque de coníferas o bosque caducifolio.</span><span class="i18n" data-lang="ro">Tipul de entitate ecosistemică pentru care este derivată metrica fenologică. Poate identifica entități forestiere precum pădure de conifere sau pădure de foioase.</span><span class="i18n" data-lang="zh">用于推导物候指标的生态系统实体类型。其取值可表示针叶林或落叶林等森林实体。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> IRI or string</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="year">
+  <h2><span class="i18n" data-lang="en">Observation Year</span><span class="i18n" data-lang="es">Año de observación</span><span class="i18n" data-lang="ro">Anul observației</span><span class="i18n" data-lang="zh">观测年份</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Observation Year</span><span class="i18n" data-lang="es">Año de observación</span><span class="i18n" data-lang="ro">Anul observației</span><span class="i18n" data-lang="zh">观测年份</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Calendar year associated with the phenology observation or derived annual EBV metric.</span><span class="i18n" data-lang="es">Año natural asociado con la observación fenológica o con la métrica EBV anual derivada.</span><span class="i18n" data-lang="ro">Anul calendaristic asociat observației fenologice sau metricii EBV anuale derivate.</span><span class="i18n" data-lang="zh">与物候观测或年度 EBV 派生指标相关的公历年份。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="vap_doy">
+  <h2><span class="i18n" data-lang="en">Start of VAP (Day of Year)</span><span class="i18n" data-lang="es">Inicio del periodo activo de vegetación (día del año)</span><span class="i18n" data-lang="ro">Începutul PAV (ziua anului)</span><span class="i18n" data-lang="zh">植被活跃期开始（年积日）</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Start of VAP (Day of Year)</span><span class="i18n" data-lang="es">Inicio del periodo activo de vegetación (día del año)</span><span class="i18n" data-lang="ro">Începutul PAV (ziua anului)</span><span class="i18n" data-lang="zh">植被活跃期开始（年积日）</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Integer day of year marking the start of the Vegetation Active Period.</span><span class="i18n" data-lang="es">Día del año, expresado como entero, que marca el inicio del Periodo Activo de Vegetación.</span><span class="i18n" data-lang="ro">Ziua anului, exprimată ca număr întreg, care marchează începutul Perioadei Active a Vegetației.</span><span class="i18n" data-lang="zh">以整数表示的一年中的某一天，用于标记植被活跃期的开始。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="mean_doy">
+  <h2><span class="i18n" data-lang="en">Mean DOY (spatial average)</span><span class="i18n" data-lang="es">DOY medio (promedio espacial)</span><span class="i18n" data-lang="ro">DOY mediu (media spațială)</span><span class="i18n" data-lang="zh">平均 DOY（空间平均）</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Mean DOY (spatial average)</span><span class="i18n" data-lang="es">DOY medio (promedio espacial)</span><span class="i18n" data-lang="ro">DOY mediu (media spațială)</span><span class="i18n" data-lang="zh">平均 DOY（空间平均）</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Spatial mean day-of-year value calculated across valid grid cells or pixels for the selected feature.</span><span class="i18n" data-lang="es">Valor medio espacial del día del año calculado sobre las celdas o píxeles válidos del elemento seleccionado.</span><span class="i18n" data-lang="ro">Valoarea medie spațială a zilei din an calculată pentru celulele sau pixelii valizi ai elementului selectat.</span><span class="i18n" data-lang="zh">针对所选要素，在有效网格单元或像元上计算得到的一年中的平均日期值。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:decimal</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="min_doy">
+  <h2><span class="i18n" data-lang="en">Minimum DOY</span><span class="i18n" data-lang="es">DOY mínimo</span><span class="i18n" data-lang="ro">DOY minim</span><span class="i18n" data-lang="zh">最小 DOY</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Minimum DOY</span><span class="i18n" data-lang="es">DOY mínimo</span><span class="i18n" data-lang="ro">DOY minim</span><span class="i18n" data-lang="zh">最小 DOY</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Minimum day-of-year value observed across the valid spatial cells for the selected feature.</span><span class="i18n" data-lang="es">Valor mínimo del día del año observado en las celdas espaciales válidas del elemento seleccionado.</span><span class="i18n" data-lang="ro">Valoarea minimă a zilei din an observată în celulele spațiale valide ale elementului selectat.</span><span class="i18n" data-lang="zh">在所选要素的有效空间单元中观测到的一年中的最小日期值。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="max_doy">
+  <h2><span class="i18n" data-lang="en">Maximum DOY</span><span class="i18n" data-lang="es">DOY máximo</span><span class="i18n" data-lang="ro">DOY maxim</span><span class="i18n" data-lang="zh">最大 DOY</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Maximum DOY</span><span class="i18n" data-lang="es">DOY máximo</span><span class="i18n" data-lang="ro">DOY maxim</span><span class="i18n" data-lang="zh">最大 DOY</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Maximum day-of-year value observed across the valid spatial cells for the selected feature.</span><span class="i18n" data-lang="es">Valor máximo del día del año observado en las celdas espaciales válidas del elemento seleccionado.</span><span class="i18n" data-lang="ro">Valoarea maximă a zilei din an observată în celulele spațiale valide ale elementului selectat.</span><span class="i18n" data-lang="zh">在所选要素的有效空间单元中观测到的一年中的最大日期值。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="stddev">
+  <h2><span class="i18n" data-lang="en">Standard Deviation of DOY</span><span class="i18n" data-lang="es">Desviación típica del DOY</span><span class="i18n" data-lang="ro">Deviația standard a DOY</span><span class="i18n" data-lang="zh">DOY 标准差</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Standard Deviation of DOY</span><span class="i18n" data-lang="es">Desviación típica del DOY</span><span class="i18n" data-lang="ro">Deviația standard a DOY</span><span class="i18n" data-lang="zh">DOY 标准差</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Standard deviation of day-of-year values across valid spatial cells or pixels.</span><span class="i18n" data-lang="es">Desviación típica de los valores de día del año en las celdas o píxeles espaciales válidos.</span><span class="i18n" data-lang="ro">Deviația standard a valorilor zilei din an pentru celulele sau pixelii spațiali valizi.</span><span class="i18n" data-lang="zh">有效空间单元或像元中一年中的日期值的标准差。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:decimal</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="valid_percent">
+  <h2><span class="i18n" data-lang="en">Valid Pixel Percentage</span><span class="i18n" data-lang="es">Porcentaje de píxeles válidos</span><span class="i18n" data-lang="ro">Procent de pixeli valizi</span><span class="i18n" data-lang="zh">有效像元百分比</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Valid Pixel Percentage</span><span class="i18n" data-lang="es">Porcentaje de píxeles válidos</span><span class="i18n" data-lang="ro">Procent de pixeli valizi</span><span class="i18n" data-lang="zh">有效像元百分比</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Percentage of valid spatial cells or pixels used to compute the phenology summary metric.</span><span class="i18n" data-lang="es">Porcentaje de celdas o píxeles espaciales válidos utilizados para calcular la métrica fenológica resumida.</span><span class="i18n" data-lang="ro">Procentul celulelor sau pixelilor spațiali valizi utilizați pentru calculul metricii fenologice sintetice.</span><span class="i18n" data-lang="zh">用于计算物候汇总指标的有效空间单元或像元的百分比。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:decimal</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="crs">
+  <h2><span class="i18n" data-lang="en">Coordinate Reference System</span><span class="i18n" data-lang="es">Sistema de referencia de coordenadas</span><span class="i18n" data-lang="ro">Sistem de referință al coordonatelor</span><span class="i18n" data-lang="zh">坐标参考系统</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Coordinate Reference System</span><span class="i18n" data-lang="es">Sistema de referencia de coordenadas</span><span class="i18n" data-lang="ro">Sistem de referință al coordonatelor</span><span class="i18n" data-lang="zh">坐标参考系统</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Coordinate reference system used by the spatial representation of the feature or coverage-derived summary.</span><span class="i18n" data-lang="es">Sistema de referencia de coordenadas utilizado por la representación espacial del elemento o por el resumen derivado de la cobertura.</span><span class="i18n" data-lang="ro">Sistemul de referință al coordonatelor utilizat de reprezentarea spațială a elementului sau de rezumatul derivat din coverage.</span><span class="i18n" data-lang="zh">要素空间表示或 coverage 派生汇总所使用的坐标参考系统。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:string</p>
+  <p><strong><span class="tr" data-key="equivalent"></span></strong> <a href="https://covjson.org/def/core#referenceSystem">https://covjson.org/def/core#referenceSystem</a></p>
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="grid_width">
+  <h2><span class="i18n" data-lang="en">Grid Width (columns)</span><span class="i18n" data-lang="es">Anchura de la malla (columnas)</span><span class="i18n" data-lang="ro">Lățimea grilei (coloane)</span><span class="i18n" data-lang="zh">网格宽度（列）</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Grid Width (columns)</span><span class="i18n" data-lang="es">Anchura de la malla (columnas)</span><span class="i18n" data-lang="ro">Lățimea grilei (coloane)</span><span class="i18n" data-lang="zh">网格宽度（列）</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Number of columns in the grid used for the coverage-derived phenology data.</span><span class="i18n" data-lang="es">Número de columnas de la malla utilizada para los datos fenológicos derivados de la cobertura.</span><span class="i18n" data-lang="ro">Numărul de coloane din grila utilizată pentru datele fenologice derivate din coverage.</span><span class="i18n" data-lang="zh">用于 coverage 派生物候数据的网格列数。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="grid_height">
+  <h2><span class="i18n" data-lang="en">Grid Height (rows)</span><span class="i18n" data-lang="es">Altura de la malla (filas)</span><span class="i18n" data-lang="ro">Înălțimea grilei (rânduri)</span><span class="i18n" data-lang="zh">网格高度（行）</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Grid Height (rows)</span><span class="i18n" data-lang="es">Altura de la malla (filas)</span><span class="i18n" data-lang="ro">Înălțimea grilei (rânduri)</span><span class="i18n" data-lang="zh">网格高度（行）</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Number of rows in the grid used for the coverage-derived phenology data.</span><span class="i18n" data-lang="es">Número de filas de la malla utilizada para los datos fenológicos derivados de la cobertura.</span><span class="i18n" data-lang="ro">Numărul de rânduri din grila utilizată pentru datele fenologice derivate din coverage.</span><span class="i18n" data-lang="zh">用于 coverage 派生物候数据的网格行数。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:integer</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="sensor">
+  <h2><span class="i18n" data-lang="en">Source Sensor Platform</span><span class="i18n" data-lang="es">Plataforma sensora de origen</span><span class="i18n" data-lang="ro">Platforma senzorului sursă</span><span class="i18n" data-lang="zh">源传感器平台</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Source Sensor Platform</span><span class="i18n" data-lang="es">Plataforma sensora de origen</span><span class="i18n" data-lang="ro">Platforma senzorului sursă</span><span class="i18n" data-lang="zh">源传感器平台</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Sensor or observation platform used as the source for the phenology derivation.</span><span class="i18n" data-lang="es">Sensor o plataforma de observación utilizada como fuente para la derivación fenológica.</span><span class="i18n" data-lang="ro">Senzorul sau platforma de observație folosită ca sursă pentru derivarea fenologică.</span><span class="i18n" data-lang="zh">作为物候推导来源使用的传感器或观测平台。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:string</p>
+  <p><strong><span class="tr" data-key="equivalent"></span></strong> <a href="http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a></p>
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="algorithm">
+  <h2><span class="i18n" data-lang="en">Derivation Algorithm</span><span class="i18n" data-lang="es">Algoritmo de derivación</span><span class="i18n" data-lang="ro">Algoritm de derivare</span><span class="i18n" data-lang="zh">推导算法</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Derivation Algorithm</span><span class="i18n" data-lang="es">Algoritmo de derivación</span><span class="i18n" data-lang="ro">Algoritm de derivare</span><span class="i18n" data-lang="zh">推导算法</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Algorithm or processing method used to derive the phenology metric.</span><span class="i18n" data-lang="es">Algoritmo o método de procesamiento utilizado para derivar la métrica fenológica.</span><span class="i18n" data-lang="ro">Algoritmul sau metoda de procesare utilizată pentru a deriva metrica fenologică.</span><span class="i18n" data-lang="zh">用于推导物候指标的算法或处理方法。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:string</p>
+  <p><strong><span class="tr" data-key="equivalent"></span></strong> <a href="http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a></p>
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="trend_slope">
+  <h2><span class="i18n" data-lang="en">Trend Slope (days/year)</span><span class="i18n" data-lang="es">Pendiente de tendencia (días/año)</span><span class="i18n" data-lang="ro">Panta tendinței (zile/an)</span><span class="i18n" data-lang="zh">趋势斜率（天/年）</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Trend Slope (days/year)</span><span class="i18n" data-lang="es">Pendiente de tendencia (días/año)</span><span class="i18n" data-lang="ro">Panta tendinței (zile/an)</span><span class="i18n" data-lang="zh">趋势斜率（天/年）</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Rate of change of the VAP start date over time, expressed in days per year.</span><span class="i18n" data-lang="es">Tasa de cambio de la fecha de inicio del VAP a lo largo del tiempo, expresada en días por año.</span><span class="i18n" data-lang="ro">Rata de schimbare în timp a datei de început a PAV, exprimată în zile pe an.</span><span class="i18n" data-lang="zh">VAP 开始日期随时间变化的速率，以天/年表示。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:decimal</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="anomaly">
+  <h2><span class="i18n" data-lang="en">Annual Anomaly Status</span><span class="i18n" data-lang="es">Estado de anomalía anual</span><span class="i18n" data-lang="ro">Starea anomaliei anuale</span><span class="i18n" data-lang="zh">年度异常状态</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Datatype property</span><span class="i18n" data-lang="es">Propiedad de dato</span><span class="i18n" data-lang="ro">Proprietate de date</span><span class="i18n" data-lang="zh">数据属性</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Annual Anomaly Status</span><span class="i18n" data-lang="es">Estado de anomalía anual</span><span class="i18n" data-lang="ro">Starea anomaliei anuale</span><span class="i18n" data-lang="zh">年度异常状态</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Annual anomaly category relative to a baseline, for example early, normal or late.</span><span class="i18n" data-lang="es">Categoría de anomalía anual respecto a una línea base, por ejemplo temprana, normal o tardía.</span><span class="i18n" data-lang="ro">Categoria anomaliei anuale față de o bază de referință, de exemplu timpurie, normală sau târzie.</span><span class="i18n" data-lang="zh">相对于基线的年度异常类别，例如偏早、正常或偏晚。</span></dd>
+  </dl>
+  <p><strong><span class="tr" data-key="range"></span></strong> xsd:string</p>
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="ConiferousForest">
+  <h2><span class="i18n" data-lang="en">Coniferous Forest</span><span class="i18n" data-lang="es">Bosque de coníferas</span><span class="i18n" data-lang="ro">Pădure de conifere</span><span class="i18n" data-lang="zh">针叶林</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#ConiferousForest</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Class</span><span class="i18n" data-lang="es">Clase</span><span class="i18n" data-lang="ro">Clasă</span><span class="i18n" data-lang="zh">类</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Coniferous Forest</span><span class="i18n" data-lang="es">Bosque de coníferas</span><span class="i18n" data-lang="ro">Pădure de conifere</span><span class="i18n" data-lang="zh">针叶林</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Forest dominated by cone-bearing trees, mainly spruce and pine in the Finnish context.</span><span class="i18n" data-lang="es">Bosque dominado por árboles que producen conos, principalmente abeto y pino en el contexto finlandés.</span><span class="i18n" data-lang="ro">Pădure dominată de arbori coniferi, în principal molid și pin în contextul Finlandei.</span><span class="i18n" data-lang="zh">以球果树种为主的森林，在芬兰语境下主要指云杉林和松林。</span></dd>
+  </dl>
+  
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+<section class="term" id="DeciduousForest">
+  <h2><span class="i18n" data-lang="en">Deciduous Forest</span><span class="i18n" data-lang="es">Bosque caducifolio</span><span class="i18n" data-lang="ro">Pădure de foioase</span><span class="i18n" data-lang="zh">落叶林</span></h2>
+  <p class="uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#DeciduousForest</code></p>
+  <dl>
+    <dt><span class="tr" data-key="type"></span></dt><dd><span class="i18n" data-lang="en">Class</span><span class="i18n" data-lang="es">Clase</span><span class="i18n" data-lang="ro">Clasă</span><span class="i18n" data-lang="zh">类</span></dd>
+    <dt><span class="tr" data-key="label"></span></dt><dd><span class="i18n" data-lang="en">Deciduous Forest</span><span class="i18n" data-lang="es">Bosque caducifolio</span><span class="i18n" data-lang="ro">Pădure de foioase</span><span class="i18n" data-lang="zh">落叶林</span></dd>
+    <dt><span class="tr" data-key="definition"></span></dt><dd><span class="i18n" data-lang="en">Forest dominated by broad-leaved trees that shed leaves seasonally, mainly birch in the Finnish context.</span><span class="i18n" data-lang="es">Bosque dominado por árboles de hoja ancha que pierden sus hojas estacionalmente, principalmente abedul en el contexto finlandés.</span><span class="i18n" data-lang="ro">Pădure dominată de arbori de foioase care își pierd frunzele sezonier, în principal mesteacăn în contextul Finlandei.</span><span class="i18n" data-lang="zh">以季节性落叶阔叶树种为主的森林，在芬兰语境下主要指桦树林。</span></dd>
+  </dl>
+  
+  
+  <p><a href="#top"><span class="tr" data-key="backtotop"></span></a></p>
+</section>
+
+</main>
+<script>
+const translations = {
+  en: { intro:'Temporary GitHub Pages vocabulary for the EBV Phenology Building Block. The page language is selected automatically from the browser language, with a manual switcher as fallback.', baseuri:'Base URI:', language:'Language:', terms:'Terms', type:'Type', label:'Label', definition:'Definition', range:'Range:', equivalent:'Equivalent external term:', backtotop:'Back to top' },
+  es: { intro:'Vocabulario temporal en GitHub Pages para el Building Block de fenología EBV. El idioma de la página se selecciona automáticamente según el idioma del navegador, con selector manual como alternativa.', baseuri:'URI base:', language:'Idioma:', terms:'Términos', type:'Tipo', label:'Etiqueta', definition:'Definición', range:'Rango:', equivalent:'Término externo equivalente:', backtotop:'Volver arriba' },
+  ro: { intro:'Vocabular temporar în GitHub Pages pentru blocul de construcție EBV Phenology. Limba paginii este selectată automat din limba browserului, cu un selector manual ca alternativă.', baseuri:'URI de bază:', language:'Limbă:', terms:'Termeni', type:'Tip', label:'Etichetă', definition:'Definiție', range:'Domeniu:', equivalent:'Termen extern echivalent:', backtotop:'Înapoi sus' },
+  zh: { intro:'这是 EBV 物候构建模块在 GitHub Pages 上的临时词汇表。页面语言会根据浏览器语言自动选择，也提供手动切换。', baseuri:'基础 URI：', language:'语言：', terms:'术语', type:'类型', label:'标签', definition:'定义', range:'取值范围：', equivalent:'对应的外部术语：', backtotop:'返回顶部' }
+};
+function normalizeLanguage(lang) {
+  if (!lang) return 'en';
+  lang = lang.toLowerCase();
+  if (lang.startsWith('es')) return 'es';
+  if (lang.startsWith('ro')) return 'ro';
+  if (lang.startsWith('zh')) return 'zh';
+  return 'en';
+}
+function getLang() {
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('lang');
+  if (q) return normalizeLanguage(q);
+  const saved = localStorage.getItem('ebv_vocab_lang');
+  if (saved) return normalizeLanguage(saved);
+  return normalizeLanguage(navigator.language || navigator.userLanguage || 'en');
+}
+function setLanguage(lang) {
+  const current = normalizeLanguage(lang);
+  localStorage.setItem('ebv_vocab_lang', current);
+  document.documentElement.lang = current;
+  document.querySelectorAll('.i18n').forEach(el => {
+    el.style.display = el.dataset.lang === current ? 'inline' : 'none';
+  });
+  document.querySelectorAll('.tr').forEach(el => {
+    const key = el.dataset.key;
+    el.textContent = translations[current][key] || translations.en[key] || key;
+  });
+  document.querySelectorAll('button[data-set-lang]').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.setLang === current);
+  });
+}
+document.querySelectorAll('button[data-set-lang]').forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.setLang)));
+setLanguage(getLang());
+</script>
+</body>
+</html>

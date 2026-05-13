@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/"
+  },
+  "@id": "ebv:pci_method_v1",
+  "@type": [
+    "prov:Plan",
+    "ebv:IndicatorComputationMethod"
+  ],
+  "dct:title": {
+    "en": "Phenological Change Indicator computation method",
+    "es": "Método de cálculo del Indicador de Cambio Fenológico"
+  },
+  "ebv:inputObservedProperty": "ebv:vap_doy",
+  "ebv:outputIndicator": "ebv:PhenologicalChangeIndicator",
+  "ebv:baselinePeriod": {
+    "ebv:startYear": 2001,
+    "ebv:endYear": 2010
+  },
+  "ebv:recentPeriod": {
+    "ebv:startYear": 2011,
+    "ebv:endYear": 2018
+  },
+  "ebv:components": [
+    {
+      "@id": "ebv:phenological_trend",
+      "ebv:algorithm": "ebv:TheilSenSlope",
+      "ebv:unit": "days/year"
+    },
+    {
+      "@id": "ebv:phenological_anomaly",
+      "ebv:algorithm": "ebv:BaselineDifference",
+      "ebv:unit": "days"
+    },
+    {
+      "@id": "ebv:changepoint_year",
+      "ebv:algorithm": "ebv:PettittTest",
+      "ebv:unit": "year"
+    },
+    {
+      "@id": "ebv:changepoint_pvalue",
+      "ebv:algorithm": "ebv:PettittTestPValue",
+      "ebv:unit": "1"
+    }
+  ]
+}
