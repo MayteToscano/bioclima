@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+[] a "PhenologyIndicatorProvenance" ;
+    dcterms:description "Lineage record describing how the Phenology Indicators example was derived from the original NetCDF EBV phenology dataset using national-scale annual spatial aggregation and temporal analysis." ;
+    dcterms:source [ dcterms:title "Vegetation Phenology in Finland" ;
+            ebv: [ ] ] ;
+    dcterms:title "Provenance for Finland EBV phenology indicators" ;
+    prov:Activity [ a "prov:Activity" ],
+        [ a "prov:Activity" ],
+        [ a "prov:Activity" ],
+        [ a "prov:Activity" ],
+        [ a "prov:Activity" ],
+        [ a "prov:Activity" ] ;
+    prov:Agent [ a "InstrumentPlatform" ],
+        [ a "SoftwareAgent" ],
+        [ a "SoftwareAgent" ],
+        [ a "Organization" ],
+        [ a "Person" ] ;
+    prov:Entity [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ;
+            dcterms:description "Remote sensing observations used as source input for the original VAP products." ],
+        [ a "prov:Entity" ;
+            dcterms:description "Intermediate table with one national-scale annual mean VAP day-of-year per EBV entity." ] ;
+    prov:wasDerivedFrom [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    ebv:derived_indicator_summary [ ],
+        [ ] ;
+    ebv:quality_and_limitations [ ] .
+

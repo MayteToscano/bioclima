@@ -1,0 +1,735 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix shacl: <https://www.w3.org/TR/shacl/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<bblocks://syke.ebv.phenology.covjson-coverage-collection> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Coverage Collection" ;
+    dct:abstract "Collection of coverages grouping multiple entities. Maps to the EBV Data Cube with 4 dimensions: lon, lat, time, entity."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Coverage Collection" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "collection",
+        "covjson",
+        "datacube",
+        "entities" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage-collection/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage-collection/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-coverage> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.data-quality> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Data Quality" ;
+    dct:abstract "Uncertainty, validation, bias, gaps."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/data-quality/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/data-quality/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "Data Quality" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "quality",
+        "uncertainty",
+        "validation" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/data-quality/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/data-quality/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-coverage> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.ebv-feature-view> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EBV Feature View" ;
+    dct:abstract "Discovery layer: GeoJSON Feature with EBV phenology properties linked to CoverageJSON building blocks via semantic context. Enables map visualization in OGC BB viewer."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/ebv-feature-view/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "EBV Feature View" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "discovery",
+        "feature",
+        "geojson",
+        "map" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-feature-view/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-feature-view/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
+        <bblocks://syke.ebv.phenology.covjson-coverage>,
+        <bblocks://syke.ebv.phenology.data-provenance>,
+        <bblocks://syke.ebv.phenology.ebv-profile> ;
+    bblocks:hasSourceJsonLdContext <http://localhost:9090/register/_sources/ebv-feature-view/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://syke.ebv.phenology.ecosystem-services> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Ecosystem Services Link" ;
+    dct:abstract "Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/ecosystem-services/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "Ecosystem Services Link" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "carbon",
+        "ecosystem-services",
+        "phenology",
+        "pollination" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ecosystem-services/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ecosystem-services/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-coverage>,
+        <bblocks://syke.ebv.phenology.data-provenance> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.policy-alignment> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Policy Alignment" ;
+    dct:abstract "Policy-relevance and alignment record for EBV phenology data and derived indicators."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/policy-alignment/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/policy-alignment/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "Policy Alignment" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "alignment",
+        "biodiversity",
+        "phenology",
+        "policy" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/policy-alignment/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/policy-alignment/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/policy-alignment/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-coverage>,
+        <bblocks://syke.ebv.phenology.data-provenance> ;
+    bblocks:hasSourceJsonLdContext <http://localhost:9090/register/_sources/policy-alignment/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<http://localhost:9090/register/build-local/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N315fa2f14ede485c989b9269f4c3852c ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-05-11T06:32:18.886810"^^xsd:dateTime ;
+            prov:startedAtTime "2026-05-11T06:32:18.506209"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:5037c3593d150762160674c530de40fb8652441c" ;
+                    rdfs:seeAlso <http://localhost:9090/register/build-local/register.json> ] ;
+            prov:wasAssociatedWith _:N315fa2f14ede485c989b9269f4c3852c ] .
+
+<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
+
+<https://geobon.org/ebvs/> rdfs:label "GEO BON EBV Framework" .
+
+<https://www.w3.org/TR/owl2-overview/> rdfs:label "W3C OWL 2" .
+
+<https://www.w3.org/TR/prov-o/> rdfs:label "W3C PROV-O" .
+
+<bblocks://syke.ebv.phenology.covjson-axis> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Axis" ;
+    dct:abstract "Single coordinate axis of a coverage domain: spatial (x,y,z) or temporal (t). Defines start, stop, num for regular axes or explicit values."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-axis/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-axis/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Axis" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "axis",
+        "coordinate",
+        "covjson",
+        "grid" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-axis/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-axis/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-domain> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Domain" ;
+    dct:abstract "Coverage domain defining spatial/temporal extent via axes and reference systems. Supports Grid, PointSeries, Trajectory and other domain types."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-domain/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-domain/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Domain" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "domain",
+        "grid",
+        "spatiotemporal" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-domain/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-domain/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-axis>,
+        <bblocks://syke.ebv.phenology.covjson-reference-system> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-parameter-group> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Parameter Group" ;
+    dct:abstract "Semantic grouping of related parameters, e.g., velocity = speed + direction, or coniferous + deciduous VAP."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Parameter Group" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "group",
+        "parameter",
+        "semantic" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-parameter-group/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-parameter-group/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-parameter> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-range> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Range" ;
+    dct:abstract "Container for data values of a single parameter. Contains NdArray (inline) or TiledNdArray (tiled/external)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-range/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-range/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Range" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "encoding",
+        "range",
+        "values" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-range/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-range/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-ndarray>,
+        <bblocks://syke.ebv.phenology.covjson-tiled-ndarray> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-reference-system> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Reference System" ;
+    dct:abstract "Coordinate reference system binding axes to real-world coordinates. Supports GeographicCRS, ProjectedCRS, TemporalRS, VerticalCRS."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Reference System" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "coordinate",
+        "covjson",
+        "crs",
+        "reference" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-reference-system/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-reference-system/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-tiled-ndarray> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON TiledNdArray" ;
+    dct:abstract "Tiled range encoding that partitions data spatially/temporally via URI templates, enabling efficient partial loading."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON TiledNdArray" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "streaming",
+        "tiled",
+        "tiles" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-tiled-ndarray/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-ndarray> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.ebv-ontology> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EBV Phenology Ontology" ;
+    dct:abstract "OWL/SKOS ontology with multilingual labels (EN, ES, ZH, RO). Linked from CovJSON observedProperty URIs."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/owl2-overview/> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "EBV Phenology Ontology" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "i18n",
+        "multilingual",
+        "ontology",
+        "owl" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-ontology/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-ontology/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-ontology/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.ebv-profile> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EBV Dataset Profile" ;
+    dct:abstract "Identity of an EBV dataset: class, name, entities, metric, scope, DOI. Following GEO BON framework."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/ebv-profile/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/ebv-profile/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://geobon.org/ebvs/> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "EBV Dataset Profile" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "ebv",
+        "geobon",
+        "identity",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-profile/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-profile/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-ndarray> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON NdArray" ;
+    dct:abstract "N-dimensional array holding actual coverage data values. Defines dataType, shape, axisNames, and the flat values array."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-ndarray/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON NdArray" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "data",
+        "ndarray",
+        "pixels",
+        "values" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-ndarray/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-ndarray/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-parameter> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Parameter" ;
+    dct:abstract "Describes what is measured: observed property with multi-language labels, unit of measure, and optional category encoding."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Parameter" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "covjson",
+        "i18n",
+        "observable",
+        "parameter",
+        "unit" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-parameter/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-parameter/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.ebv-ontology> ;
+    bblocks:hasSourceJsonLdContext <http://localhost:9090/register/_sources/covjson-parameter/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.data-provenance> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Data Provenance" ;
+    dct:abstract "Lineage and provenance information for EBV phenology datasets and derived phenology indicators."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/data-provenance/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/data-provenance/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/prov-o/> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "Data Provenance" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "lineage",
+        "phenology",
+        "prov",
+        "provenance" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/data-provenance/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/data-provenance/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/data-provenance/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-coverage> ;
+    bblocks:hasSourceJsonLdContext <http://localhost:9090/register/_sources/data-provenance/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://syke.ebv.phenology.covjson-coverage> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "CovJSON Coverage" ;
+    dct:abstract "Complete coverage composing Domain, Parameters, ParameterGroups and Ranges. The core CoverageJSON object for raster data."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/markdown/ebv/phenology/covjson-coverage/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <http://localhost:9090/register/build-local/generateddocs/json-full/ebv/phenology/covjson-coverage/index.json> ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2026-04-30"^^xsd:date ;
+    dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
+    skos:inScheme <http://localhost:9090/register/> ;
+    skos:prefLabel "CovJSON Coverage" ;
+    skos:topConceptOf <http://localhost:9090/register/> ;
+    dcat:keyword "composite",
+        "coverage",
+        "covjson",
+        "raster" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-domain>,
+        <bblocks://syke.ebv.phenology.covjson-parameter>,
+        <bblocks://syke.ebv.phenology.covjson-parameter-group>,
+        <bblocks://syke.ebv.phenology.covjson-range> ;
+    bblocks:hasSourceJsonLdContext <http://localhost:9090/register/_sources/covjson-coverage/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://docs.ogc.org/cs/21-069r2/21-069r2.html> rdfs:label "OGC CoverageJSON 21-069r2 §6",
+        "OGC CoverageJSON 21-069r2 §6.3",
+        "OGC CoverageJSON 21-069r2 §7",
+        "OGC CoverageJSON 21-069r2 §7.2",
+        "OGC CoverageJSON 21-069r2 §7.4",
+        "OGC CoverageJSON 21-069r2 §8",
+        "OGC CoverageJSON 21-069r2 §8.3",
+        "OGC CoverageJSON 21-069r2 §9",
+        "OGC CoverageJSON 21-069r2 §9.2" .
+
+<http://localhost:9090/register/> a skos:ConceptScheme,
+        dcat:Catalog,
+        bblocks:BBlocksRegister ;
+    rdfs:label "Building Blocks - BioClima EBV Phenology Finland OGC Blocks" ;
+    dct:abstract """Complete OGC Blocks for EBV phenology raster data. Models the full 
+CoverageJSON UML (9 classes) plus 7 EBV-specific blocks = 17 total.
+Multi-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """## About this Register: BioClima EBV Phenology Finland OGC Blocks
+
+This register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.
+
+### Who is this register for?
+This register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:
+*   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.
+*   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.
+*   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.
+*   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.
+
+### What does this register contain?
+The register includes **17 OGC Blocks** designed to provide a comprehensive framework for environmental data. It features:
+*   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.
+*   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).
+*   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.
+*   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.
+
+### When should this register be used?
+This register is most relevant in the following scenarios and workflows:
+*   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.
+*   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.
+*   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.
+*   **Reporting:** When aligning environmental data with international frameworks such as **NBSAPs** (National Biodiversity Strategies and Action Plans) or the **IPBES**.
+
+### Where does this register fit?
+This register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable "building blocks". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.
+
+### Why does this register exist?
+The register exists to fill critical gaps in current environmental monitoring:
+*   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.
+*   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.
+*   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.
+
+### How is this register structured and implemented?
+The register is structured as a series of modular **OGC Blocks** managed via GitHub:
+*   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).
+*   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.
+*   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.
+*   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2026-05-11T06:32:10.193315"^^xsd:dateTime ;
+    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:hasTopConcept <bblocks://syke.ebv.phenology.covjson-axis>,
+        <bblocks://syke.ebv.phenology.covjson-coverage>,
+        <bblocks://syke.ebv.phenology.covjson-coverage-collection>,
+        <bblocks://syke.ebv.phenology.covjson-domain>,
+        <bblocks://syke.ebv.phenology.covjson-ndarray>,
+        <bblocks://syke.ebv.phenology.covjson-parameter>,
+        <bblocks://syke.ebv.phenology.covjson-parameter-group>,
+        <bblocks://syke.ebv.phenology.covjson-range>,
+        <bblocks://syke.ebv.phenology.covjson-reference-system>,
+        <bblocks://syke.ebv.phenology.covjson-tiled-ndarray>,
+        <bblocks://syke.ebv.phenology.data-provenance>,
+        <bblocks://syke.ebv.phenology.data-quality>,
+        <bblocks://syke.ebv.phenology.ebv-feature-view>,
+        <bblocks://syke.ebv.phenology.ebv-ontology>,
+        <bblocks://syke.ebv.phenology.ebv-profile>,
+        <bblocks://syke.ebv.phenology.ecosystem-services>,
+        <bblocks://syke.ebv.phenology.policy-alignment> ;
+    skos:prefLabel "Building Blocks - BioClima EBV Phenology Finland OGC Blocks" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <http://localhost:9090/register/build-local/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <http://localhost:9090/register/build-local/register.json> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <http://localhost:9090/register/build-local/bblocks.ttl> ] ;
+    bblocks:hasValidationReport <http://localhost:9090/register/build-local/tests/report.html> .
+
+_:N315fa2f14ede485c989b9269f4c3852c a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.28" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for syke.ebv.phenology.covjson-range - CovJSON Range",
+  "bblockName": "CovJSON Range",
+  "bblockId": "syke.ebv.phenology.covjson-range",
+  "generated": "2026-05-11T06:32:16.425387+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

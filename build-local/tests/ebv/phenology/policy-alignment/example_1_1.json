@@ -1,0 +1,123 @@
+{
+  "type": "PolicyAlignment",
+  "title": "Policy alignment for Finland EBV phenology data",
+  "description": "Illustrative policy alignment record for the EBV phenology dataset 'Vegetation Phenology in Finland'. The record explains how the dataset may support policy-relevant monitoring, while clearly distinguishing between technical interoperability examples and policy-grade indicators.",
+  "source_dataset": {
+    "title": "Vegetation Phenology in Finland",
+    "doi": "10.25829/xf8ek6",
+    "product_version": "2",
+    "date_issued": "2023-07-18",
+    "spatial_scope": "Finland",
+    "temporal_coverage": {
+      "time_coverage_resolution": "P0001-00-00",
+      "time_coverage_start": "2001-01-01",
+      "time_coverage_end": "2018-01-01"
+    },
+    "ebv_class": "Ecosystem functioning",
+    "ebv_name": "Ecosystem phenology",
+    "ebv_entity_scope": "Coniferous and deciduous forests",
+    "metric": {
+      ":standard_name": "Start of the vegetation active period (VAP)",
+      ":long_name": "The start of the vegetation active period (VAP) in coniferous forest (Day of Year) is defined as the day when the trees start to photosynthesize in spring. The data set was derived from Moderate Resolution Imaging Spetroradiometer (MODIS) satellite observation of Fractional Snow Cover. The day when snow cover decreases during spring melt was used as a proxy indicator for the beginning of the start of the vegetation active period. The start of the vegetation active period (VAP) in deciduous vegetation (Day of Year) is defined as the day when deciduous trees unfold new leaves in spring. It is also often referred to as the green-up or greening day. The data set was derived from time series of the Normalized Difference Water Index (NDWI) calculated from Moderate Resolution Imaging Spetroradiometer (MODIS) satellite observation.",
+      ":units": "Day of year"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "policy_relevance": {
+    "summary": "The dataset may support policy-relevant monitoring of ecosystem phenology, forest ecosystem functioning and climate-driven changes in seasonal vegetation dynamics.",
+    "relevance_type": "potential_supporting_evidence",
+    "policy_use_level": "monitoring_support",
+    "not_policy_grade_by_itself": true
+  },
+  "aligned_policy_themes": [
+    {
+      "theme": "Biodiversity monitoring",
+      "alignment": "The dataset is an Essential Biodiversity Variable related to ecosystem functioning and ecosystem phenology. It can support monitoring of temporal changes in vegetation seasonality.",
+      "evidence_from_dataset": [
+        "Annual maps of start of Vegetation Active Period.",
+        "Coverage for coniferous forests and deciduous vegetation.",
+        "National spatial scope for Finland."
+      ],
+      "limitations": [
+        "The Building Block examples may be subsets or derived summaries.",
+        "Policy interpretation requires analysis of the full dataset and documented aggregation methods."
+      ]
+    },
+    {
+      "theme": "Climate change impacts on ecosystems",
+      "alignment": "Changes in the start of the Vegetation Active Period can be used as an indicator of climate-related shifts in ecosystem seasonality.",
+      "evidence_from_dataset": [
+        "Annual time series from 2001 to 2018.",
+        "MODIS-derived phenology observations.",
+        "Day-of-year metric for VAP onset."
+      ],
+      "limitations": [
+        "Trend strength and statistical significance must be assessed separately.",
+        "The indicator should not be interpreted without uncertainty and validation information."
+      ]
+    },
+    {
+      "theme": "Forest ecosystem functioning",
+      "alignment": "The dataset distinguishes coniferous and deciduous vegetation, supporting interpretation of forest phenology dynamics across ecosystem entities.",
+      "evidence_from_dataset": [
+        "EBV entity names: Coniferous and Deciduous.",
+        "Metric: start of the Vegetation Active Period."
+      ],
+      "limitations": [
+        "National-scale summaries may hide regional variation.",
+        "Local management decisions would require finer-scale analysis."
+      ]
+    },
+    {
+      "theme": "Open, interoperable environmental data",
+      "alignment": "Representing the dataset through OGC Building Blocks, CoverageJSON, JSON-LD and linked definitions supports reusable and interoperable environmental data workflows.",
+      "evidence_from_dataset": [
+        "NetCDF source dataset.",
+        "CoverageJSON examples.",
+        "Linked vocabulary terms for phenology attributes."
+      ],
+      "limitations": [
+        "Interoperability does not automatically imply policy readiness.",
+        "Mappings to specific reporting frameworks must be explicitly documented."
+      ]
+    }
+  ],
+  "linked_building_blocks": [
+    {
+      "id": "syke.ebv.phenology.covjson-coverage",
+      "role": "Represents annual raster coverages."
+    },
+    {
+      "id": "syke.ebv.phenology.ebv-feature-view",
+      "role": "Provides feature-oriented examples and semantic annotation."
+    },
+    {
+      "id": "syke.ebv.phenology.phenology-indicators",
+      "role": "Represents derived temporal indicators."
+    },
+    {
+      "id": "syke.ebv.phenology.data-provenance",
+      "role": "Documents provenance and derivation lineage."
+    }
+  ],
+  "interpretation_guidance": {
+    "appropriate_use": [
+      "Demonstrating how EBV phenology data can be aligned with policy-relevant monitoring themes.",
+      "Explaining potential relevance to biodiversity, climate and ecosystem-functioning assessment.",
+      "Supporting discussion about interoperable data flows for environmental reporting."
+    ],
+    "inappropriate_use": [
+      "Claiming direct compliance with a policy target from the example alone.",
+      "Using a small example subset as a representative national policy indicator.",
+      "Inferring climate impacts without trend analysis, validation and uncertainty assessment."
+    ],
+    "recommended_statement": "This Building Block can support policy-relevant monitoring of ecosystem phenology, but the examples are illustrative and should not be interpreted as policy-grade indicators by themselves."
+  },
+  "representativeness_assessment": {
+    "full_dataset": "potentially_relevant_for_national_scale_monitoring",
+    "building_block_examples": "illustrative_not_representative",
+    "coveragejson_crop": "technical_demonstration",
+    "feature_view_examples": "semantic_and_visual_demonstration",
+    "phenology_indicators": "derived_summary_requiring_methodological_context"
+  }
+}

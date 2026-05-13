@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for syke.ebv.phenology.covjson-parameter - CovJSON Parameter",
+  "bblockName": "CovJSON Parameter",
+  "bblockId": "syke.ebv.phenology.covjson-parameter",
+  "generated": "2026-05-11T06:32:16.369910+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

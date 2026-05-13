@@ -1,0 +1,16 @@
+path	@id	schema
+/entity_type	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/year	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/vap_doy	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/mean_doy	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/min_doy	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/max_doy	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/stddev	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/valid_percent	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/crs	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/grid_width	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/grid_height	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/sensor	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/algorithm	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/trend_slope	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml
+/anomaly	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly	/workspace/build-local/annotated/ebv/phenology/ebv-feature-view/schema.yaml

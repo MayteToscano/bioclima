@@ -1,0 +1,1734 @@
+{
+  "type": "FeatureCollection",
+  "name": "EBV_Phenology_Finland_VAP_Real",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2001",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2001,
+        "vap_doy": 106,
+        "mean_doy": 106.4,
+        "min_doy": 65,
+        "max_doy": 138,
+        "stddev": 12.5,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2002",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2002,
+        "vap_doy": 95,
+        "mean_doy": 94.7,
+        "min_doy": 64,
+        "max_doy": 124,
+        "stddev": 8.5,
+        "valid_percent": 11.09,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "early"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2003",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2003,
+        "vap_doy": 111,
+        "mean_doy": 111.4,
+        "min_doy": 65,
+        "max_doy": 134,
+        "stddev": 13.9,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2004",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2004,
+        "vap_doy": 110,
+        "mean_doy": 109.7,
+        "min_doy": 69,
+        "max_doy": 133,
+        "stddev": 12.0,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2005",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2005,
+        "vap_doy": 111,
+        "mean_doy": 111.1,
+        "min_doy": 77,
+        "max_doy": 153,
+        "stddev": 20.1,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2006",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2006,
+        "vap_doy": 113,
+        "mean_doy": 113.0,
+        "min_doy": 92,
+        "max_doy": 135,
+        "stddev": 5.7,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2007",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2007,
+        "vap_doy": 97,
+        "mean_doy": 96.9,
+        "min_doy": 58,
+        "max_doy": 144,
+        "stddev": 23.2,
+        "valid_percent": 19.43,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "early"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2008",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2008,
+        "vap_doy": 107,
+        "mean_doy": 107.4,
+        "min_doy": 49,
+        "max_doy": 149,
+        "stddev": 17.9,
+        "valid_percent": 19.43,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2009",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2009,
+        "vap_doy": 110,
+        "mean_doy": 110.0,
+        "min_doy": 75,
+        "max_doy": 130,
+        "stddev": 10.4,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2010",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2010,
+        "vap_doy": 109,
+        "mean_doy": 109.4,
+        "min_doy": 89,
+        "max_doy": 135,
+        "stddev": 14.2,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2011",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2011,
+        "vap_doy": 107,
+        "mean_doy": 106.6,
+        "min_doy": 90,
+        "max_doy": 135,
+        "stddev": 7.8,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2012",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2012,
+        "vap_doy": 117,
+        "mean_doy": 117.1,
+        "min_doy": 59,
+        "max_doy": 144,
+        "stddev": 14.1,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "late"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2013",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2013,
+        "vap_doy": 110,
+        "mean_doy": 110.2,
+        "min_doy": 93,
+        "max_doy": 138,
+        "stddev": 9.5,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2014",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2014,
+        "vap_doy": 92,
+        "mean_doy": 91.7,
+        "min_doy": 44,
+        "max_doy": 142,
+        "stddev": 29.0,
+        "valid_percent": 19.29,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "early"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2015",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2015,
+        "vap_doy": 102,
+        "mean_doy": 101.8,
+        "min_doy": 41,
+        "max_doy": 142,
+        "stddev": 25.2,
+        "valid_percent": 19.41,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2016",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2016,
+        "vap_doy": 101,
+        "mean_doy": 101.3,
+        "min_doy": 50,
+        "max_doy": 132,
+        "stddev": 16.8,
+        "valid_percent": 19.44,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2017",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2017,
+        "vap_doy": 114,
+        "mean_doy": 113.8,
+        "min_doy": 44,
+        "max_doy": 158,
+        "stddev": 30.3,
+        "valid_percent": 19.4,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-coniferous-2018",
+      "properties": {
+        "entity_type": "ConiferousForest",
+        "year": 2018,
+        "vap_doy": 113,
+        "mean_doy": 113.4,
+        "min_doy": 80,
+        "max_doy": 131,
+        "stddev": 11.5,
+        "valid_percent": 20.08,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Fractional Snow Cover (FSC)",
+        "trend_slope": -0.45,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2001",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2001,
+        "vap_doy": 137,
+        "mean_doy": 137.2,
+        "min_doy": 113,
+        "max_doy": 198,
+        "stddev": 9.6,
+        "valid_percent": 20.61,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2002",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2002,
+        "vap_doy": 142,
+        "mean_doy": 141.9,
+        "min_doy": 93,
+        "max_doy": 167,
+        "stddev": 8.6,
+        "valid_percent": 20.7,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2003",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2003,
+        "vap_doy": 140,
+        "mean_doy": 140.4,
+        "min_doy": 116,
+        "max_doy": 199,
+        "stddev": 10.3,
+        "valid_percent": 21.1,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2004",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2004,
+        "vap_doy": 138,
+        "mean_doy": 138.5,
+        "min_doy": 115,
+        "max_doy": 199,
+        "stddev": 13.0,
+        "valid_percent": 21.14,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2005",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2005,
+        "vap_doy": 145,
+        "mean_doy": 145.0,
+        "min_doy": 113,
+        "max_doy": 198,
+        "stddev": 14.2,
+        "valid_percent": 21.15,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2006",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2006,
+        "vap_doy": 138,
+        "mean_doy": 137.6,
+        "min_doy": 122,
+        "max_doy": 192,
+        "stddev": 9.4,
+        "valid_percent": 20.99,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2007",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2007,
+        "vap_doy": 139,
+        "mean_doy": 138.8,
+        "min_doy": 101,
+        "max_doy": 199,
+        "stddev": 15.2,
+        "valid_percent": 21.16,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2008",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2008,
+        "vap_doy": 144,
+        "mean_doy": 144.5,
+        "min_doy": 107,
+        "max_doy": 199,
+        "stddev": 17.3,
+        "valid_percent": 21.1,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2009",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2009,
+        "vap_doy": 137,
+        "mean_doy": 137.4,
+        "min_doy": 107,
+        "max_doy": 183,
+        "stddev": 10.2,
+        "valid_percent": 21.14,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2010",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2010,
+        "vap_doy": 139,
+        "mean_doy": 138.7,
+        "min_doy": 117,
+        "max_doy": 196,
+        "stddev": 10.7,
+        "valid_percent": 21.17,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2011",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2011,
+        "vap_doy": 135,
+        "mean_doy": 135.0,
+        "min_doy": 117,
+        "max_doy": 196,
+        "stddev": 11.1,
+        "valid_percent": 21.17,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2012",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2012,
+        "vap_doy": 143,
+        "mean_doy": 143.3,
+        "min_doy": 115,
+        "max_doy": 199,
+        "stddev": 11.5,
+        "valid_percent": 21.13,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2013",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2013,
+        "vap_doy": 138,
+        "mean_doy": 137.6,
+        "min_doy": 123,
+        "max_doy": 194,
+        "stddev": 9.6,
+        "valid_percent": 21.17,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2014",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2014,
+        "vap_doy": 139,
+        "mean_doy": 138.6,
+        "min_doy": 98,
+        "max_doy": 199,
+        "stddev": 14.9,
+        "valid_percent": 21.14,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2015",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2015,
+        "vap_doy": 139,
+        "mean_doy": 139.4,
+        "min_doy": 99,
+        "max_doy": 196,
+        "stddev": 14.8,
+        "valid_percent": 21.16,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2016",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2016,
+        "vap_doy": 137,
+        "mean_doy": 136.7,
+        "min_doy": 103,
+        "max_doy": 199,
+        "stddev": 8.8,
+        "valid_percent": 21.18,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2017",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2017,
+        "vap_doy": 153,
+        "mean_doy": 153.3,
+        "min_doy": 114,
+        "max_doy": 198,
+        "stddev": 14.1,
+        "valid_percent": 21.14,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "late"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vap-deciduous-2018",
+      "properties": {
+        "entity_type": "DeciduousForest",
+        "year": 2018,
+        "vap_doy": 138,
+        "mean_doy": 138.0,
+        "min_doy": 116,
+        "max_doy": 196,
+        "stddev": 9.6,
+        "valid_percent": 21.16,
+        "crs": "CRS84",
+        "grid_width": 318,
+        "grid_height": 202,
+        "sensor": "MODIS Terra Level 1B",
+        "algorithm": "Normalized Difference Water Index (NDWI)",
+        "trend_slope": -0.35,
+        "anomaly": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.1,
+              57.75
+            ],
+            [
+              35.23,
+              57.75
+            ],
+            [
+              35.23,
+              71.17
+            ],
+            [
+              14.1,
+              71.17
+            ],
+            [
+              14.1,
+              57.75
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

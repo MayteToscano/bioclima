@@ -1,0 +1,111 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: EBV phenology properties for map feature view
+type: object
+properties:
+  entity_type:
+    type: string
+    title: Forest Entity Type
+    description: The ecosystem entity type for which the phenology metric is derived.
+      Values may identify forest entities such as coniferous or deciduous forest.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type
+    x-jsonld-type: '@id'
+    x-jsonld-base: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#
+  year:
+    type: integer
+    title: Observation Year
+    description: Calendar year associated with the phenology observation or derived
+      annual EBV metric.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  vap_doy:
+    type: integer
+    title: Start of VAP (Day of Year)
+    description: Integer day of year marking the start of the Vegetation Active Period.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  mean_doy:
+    type: number
+    title: Mean DOY (spatial average)
+    description: Spatial mean day-of-year value calculated across valid grid cells
+      or pixels for the selected feature.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  min_doy:
+    type: integer
+    title: Minimum DOY
+    description: Minimum day-of-year value observed across the valid spatial cells
+      for the selected feature.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  max_doy:
+    type: integer
+    title: Maximum DOY
+    description: Maximum day-of-year value observed across the valid spatial cells
+      for the selected feature.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  stddev:
+    type: number
+    title: Standard Deviation of DOY
+    description: Standard deviation of day-of-year values across valid spatial cells
+      or pixels.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  valid_percent:
+    type: number
+    title: Valid Pixel Percentage
+    description: Percentage of valid spatial cells or pixels used to compute the phenology
+      summary metric.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  crs:
+    type: string
+    title: Coordinate Reference System
+    description: Coordinate reference system used by the spatial representation of
+      the feature or coverage-derived summary.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs
+  grid_width:
+    type: integer
+    title: Grid Width (columns)
+    description: Number of columns in the grid used for the coverage-derived phenology
+      data.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  grid_height:
+    type: integer
+    title: Grid Height (rows)
+    description: Number of rows in the grid used for the coverage-derived phenology
+      data.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  sensor:
+    type: string
+    title: Source Sensor Platform
+    description: Sensor or observation platform used as the source for the phenology
+      derivation.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor
+  algorithm:
+    type: string
+    title: Derivation Algorithm
+    description: Algorithm or processing method used to derive the phenology metric.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm
+  trend_slope:
+    type: number
+    title: Trend Slope (days/year)
+    description: Rate of change of the VAP start date over time, expressed in days
+      per year.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  anomaly:
+    type: string
+    title: Annual Anomaly Status
+    description: Annual anomaly category relative to a baseline, for example early,
+      normal or late.
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly
+required:
+- entity_type
+- year
+- vap_doy
+x-jsonld-prefixes:
+  ebv: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#
+  xsd: http://www.w3.org/2001/XMLSchema#

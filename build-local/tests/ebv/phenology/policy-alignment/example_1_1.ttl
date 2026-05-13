@@ -1,0 +1,19 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+
+[] a "PolicyAlignment" ;
+    dcterms:description "Illustrative policy alignment record for the EBV phenology dataset 'Vegetation Phenology in Finland'. The record explains how the dataset may support policy-relevant monitoring, while clearly distinguishing between technical interoperability examples and policy-grade indicators." ;
+    dcterms:source [ dcterms:title "Vegetation Phenology in Finland" ] ;
+    dcterms:title "Policy alignment for Finland EBV phenology data" ;
+    ebv:aligned_policy_theme [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    ebv:interpretation_guidance [ ] ;
+    ebv:linked_building_block [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    ebv:policy_relevance [ ] ;
+    ebv:representativeness_assessment [ ] .
+

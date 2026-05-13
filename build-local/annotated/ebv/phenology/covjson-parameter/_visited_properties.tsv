@@ -1,0 +1,14 @@
+path	@id	schema
+/type	@type	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/description	http://purl.org/dc/terms/description	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/unit	http://qudt.org/schema/qudt#unit	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/unit/label	http://www.w3.org/2004/02/skos/core#prefLabel	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/unit/symbol	http://qudt.org/schema/qudt#symbol	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/unit/symbol/value	@value	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/unit/symbol/type	@type	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/observedProperty	http://www.w3.org/ns/sosa#observedProperty	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/observedProperty/id	@id	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/observedProperty/label	http://www.w3.org/2004/02/skos/core#prefLabel	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/observedProperty/description	http://purl.org/dc/terms/description	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/observedProperty/categories		/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml
+/categoryEncoding	https://covjson.org/def/core#categoryEncoding	/workspace/build-local/annotated/ebv/phenology/covjson-parameter/schema.yaml

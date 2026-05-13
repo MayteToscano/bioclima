@@ -1,0 +1,47 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: CoverageJSON Range - data values container (NdArray or TiledNdArray)
+type: object
+oneOf:
+- required:
+  - type
+  - dataType
+  - axisNames
+  - shape
+  properties:
+    type:
+      type: string
+      const: NdArray
+    dataType:
+      type: string
+    axisNames:
+      type: array
+      items:
+        type: string
+    shape:
+      type: array
+      items:
+        type: integer
+    values:
+      type: array
+- required:
+  - type
+  - dataType
+  - axisNames
+  - shape
+  - tileSets
+  properties:
+    type:
+      type: string
+      const: TiledNdArray
+    dataType:
+      type: string
+    axisNames:
+      type: array
+      items:
+        type: string
+    shape:
+      type: array
+      items:
+        type: integer
+    tileSets:
+      type: array

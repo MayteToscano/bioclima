@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for syke.ebv.phenology.ebv-ontology - EBV Phenology Ontology",
+  "bblockName": "EBV Phenology Ontology",
+  "bblockId": "syke.ebv.phenology.ebv-ontology",
+  "generated": "2026-05-11T06:32:16.144728+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

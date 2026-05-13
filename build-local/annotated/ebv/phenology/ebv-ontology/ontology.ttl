@@ -1,0 +1,152 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://w3id.org/ogc/hosted/ebv-phenology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ebv: a owl:Ontology ;
+    dcterms:description "Ontology for Essential Biodiversity Variable phenology metrics derived from MODIS satellite observations of Finnish forests."@en,
+        "Ontología para métricas de fenología de Variables Esenciales de Biodiversidad derivadas de observaciones satelitales MODIS en bosques finlandeses."@es ;
+    dcterms:title "EBV Phenology Ontology"@en,
+        "Ontología Fenología EBV"@es,
+        "Ontologia Fenologiei EBV"@ro,
+        "EBV物候学本体"@zh .
+
+ebv:ConiferousForest a owl:Class ;
+    rdfs:label "Coniferous Forest"@en,
+        "Bosque de Coníferas"@es,
+        "Pădure de Conifere"@ro,
+        "针叶林"@zh ;
+    skos:definition "Forest dominated by cone-bearing trees (mainly spruce and pine in Finland). Remains green year-round; photosynthesis onset in spring is detected via Fractional Snow Cover decline."@en,
+        "Bosque dominado por árboles que producen conos (principalmente abeto y pino en Finlandia). Permanece verde todo el año; el inicio de la fotosíntesis en primavera se detecta mediante la disminución de la Cobertura Nival Fraccional."@es,
+        "Pădure dominată de arbori cu conuri (în special molid și pin în Finlanda). Rămâne verde tot anul; debutul fotosintezei primăvara este detectat prin scăderea Copertei de Zăpadă Fracționale."@ro,
+        "以针叶树（芬兰主要是云杉和松树）为主的森林。全年常绿；春季光合作用开始通过分数积雪覆盖减少来检测。"@zh ;
+    skos:prefLabel "Coniferous Forest"@en,
+        "Bosque de Coníferas"@es,
+        "Pădure de Conifere"@ro,
+        "针叶林"@zh .
+
+ebv:DeciduousForest a owl:Class ;
+    rdfs:label "Deciduous Forest"@en,
+        "Bosque Caducifolio"@es,
+        "Pădure Caducă"@ro,
+        "落叶林"@zh ;
+    skos:definition "Forest dominated by broad-leaved trees that shed leaves seasonally (mainly birch in Finland). Spring onset is detected via NDWI threshold on leaf water content time series."@en,
+        "Bosque dominado por árboles de hoja ancha que pierden las hojas estacionalmente (principalmente abedul en Finlandia). El inicio primaveral se detecta mediante un umbral NDWI en series temporales del contenido hídrico foliar."@es,
+        "Pădure dominată de arbori cu frunze late, caduci (în principal mesteacăn în Finlanda). Debutul primăvăratic este detectat prin pragul NDWI în seriile temporale ale conținutului de apă foliar."@ro,
+        "以宽叶树（芬兰主要是桦树）为主、叶片季节性脱落的森林。春季起始通过叶片含水量时间序列的NDWI阈值检测。"@zh ;
+    skos:prefLabel "Deciduous Forest"@en,
+        "Bosque Caducifolio"@es,
+        "Pădure Caducă"@ro,
+        "落叶林"@zh .
+
+ebv:StartOfVAP a owl:Class ;
+    rdfs:label "Start of Vegetation Active Period"@en,
+        "Inicio del Periodo Activo de Vegetación"@es,
+        "Începutul Perioadei Active a Vegetației"@ro,
+        "植被活跃期起始"@zh ;
+    rdfs:subClassOf ebv:EcosystemPhenology ;
+    skos:definition "Day of Year when vegetation becomes physiologically active in spring. For conifers: onset of photosynthesis proxied by snow-melt (FSC). For deciduous: day of bud break and leaf unfolding (NDWI)."@en,
+        "Día del Año en que la vegetación se vuelve fisiológicamente activa en primavera. Para coníferas: inicio de fotosíntesis como sustituto de la fusión de nieve (FSC). Para caducifolias: día de brotación y despliegue foliar (NDWI)."@es,
+        "Ziua anului în care vegetația devine fiziologic activă primăvara. Pentru conifere: debutul fotosintezei proxiat prin topirea zăpezii (FSC). Pentru caducifolii: ziua dezmugurului (NDWI)."@ro,
+        "植被在春季生理上变得活跃的年日数。针叶林：积雪融化（FSC）作为光合作用开始的代理指标。落叶林：芽苞开裂和叶片展开的那天（NDWI）。"@zh ;
+    skos:prefLabel "Start of Vegetation Active Period"@en,
+        "Inicio del Periodo Activo de Vegetación"@es,
+        "Începutul Perioadei Active a Vegetației"@ro,
+        "植被活跃期起始"@zh .
+
+ebv:anomaly a owl:DatatypeProperty ;
+    rdfs:label "anomaly"@en,
+        "anomalía"@es,
+        "anomalie"@ro,
+        "异常"@zh ;
+    skos:definition "Departure from the 2001–2018 baseline mean: 'early' (>7 days before), 'late' (>7 days after), 'normal' (±7 days)."@en,
+        "Desviación de la media de referencia 2001–2018: 'early' (>7 días antes), 'late' (>7 días después), 'normal' (±7 días)."@es ;
+    skos:prefLabel "Annual Anomaly"@en,
+        "Anomalía Anual"@es,
+        "Anomalie Anuală"@ro,
+        "年度异常"@zh .
+
+ebv:entity_type a owl:ObjectProperty ;
+    rdfs:label "entity type"@en,
+        "tipo de entidad"@es,
+        "tip de entitate"@ro,
+        "实体类型"@zh ;
+    skos:definition "The ecosystem entity type: ConiferousForest or DeciduousForest."@en,
+        "El tipo de entidad del ecosistema: ConiferousForest (coníferas) o DeciduousForest (caducifolias)."@es,
+        "Tipul entității ecosistemului: ConiferousForest sau DeciduousForest."@ro,
+        "生态系统实体类型：ConiferousForest（针叶林）或DeciduousForest（落叶林）。"@zh ;
+    skos:prefLabel "entity type"@en,
+        "tipo de entidad"@es,
+        "tip de entitate"@ro,
+        "实体类型"@zh .
+
+ebv:mean_doy a owl:DatatypeProperty ;
+    rdfs:label "mean DOY"@en,
+        "DOY medio"@es,
+        "DOY mediu"@ro,
+        "平均年日数"@zh ;
+    rdfs:range xsd:decimal ;
+    skos:prefLabel "Spatial Mean DOY"@en,
+        "Media Espacial DOY"@es,
+        "Media Spațială DOY"@ro,
+        "空间平均年日数"@zh .
+
+ebv:trend_slope a owl:DatatypeProperty ;
+    rdfs:label "trend slope"@en,
+        "pendiente de tendencia"@es,
+        "panta tendinței"@ro,
+        "趋势斜率"@zh ;
+    rdfs:range xsd:decimal ;
+    skos:definition "Rate of change of VAP start date over time. Negative = earlier onset (climate warming signal)."@en,
+        "Tasa de cambio de la fecha de inicio del VAP. Negativo = inicio más temprano (señal de calentamiento climático)."@es,
+        "Rata de schimbare a datei de debut VAP. Negativ = debut mai timpuriu (semnal de încălzire climatică)."@ro,
+        "VAP起始日期随时间的变化速率。负值=更早（气候变暖信号）。"@zh ;
+    skos:prefLabel "Linear Trend Slope (days/year)"@en,
+        "Pendiente Tendencia Lineal (días/año)"@es,
+        "Panta Tendinței Liniare (zile/an)"@ro,
+        "线性趋势斜率（天/年）"@zh .
+
+ebv:vap_doy a owl:DatatypeProperty ;
+    rdfs:label "VAP Day of Year"@en,
+        "Día del Año VAP"@es,
+        "Ziua Anului VAP"@ro,
+        "VAP年日数"@zh ;
+    rdfs:range xsd:integer ;
+    skos:definition "Integer Day of Year (1–365) marking the start of the Vegetation Active Period. Derived from MODIS Level 1B observations at 0.05° spatial resolution."@en,
+        "Día del Año entero (1–365) que marca el inicio del Período Activo de Vegetación. Derivado de observaciones MODIS Nivel 1B a resolución espacial de 0.05°."@es,
+        "Ziua anului (1–365) marcând începutul Perioadei Active a Vegetației. Derivată din observații MODIS Nivel 1B la rezoluție spațială 0,05°."@ro,
+        "标记植被活跃期起始的整数年日数（1-365）。来源于0.05°空间分辨率的MODIS Level 1B观测。"@zh ;
+    skos:prefLabel "VAP Day of Year"@en,
+        "Día del Año VAP"@es,
+        "Ziua Anului VAP"@ro,
+        "VAP年日数"@zh .
+
+ebv:EcosystemFunctioning a owl:Class ;
+    rdfs:label "Ecosystem Functioning"@en,
+        "Funcionamiento del Ecosistema"@es,
+        "Funcționarea Ecosistemului"@ro,
+        "生态系统功能"@zh ;
+    skos:definition "Describes the rates of energy fixation and transfer, nutrient cycling, and water cycling within an ecosystem."@en,
+        "Describe las tasas de fijación y transferencia de energía, ciclo de nutrientes y ciclo del agua en un ecosistema."@es ;
+    skos:prefLabel "Ecosystem Functioning"@en,
+        "Funcionamiento del Ecosistema"@es,
+        "Funcționarea Ecosistemului"@ro,
+        "生态系统功能"@zh .
+
+ebv:EcosystemPhenology a owl:Class ;
+    rdfs:label "Ecosystem Phenology"@en,
+        "Fenología del Ecosistema"@es,
+        "Fenologia Ecosistemului"@ro,
+        "生态系统物候学"@zh ;
+    rdfs:subClassOf ebv:EcosystemFunctioning ;
+    skos:definition "The study of cyclic and seasonal natural phenomena, especially in relation to climate, plant and animal life."@en,
+        "El estudio de los fenómenos naturales cíclicos y estacionales, especialmente en relación con el clima, la vida vegetal y animal."@es,
+        "Studiul fenomenelor naturale ciclice și sezoniere, mai ales în relație cu clima și viața vegetală și animală."@ro,
+        "研究与气候、植物和动物生命相关的周期性和季节性自然现象。"@zh ;
+    skos:prefLabel "Ecosystem Phenology"@en,
+        "Fenología del Ecosistema"@es,
+        "Fenologia Ecosistemului"@ro,
+        "生态系统物候学"@zh .
+

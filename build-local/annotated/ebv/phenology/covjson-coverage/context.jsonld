@@ -1,0 +1,158 @@
+{
+  "@context": {
+    "@vocab": "_:",
+    "meteogate": "https://api.meteogate.eu/profiles/metocean/covjson",
+    "id": "@id",
+    "value": "@value",
+    "label": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "dct:description",
+      "@container": "@language"
+    },
+    "unit": "qudt:unit",
+    "symbol": "qudt:symbol",
+    "Domain": "covjson:Domain",
+    "domainType": {
+      "@id": "covjson:domainType",
+      "@type": "@vocab"
+    },
+    "axes": {
+      "@id": "covjson:axis",
+      "@container": "@index"
+    },
+    "dataType": {
+      "@id": "covjson:dataType",
+      "@type": "@vocab"
+    },
+    "primitive": "covjson:primitive",
+    "tuple": "covjson:tuple",
+    "polygon": "covjson:polygon",
+    "num": "covjson:num",
+    "start": "covjson:start",
+    "stop": "covjson:stop",
+    "referencing": {
+      "@id": "covjson:referencing",
+      "@container": "@set"
+    },
+    "components": {
+      "@id": "covjson:components",
+      "@container": "@list"
+    },
+    "system": "covjson:referenceSystem",
+    "RS": "covjson:ReferenceSystem",
+    "CRS": "covjson:CoordinateReferenceSystem",
+    "cs": "ignf:coordinateSystem",
+    "CS": "ignf:CoordinateSystem",
+    "TemporalRS": "inspiregloss:TemporalReferenceSystem",
+    "TemporalCRS": "covjson:TemporalCRS",
+    "calendar": {
+      "@id": "covjson:calendar",
+      "@type": "@vocab"
+    },
+    "Gregorian": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian",
+    "timeScale": "covjson:timeScale",
+    "SpatialRS": "inspiregloss:SpatialReferenceSystem",
+    "SpatialCRS": "ignf:CRS",
+    "GeodeticCRS": "ignf:GeodeticCRS",
+    "ProjectedCRS": "ignf:ProjectedCRS",
+    "VerticalCRS": "ignf:VerticalCRS",
+    "datum": "ignf:datum",
+    "csAxes": {
+      "@id": "covjson:coordinateSystemAxes",
+      "@container": "@list"
+    },
+    "direction": "ignf:axisDirection",
+    "IdentifierRS": "covjson:IdentifierReferenceSystem",
+    "targetConcept": "covjson:targetConcept",
+    "identifiers": {
+      "@id": "covjson:identifier",
+      "@type": "@id",
+      "@container": "@index"
+    },
+    "Parameter": "covjson:Parameter",
+    "observedProperty": "sosa:observedProperty",
+    "usedProcedure": "sosa:usedProcedure",
+    "madeBySensor": "sosa:madeBySensor",
+    "hasFeatureOfInterest": "sosa:hasFeatureOfInterest",
+    "categoryEncoding": "covjson:categoryEncoding",
+    "ParameterGroup": "covjson:ParameterGroup",
+    "members": {
+      "@id": "covjson:member",
+      "@type": "@vocab",
+      "@container": "@set"
+    },
+    "NdArray": "covjson:NdArray",
+    "TiledNdArray": "covjson:TiledNdArray",
+    "shape": {
+      "@id": "covjson:shape",
+      "@container": "@list"
+    },
+    "tileShape": {
+      "@id": "covjson:tileShape",
+      "@container": "@list"
+    },
+    "axisNames": {
+      "@id": "covjson:axisNames",
+      "@container": "@list"
+    },
+    "urlTemplate": "covjson:urlTemplate",
+    "tileSets": {
+      "@id": "covjson:tileSet",
+      "@container": "@set"
+    },
+    "float": "xsd:double",
+    "integer": "xsd:integer",
+    "string": "xsd:string",
+    "Coverage": "covjson:Coverage",
+    "coverages": {
+      "@id": "hydra:member",
+      "@container": "@set"
+    },
+    "CoverageCollection": "covjson:CoverageCollection",
+    "Grid": "covjsondt:Grid",
+    "VerticalProfile": "covjsondt:VerticalProfile",
+    "MultiPointSeries": "covjsondt:MultiPointSeries",
+    "MultiPoint": "covjsondt:MultiPoint",
+    "PointSeries": "covjsondt:PointSeries",
+    "Point": "covjsondt:Point",
+    "Trajectory": "covjsondt:Trajectory",
+    "Section": "covjsondt:Section",
+    "MultiPolygonSeries": "covjsondt:MultiPolygonSeries",
+    "MultiPolygon": "covjsondt:MultiPolygon",
+    "Polygon": "covjsondt:Polygon",
+    "type": "@type",
+    "domain": "covjson:domain",
+    "parameters": {
+      "@id": "covjson:parameter",
+      "@type": "@id",
+      "@container": "@index"
+    },
+    "ranges": {
+      "@id": "covjson:range",
+      "@type": "@id",
+      "@container": "@index"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "qudt": "http://qudt.org/schema/qudt#",
+    "covjson": "https://covjson.org/def/core#",
+    "ignf": "http://data.ign.fr/def/ignf#",
+    "inspiregloss": "http://inspire.ec.europa.eu/glossary/",
+    "sosa": "http://www.w3.org/ns/sosa#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "covjsondt": "https://covjson.org/def/domainTypes#",
+    "ssn": "http://www.w3.org/2005/Incubator/ssn/ssnx/ssn#",
+    "rel": "http://www.iana.org/assignments/relation/",
+    "ebv": "https://w3id.org/ogc/hosted/ebv-phenology/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@version": 1.1
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "summary": {
+    "total": 17,
+    "passed": 16,
+    "failed": 1,
+    "result": false
+  },
+  "bblocks": {
+    "syke.ebv.phenology.covjson-axis": {
+      "title": "Validation report for syke.ebv.phenology.covjson-axis - CovJSON Axis",
+      "bblockName": "CovJSON Axis",
+      "bblockId": "syke.ebv.phenology.covjson-axis",
+      "generated": "2026-05-11T06:32:15.983909+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-reference-system": {
+      "title": "Validation report for syke.ebv.phenology.covjson-reference-system - CovJSON Reference System",
+      "bblockName": "CovJSON Reference System",
+      "bblockId": "syke.ebv.phenology.covjson-reference-system",
+      "generated": "2026-05-11T06:32:16.038500+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-ndarray": {
+      "title": "Validation report for syke.ebv.phenology.covjson-ndarray - CovJSON NdArray",
+      "bblockName": "CovJSON NdArray",
+      "bblockId": "syke.ebv.phenology.covjson-ndarray",
+      "generated": "2026-05-11T06:32:16.092075+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.ebv-ontology": {
+      "title": "Validation report for syke.ebv.phenology.ebv-ontology - EBV Phenology Ontology",
+      "bblockName": "EBV Phenology Ontology",
+      "bblockId": "syke.ebv.phenology.ebv-ontology",
+      "generated": "2026-05-11T06:32:16.144728+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.ebv-profile": {
+      "title": "Validation report for syke.ebv.phenology.ebv-profile - EBV Dataset Profile",
+      "bblockName": "EBV Dataset Profile",
+      "bblockId": "syke.ebv.phenology.ebv-profile",
+      "generated": "2026-05-11T06:32:16.200504+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-domain": {
+      "title": "Validation report for syke.ebv.phenology.covjson-domain - CovJSON Domain",
+      "bblockName": "CovJSON Domain",
+      "bblockId": "syke.ebv.phenology.covjson-domain",
+      "generated": "2026-05-11T06:32:16.254610+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-tiled-ndarray": {
+      "title": "Validation report for syke.ebv.phenology.covjson-tiled-ndarray - CovJSON TiledNdArray",
+      "bblockName": "CovJSON TiledNdArray",
+      "bblockId": "syke.ebv.phenology.covjson-tiled-ndarray",
+      "generated": "2026-05-11T06:32:16.311267+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-parameter": {
+      "title": "Validation report for syke.ebv.phenology.covjson-parameter - CovJSON Parameter",
+      "bblockName": "CovJSON Parameter",
+      "bblockId": "syke.ebv.phenology.covjson-parameter",
+      "generated": "2026-05-11T06:32:16.369910+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-range": {
+      "title": "Validation report for syke.ebv.phenology.covjson-range - CovJSON Range",
+      "bblockName": "CovJSON Range",
+      "bblockId": "syke.ebv.phenology.covjson-range",
+      "generated": "2026-05-11T06:32:16.425387+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-parameter-group": {
+      "title": "Validation report for syke.ebv.phenology.covjson-parameter-group - CovJSON Parameter Group",
+      "bblockName": "CovJSON Parameter Group",
+      "bblockId": "syke.ebv.phenology.covjson-parameter-group",
+      "generated": "2026-05-11T06:32:16.479164+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-coverage": {
+      "title": "Validation report for syke.ebv.phenology.covjson-coverage - CovJSON Coverage",
+      "bblockName": "CovJSON Coverage",
+      "bblockId": "syke.ebv.phenology.covjson-coverage",
+      "generated": "2026-05-11T06:32:16.568255+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/covjson-coverage/example_1_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/covjson-coverage/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-vap-coniferous-2001-crop.covjson from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 44,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.covjson-coverage-collection": {
+      "title": "Validation report for syke.ebv.phenology.covjson-coverage-collection - CovJSON Coverage Collection",
+      "bblockName": "CovJSON Coverage Collection",
+      "bblockId": "syke.ebv.phenology.covjson-coverage-collection",
+      "generated": "2026-05-11T06:32:16.624951+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-vap-all-entities.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.data-provenance": {
+      "title": "Validation report for syke.ebv.phenology.data-provenance - Data Provenance",
+      "bblockName": "Data Provenance",
+      "bblockId": "syke.ebv.phenology.data-provenance",
+      "generated": "2026-05-11T06:32:16.708011+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/data-provenance/example_1_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/data-provenance/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-phenology-indicators-provenance.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 52,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/data-provenance/example_2_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/data-provenance/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-phenology-indicators-provenance.jsonld from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 82,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.data-quality": {
+      "title": "Validation report for syke.ebv.phenology.data-quality - Data Quality",
+      "bblockName": "Data Quality",
+      "bblockId": "syke.ebv.phenology.data-quality",
+      "generated": "2026-05-11T06:32:16.763553+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.ebv-feature-view": {
+      "title": "Validation report for syke.ebv.phenology.ebv-feature-view - EBV Feature View",
+      "bblockName": "EBV Feature View",
+      "bblockId": "syke.ebv.phenology.ebv-feature-view",
+      "generated": "2026-05-11T06:32:18.268142+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-vap-grid-sample-2001.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 14,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "116.57 is not of type 'integer'",
+                  "isError": true,
+                  "message": "ValidationError: 116.57 is not of type 'integer'\n\nFailed validating 'type' in schema['properties']['vap_doy']:\n    {'description': 'Integer day of year marking the start of the '\n                    'Vegetation Active Period.',\n     'title': 'Start of VAP (Day of Year)',\n     'type': 'integer',\n     'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy',\n     'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'}\n\nOn instance['vap_doy']:\n    116.57"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:FeatureShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-vap-features.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_2_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'entity_type' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'entity_type' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'EBV phenology properties for map feature view',\n     'properties': {'algorithm': {'description': 'Algorithm or processing '\n                                                 'method used to derive '\n                                                 'the phenology metric.',\n                                  'title': 'Derivation Algorithm',\n                                  'type': 'string',\n                                  'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm'},\n                    'anomaly': {'description': 'Annual anomaly category '\n                                               'relative to a baseline, '\n                                               'for example early, normal '\n                                               'or late.',\n                                'title': 'Annual Anomaly Status',\n                                'type': 'string',\n                                'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly'},\n                    'crs': {'description': 'Coordinate reference system '\n                                           'used by the spatial '\n                                           'representation of the feature '\n                                           'or coverage-derived summary.',\n                            'title': 'Coordinate Reference System',\n                            'type': 'string',\n                            'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs'},\n                    'entity_type': {'description': 'The ecosystem entity '\n                                                   'type for which the '\n                                                   'phenology metric is '\n                                                   'derived. Values may '\n                                                   'identify forest '\n                                                   'entities such as '\n                                                   'coniferous or '\n                                                   'deciduous forest.',\n                                    'title': 'Forest Entity Type',\n                                    'type': 'string',\n                                    'x-jsonld-base': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                                    'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type',\n                                    'x-jsonld-type': '@id'},\n                    'grid_height': {'description': 'Number of rows in the '\n                                                   'grid used for the '\n                                                   'coverage-derived '\n                                                   'phenology data.',\n                                    'title': 'Grid Height (rows)',\n                                    'type': 'integer',\n                                    'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},\n                    'grid_width': {'description': 'Number of columns in '\n                                                  'the grid used for the '\n                                                  'coverage-derived '\n                                                  'phenology data.',\n                                   'title': 'Grid Width (columns)',\n                                   'type': 'integer',\n                                   'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width',\n                                   'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},\n                    'max_doy': {'description': 'Maximum day-of-year value '\n                                               'observed across the valid '\n                                               'spatial cells for the '\n                                               'selected feature.',\n                                'title': 'Maximum DOY',\n                                'type': 'integer',\n                                'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy',\n                                'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},\n                    'mean_doy': {'description': 'Spatial mean day-of-year '\n                                                'value calculated across '\n                                                'valid grid cells or '\n                                                'pixels for the selected '\n                                                'feature.',\n                                 'title': 'Mean DOY (spatial average)',\n                                 'type': 'number',\n                                 'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy',\n                                 'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#decimal'},\n                    'min_doy': {'description': 'Minimum day-of-year value '\n                                               'observed across the valid '\n                                               'spatial cells for the '\n                                               'selected feature.',\n                                'title': 'Minimum DOY',\n                                'type': 'integer',\n                                'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy',\n                                'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},\n                    'sensor': {'description': 'Sensor or observation '\n                                              'platform used as the source '\n                                              'for the phenology '\n                                              'derivation.',\n                               'title': 'Source Sensor Platform',\n                               'type': 'string',\n                               'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor'},\n                    'stddev': {'description': 'Standard deviation of '\n                                              'day-of-year values across '\n                                              'valid spatial cells or '\n                                              'pixels.',\n                               'title': 'Standard Deviation of DOY',\n                               'type': 'number',\n                               'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev',\n                               'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#decimal'},\n                    'trend_slope': {'description': 'Rate of change of the '\n                                                   'VAP start date over '\n                                                   'time, expressed in '\n                                                   'days per year.',\n                                    'title': 'Trend Slope (days/year)',\n                                    'type': 'number',\n                                    'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#decimal'},\n                    'valid_percent': {'description': 'Percentage of valid '\n                                                     'spatial cells or '\n                                                     'pixels used to '\n                                                     'compute the '\n                                                     'phenology summary '\n                                                     'metric.',\n                                      'title': 'Valid Pixel Percentage',\n                                      'type': 'number',\n                                      'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent',\n                                      'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#decimal'},\n                    'vap_doy': {'description': 'Integer day of year '\n                                               'marking the start of the '\n                                               'Vegetation Active Period.',\n                                'title': 'Start of VAP (Day of Year)',\n                                'type': 'integer',\n                                'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy',\n                                'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'},\n                    'year': {'description': 'Calendar year associated with '\n                                            'the phenology observation or '\n                                            'derived annual EBV metric.',\n                             'title': 'Observation Year',\n                             'type': 'integer',\n                             'x-jsonld-id': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year',\n                             'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#integer'}},\n     'required': ['entity_type', 'year', 'vap_doy'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                           'xsd': 'http://www.w3.org/2001/XMLSchema#'}}\n\nOn instance:\n    {'features': [{'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2001',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 138,\n                                  'mean_doy': 106.4,\n                                  'min_doy': 65,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 12.5,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 106,\n                                  'year': 2001},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2002',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'early',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 124,\n                                  'mean_doy': 94.7,\n                                  'min_doy': 64,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 8.5,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 11.09,\n                                  'vap_doy': 95,\n                                  'year': 2002},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2003',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 134,\n                                  'mean_doy': 111.4,\n                                  'min_doy': 65,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 13.9,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 111,\n                                  'year': 2003},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2004',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 133,\n                                  'mean_doy': 109.7,\n                                  'min_doy': 69,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 12.0,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 110,\n                                  'year': 2004},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2005',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 153,\n                                  'mean_doy': 111.1,\n                                  'min_doy': 77,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 20.1,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 111,\n                                  'year': 2005},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2006',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 135,\n                                  'mean_doy': 113.0,\n                                  'min_doy': 92,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 5.7,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 113,\n                                  'year': 2006},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2007',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'early',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 144,\n                                  'mean_doy': 96.9,\n                                  'min_doy': 58,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 23.2,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.43,\n                                  'vap_doy': 97,\n                                  'year': 2007},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2008',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 149,\n                                  'mean_doy': 107.4,\n                                  'min_doy': 49,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 17.9,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.43,\n                                  'vap_doy': 107,\n                                  'year': 2008},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2009',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 130,\n                                  'mean_doy': 110.0,\n                                  'min_doy': 75,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 10.4,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 110,\n                                  'year': 2009},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2010',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 135,\n                                  'mean_doy': 109.4,\n                                  'min_doy': 89,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.2,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 109,\n                                  'year': 2010},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2011',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 135,\n                                  'mean_doy': 106.6,\n                                  'min_doy': 90,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 7.8,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 107,\n                                  'year': 2011},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2012',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'late',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 144,\n                                  'mean_doy': 117.1,\n                                  'min_doy': 59,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.1,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 117,\n                                  'year': 2012},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2013',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 138,\n                                  'mean_doy': 110.2,\n                                  'min_doy': 93,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 9.5,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 110,\n                                  'year': 2013},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2014',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'early',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 142,\n                                  'mean_doy': 91.7,\n                                  'min_doy': 44,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 29.0,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.29,\n                                  'vap_doy': 92,\n                                  'year': 2014},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2015',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 142,\n                                  'mean_doy': 101.8,\n                                  'min_doy': 41,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 25.2,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.41,\n                                  'vap_doy': 102,\n                                  'year': 2015},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2016',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 132,\n                                  'mean_doy': 101.3,\n                                  'min_doy': 50,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 16.8,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.44,\n                                  'vap_doy': 101,\n                                  'year': 2016},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2017',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 158,\n                                  'mean_doy': 113.8,\n                                  'min_doy': 44,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 30.3,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 19.4,\n                                  'vap_doy': 114,\n                                  'year': 2017},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-coniferous-2018',\n                   'properties': {'algorithm': 'Fractional Snow Cover '\n                                               '(FSC)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'ConiferousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 131,\n                                  'mean_doy': 113.4,\n                                  'min_doy': 80,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 11.5,\n                                  'trend_slope': -0.45,\n                                  'valid_percent': 20.08,\n                                  'vap_doy': 113,\n                                  'year': 2018},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2001',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 198,\n                                  'mean_doy': 137.2,\n                                  'min_doy': 113,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 9.6,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 20.61,\n                                  'vap_doy': 137,\n                                  'year': 2001},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2002',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 167,\n                                  'mean_doy': 141.9,\n                                  'min_doy': 93,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 8.6,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 20.7,\n                                  'vap_doy': 142,\n                                  'year': 2002},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2003',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 140.4,\n                                  'min_doy': 116,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 10.3,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.1,\n                                  'vap_doy': 140,\n                                  'year': 2003},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2004',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 138.5,\n                                  'min_doy': 115,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 13.0,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.14,\n                                  'vap_doy': 138,\n                                  'year': 2004},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2005',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 198,\n                                  'mean_doy': 145.0,\n                                  'min_doy': 113,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.2,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.15,\n                                  'vap_doy': 145,\n                                  'year': 2005},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2006',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 192,\n                                  'mean_doy': 137.6,\n                                  'min_doy': 122,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 9.4,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 20.99,\n                                  'vap_doy': 138,\n                                  'year': 2006},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2007',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 138.8,\n                                  'min_doy': 101,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 15.2,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.16,\n                                  'vap_doy': 139,\n                                  'year': 2007},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2008',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 144.5,\n                                  'min_doy': 107,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 17.3,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.1,\n                                  'vap_doy': 144,\n                                  'year': 2008},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2009',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 183,\n                                  'mean_doy': 137.4,\n                                  'min_doy': 107,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 10.2,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.14,\n                                  'vap_doy': 137,\n                                  'year': 2009},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2010',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 196,\n                                  'mean_doy': 138.7,\n                                  'min_doy': 117,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 10.7,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.17,\n                                  'vap_doy': 139,\n                                  'year': 2010},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2011',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 196,\n                                  'mean_doy': 135.0,\n                                  'min_doy': 117,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 11.1,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.17,\n                                  'vap_doy': 135,\n                                  'year': 2011},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2012',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 143.3,\n                                  'min_doy': 115,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 11.5,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.13,\n                                  'vap_doy': 143,\n                                  'year': 2012},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2013',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 194,\n                                  'mean_doy': 137.6,\n                                  'min_doy': 123,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 9.6,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.17,\n                                  'vap_doy': 138,\n                                  'year': 2013},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2014',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 138.6,\n                                  'min_doy': 98,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.9,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.14,\n                                  'vap_doy': 139,\n                                  'year': 2014},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2015',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 196,\n                                  'mean_doy': 139.4,\n                                  'min_doy': 99,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.8,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.16,\n                                  'vap_doy': 139,\n                                  'year': 2015},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2016',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 199,\n                                  'mean_doy': 136.7,\n                                  'min_doy': 103,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 8.8,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.18,\n                                  'vap_doy': 137,\n                                  'year': 2016},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2017',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'late',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 198,\n                                  'mean_doy': 153.3,\n                                  'min_doy': 114,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 14.1,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.14,\n                                  'vap_doy': 153,\n                                  'year': 2017},\n                   'type': 'Feature'},\n                  {'geometry': {'coordinates': [[[14.1, 57.75],\n                                                 [35.23, 57.75],\n                                                 [35.23, 71.17],\n                                                 [14.1, 71.17],\n                                                 [14.1, 57.75]]],\n                                'type': 'Polygon'},\n                   'id': 'vap-deciduous-2018',\n                   'properties': {'algorithm': 'Normalized Difference '\n                                               'Water Index (NDWI)',\n                                  'anomaly': 'normal',\n                                  'crs': 'CRS84',\n                                  'entity_type': 'DeciduousForest',\n                                  'grid_height': 202,\n                                  'grid_width': 318,\n                                  'max_doy': 196,\n                                  'mean_doy': 138.0,\n                                  'min_doy': 116,\n                                  'sensor': 'MODIS Terra Level 1B',\n                                  'stddev': 9.6,\n                                  'trend_slope': -0.35,\n                                  'valid_percent': 21.16,\n                                  'vap_doy': 138,\n                                  'year': 2018},\n                   'type': 'Feature'}],\n     'name': 'EBV_Phenology_Finland_VAP_Real',\n     'type': 'FeatureCollection'}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    "syke.ebv.phenology.ecosystem-services": {
+      "title": "Validation report for syke.ebv.phenology.ecosystem-services - Ecosystem Services Link",
+      "bblockName": "Ecosystem Services Link",
+      "bblockId": "syke.ebv.phenology.ecosystem-services",
+      "generated": "2026-05-11T06:32:18.326927+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.policy-alignment": {
+      "title": "Validation report for syke.ebv.phenology.policy-alignment - Policy Alignment",
+      "bblockName": "Policy Alignment",
+      "bblockId": "syke.ebv.phenology.policy-alignment",
+      "generated": "2026-05-11T06:32:18.394037+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build-local/tests/ebv/phenology/policy-alignment/example_1_1.json",
+            "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/policy-alignment/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-phenology-policy-alignment.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 16,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  }
+}

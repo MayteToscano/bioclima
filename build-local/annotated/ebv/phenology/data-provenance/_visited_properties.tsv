@@ -1,0 +1,11 @@
+path	@id	schema
+/type	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/title	http://purl.org/dc/terms/title	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/description	http://purl.org/dc/terms/description	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/source_dataset	http://purl.org/dc/terms/source	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/agents	http://www.w3.org/ns/prov#Agent	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/entities	http://www.w3.org/ns/prov#Entity	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/activities	http://www.w3.org/ns/prov#Activity	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/lineage	http://www.w3.org/ns/prov#wasDerivedFrom	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/derived_indicator_summary	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#derived_indicator_summary	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml
+/quality_and_limitations	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#quality_and_limitations	/workspace/build-local/annotated/ebv/phenology/data-provenance/schema.yaml

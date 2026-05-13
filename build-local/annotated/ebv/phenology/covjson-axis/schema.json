@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "CoverageJSON Axis - regular or irregular coordinate axis",
+  "type": "object",
+  "properties": {
+    "start": {
+      "type": "number"
+    },
+    "stop": {
+      "type": "number"
+    },
+    "num": {
+      "type": "integer"
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "bounds": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

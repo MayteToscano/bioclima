@@ -1,0 +1,20 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Ecosystem service impact links
+type: object
+properties:
+  services:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        category:
+          type: string
+          enum:
+          - provisioning
+          - regulating
+          - cultural
+          - supporting
+        impact:
+          type: string

@@ -1,0 +1,13 @@
+Validation report for syke.ebv.phenology.policy-alignment - Policy Alignment
+Generated 2026-05-11T06:32:18.393849+00:00
+=== Files ===
+Using examples/finland-phenology-policy-alignment.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
