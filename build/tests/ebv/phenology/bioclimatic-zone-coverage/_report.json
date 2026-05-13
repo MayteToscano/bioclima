@@ -1,0 +1,70 @@
+{
+  "title": "Validation report for syke.ebv.phenology.bioclimatic-zone-coverage - Bioclimatic Zone Categorical Coverage",
+  "bblockName": "Bioclimatic Zone Categorical Coverage",
+  "bblockId": "syke.ebv.phenology.bioclimatic-zone-coverage",
+  "generated": "2026-05-13T14:49:49.387027+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/ebv/phenology/bioclimatic-zone-coverage/example_1_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/bioclimatic-zone-coverage/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/finland-bioclimatic-zones.covjson from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": true,
+              "filename": "example_1_1.ttl",
+              "size": 0,
+              "isError": true,
+              "message": "**Empty** output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

@@ -1,0 +1,83 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.bioclimatic-zone-generation-process",
+  "$schema": "metaschema.yaml",
+  "name": "Bioclimatic zone CoverageJSON generation process",
+  "abstract": "Semantic process block for generating or replacing the categorical CoverageJSON of Finland bioclimatic zones.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-13T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-05-13",
+  "sources": [
+    {
+      "title": "W3C PROV",
+      "link": "https://www.w3.org/TR/prov-o/"
+    },
+    {
+      "title": "CoverageJSON",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.ebv-ontology",
+    "syke.ebv.phenology.bioclimatic-zone-coverage"
+  ],
+  "tags": [
+    "process",
+    "python",
+    "categorical",
+    "coveragejson",
+    "bioclimatic"
+  ],
+  "group": "Semantic Processing",
+  "highlighted": false,
+  "ldContext": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/context.jsonld",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml",
+    "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.json"
+  },
+  "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/schema.yaml",
+  "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/context.jsonld",
+  "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/resolvedProperties.json",
+  "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/bioclimatic-zone-generation-process/",
+  "description": "# Bioclimatic zone CoverageJSON generation process\n\nSemantic process block for generating or replacing the categorical CoverageJSON of Finland bioclimatic zones.\n\nThis block makes the executable workflow visible in the Building Blocks register. The numerical or software execution remains in code, while the block records the semantic inputs, outputs, method, implementation file and ontology links.\n\n\n",
+  "examples": [
+    {
+      "title": "Bioclimatic zone CoverageJSON generation process definition",
+      "content": "examples/bioclimatic-zone-generation-process.jsonld",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/examples/bioclimatic-zone-generation-process.jsonld",
+          "code": "{\n  \"@context\": {\n    \"ebv\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\",\n    \"prov\": \"http://www.w3.org/ns/prov#\",\n    \"dct\": \"http://purl.org/dc/terms/\"\n  },\n  \"@id\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic-zone-generation-process\",\n  \"@type\": [\n    \"prov:Plan\",\n    \"ebv:CoverageGenerationProcess\"\n  ],\n  \"title\": {\n    \"en\": \"Bioclimatic zone CoverageJSON generation process\",\n    \"es\": \"Proceso de generaci\u00f3n de CoverageJSON de zonas bioclim\u00e1ticas\"\n  },\n  \"description\": {\n    \"en\": \"Produces a categorical CoverageJSON aligned to the map grid. The bundled layer is a demonstrator and can be replaced by an authoritative zonation source.\",\n    \"es\": \"Produce un CoverageJSON categ\u00f3rico alineado con la malla del mapa. La capa incluida es demostrativa y puede sustituirse por una zonificaci\u00f3n oficial.\"\n  },\n  \"usesOntology\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\",\n  \"input\": [\n    \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\"\n  ],\n  \"output\": [\n    \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\"\n  ],\n  \"implementedBy\": {\n    \"language\": \"python\",\n    \"path\": \"scripts/generate_bioclimatic_zones.py\",\n    \"role\": \"generation or replacement helper\"\n  }\n}",
+          "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/bioclimatic-zone-generation-process/example_1_1.json"
+        },
+        {
+          "language": "python",
+          "ref": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/snippets/generate_bioclimatic_zones.py",
+          "code": "#!/usr/bin/env python3\n\"\"\"Generate the bundled demonstration categorical bioclimatic-zone CoverageJSON.\"\"\"\nprint('This repository already includes data/categorical/finland-bioclimatic-zones.covjson. Replace this demonstration generator with an official zonation layer when available.')\n",
+          "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/bioclimatic-zone-generation-process/example_1_2.python"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": [\n    \"https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/context.jsonld\",\n    {\n      \"ebv\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\",\n      \"prov\": \"http://www.w3.org/ns/prov#\",\n      \"dct\": \"http://purl.org/dc/terms/\"\n    }\n  ],\n  \"@id\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic-zone-generation-process\",\n  \"@type\": [\n    \"prov:Plan\",\n    \"ebv:CoverageGenerationProcess\"\n  ],\n  \"title\": {\n    \"en\": \"Bioclimatic zone CoverageJSON generation process\",\n    \"es\": \"Proceso de generaci\\u00f3n de CoverageJSON de zonas bioclim\\u00e1ticas\"\n  },\n  \"description\": {\n    \"en\": \"Produces a categorical CoverageJSON aligned to the map grid. The bundled layer is a demonstrator and can be replaced by an authoritative zonation source.\",\n    \"es\": \"Produce un CoverageJSON categ\\u00f3rico alineado con la malla del mapa. La capa incluida es demostrativa y puede sustituirse por una zonificaci\\u00f3n oficial.\"\n  },\n  \"usesOntology\": \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\",\n  \"input\": [\n    \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\"\n  ],\n  \"output\": [\n    \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\"\n  ],\n  \"implementedBy\": {\n    \"language\": \"python\",\n    \"path\": \"scripts/generate_bioclimatic_zones.py\",\n    \"role\": \"generation or replacement helper\"\n  }\n}",
+          "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/bioclimatic-zone-generation-process/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n\nebv:bioclimatic-zone-generation-process a prov:Plan,\n        ebv:CoverageGenerationProcess ;\n    dct:description [ ] ;\n    dct:title [ ] ;\n    ebv:implementedBy [ dct:format \"python\" ;\n            dct:identifier \"scripts/generate_bioclimatic_zones.py\" ;\n            dct:type \"generation or replacement helper\" ] ;\n    ebv:input \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\" ;\n    ebv:output \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone\" ;\n    ebv:usesOntology \"https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\" .\n\n",
+          "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/bioclimatic-zone-generation-process/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Semantic process or software component definition encoded as JSON-LD.\ntype: object\nrequired:\n- '@context'\n- '@id'\n- '@type'\n- title\n- implementedBy\nproperties:\n  '@context': {}\n  '@id':\n    type: string\n  '@type': {}\n  title:\n    x-jsonld-id: http://purl.org/dc/terms/title\n  description:\n    x-jsonld-id: http://purl.org/dc/terms/description\n  usesOntology:\n    type: string\n    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#usesOntology\n  input:\n    type: array\n    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#input\n  output:\n    type: array\n    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#output\n  implementedBy:\n    type: object\n    required:\n    - language\n    - path\n    properties:\n      language:\n        type: string\n        x-jsonld-id: http://purl.org/dc/terms/format\n      path:\n        type: string\n        x-jsonld-id: http://purl.org/dc/terms/identifier\n      role:\n        type: string\n        x-jsonld-id: http://purl.org/dc/terms/type\n    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#implementedBy\n  method:\n    type: string\n    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#method\n  provenance:\n    type: string\n    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy\nadditionalProperties: true\nx-jsonld-prefixes:\n  dct: http://purl.org/dc/terms/\n  ebv: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#\n  prov: http://www.w3.org/ns/prov#\n",
+  "gitRepository": "https://github.com/MayteToscano/bioclima",
+  "gitPath": "_sources/bioclimatic-zone-generation-process"
+}

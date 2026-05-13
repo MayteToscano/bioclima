@@ -1,0 +1,15 @@
+Validation report for syke.ebv.phenology.bioclimatic-zone-coverage - Bioclimatic Zone Categorical Coverage
+Generated 2026-05-13T14:49:49.386935+00:00
+=== Files ===
+Using examples/finland-bioclimatic-zones.covjson from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+
+** Validation error **
+**Empty** output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

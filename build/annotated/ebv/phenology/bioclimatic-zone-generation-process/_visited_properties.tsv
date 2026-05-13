@@ -1,0 +1,12 @@
+path	@id	schema
+/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/usesOntology	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#usesOntology	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/input	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#input	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/output	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#output	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/implementedBy	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#implementedBy	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/implementedBy/language	http://purl.org/dc/terms/format	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/implementedBy/path	http://purl.org/dc/terms/identifier	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/implementedBy/role	http://purl.org/dc/terms/type	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/method	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#method	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml
+/provenance	http://www.w3.org/ns/prov#wasGeneratedBy	/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml

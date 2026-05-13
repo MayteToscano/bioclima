@@ -1,0 +1,6 @@
+path	@id	schema
+/type		/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml
+/domain		/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml
+/parameters		/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml
+/parameters/bioclimatic_zone		/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml
+/ranges		/github/workspace/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml

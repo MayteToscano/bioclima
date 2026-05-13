@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "covjson": "https://covjson.org/def/core#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "@version": 1.1
+  }
+}

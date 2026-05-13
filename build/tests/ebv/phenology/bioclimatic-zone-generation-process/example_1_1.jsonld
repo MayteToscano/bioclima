@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/context.jsonld",
+    {
+      "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@id": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic-zone-generation-process",
+  "@type": [
+    "prov:Plan",
+    "ebv:CoverageGenerationProcess"
+  ],
+  "title": {
+    "en": "Bioclimatic zone CoverageJSON generation process",
+    "es": "Proceso de generaci\u00f3n de CoverageJSON de zonas bioclim\u00e1ticas"
+  },
+  "description": {
+    "en": "Produces a categorical CoverageJSON aligned to the map grid. The bundled layer is a demonstrator and can be replaced by an authoritative zonation source.",
+    "es": "Produce un CoverageJSON categ\u00f3rico alineado con la malla del mapa. La capa incluida es demostrativa y puede sustituirse por una zonificaci\u00f3n oficial."
+  },
+  "usesOntology": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+  "input": [
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone"
+  ],
+  "output": [
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#bioclimatic_zone"
+  ],
+  "implementedBy": {
+    "language": "python",
+    "path": "scripts/generate_bioclimatic_zones.py",
+    "role": "generation or replacement helper"
+  }
+}

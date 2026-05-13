@@ -2,7 +2,7 @@
   "name": "BioClima EBV Phenology Finland OGC Blocks",
   "abstract": "Complete OGC Blocks for EBV phenology raster data, semantic CoverageJSON indicators, processing workflows and a multilingual ontology-aware viewer.\nMulti-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.\n",
   "description": "## About this Register: BioClima EBV Phenology Finland OGC Blocks\n\nThis register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.\n\nThis register specifically focuses on EBV Phenology, utilizing a dataset of vegetation trends in Finland to demonstrate how complex environmental observations can be structured using OGC standards and CoverageJSON. By integrating EBV-specific blocks, the repository aligns raw scientific data with global policy frameworks like the Sustainable Development Goals and international biodiversity targets. Ultimately, the resource provides a sophisticated framework for documenting data provenance, quality, and ontology, ensuring that ecological indicators are interoperable and accessible across different languages and platforms.\n\n### **Who is this register for?**\nThis register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:\n*   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.\n*   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.\n*   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.\n*   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.\n\n### **What does this register contain?**\nThe register includes generic CoverageJSON blocks, EBV-specific blocks, semantic indicator blocks, processing workflow blocks and a multilingual ontology-aware viewer block. It features:\n*   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.\n*   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).\n*   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.\n*   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.\n\n### **When should this register be used?**\nThis register is most relevant in the following scenarios and workflows:\n*   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.\n*   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.\n*   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.\n*   **Reporting:** When aligning environmental data with international frameworks such as **GBF**  \n\n### **Where does this register fit?**\nThis register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable \"building blocks\". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.\n\n### **Why does this register exist?**\nThe register exists to fill critical gaps in current environmental monitoring:\n*   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.\n*   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.\n*   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.\n\n### **How is this register structured and implemented?**\nThe register is structured as a series of modular **OGC Blocks** managed via GitHub:\n*   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).\n*   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.\n*   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.\n*   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.\n\n### **For Developers**\n*   **[GitHub Repository](https://github.com/ogcincubator/bblocks-ebv-bioclima)**\n*   **[OGC Blocks Documentation](https://ogcincubator.github.io/bblocks-docs/)**\n*   **[OGC Blocks Tutorials](https://ogcincubator.github.io/bblocks-tutorial/)**\n*   **[OGC Blocks Examples](https://ogcincubator.github.io/bblocks-examples/)**\n",
-  "modified": "2026-05-13T14:45:34.090603",
+  "modified": "2026-05-13T14:49:45.071771",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
@@ -20,6 +20,56 @@
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
   "bblocks": [
+    {
+      "itemIdentifier": "syke.ebv.phenology.ebv-ontology",
+      "$schema": "metaschema.yaml",
+      "name": "EBV Phenology Ontology",
+      "abstract": "OWL/SKOS ontology with multilingual labels (EN, ES, ZH, RO). Linked from CovJSON observedProperty URIs.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C OWL 2",
+          "link": "https://www.w3.org/TR/owl2-overview/"
+        }
+      ],
+      "tags": [
+        "ontology",
+        "owl",
+        "multilingual",
+        "i18n"
+      ],
+      "group": "Semantics",
+      "highlighted": true,
+      "shaclShapes": {},
+      "ontology": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml",
+        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json"
+      },
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-ontology"
+        }
+      }
+    },
     {
       "itemIdentifier": "syke.ebv.phenology.covjson-axis",
       "$schema": "metaschema.yaml",
@@ -169,56 +219,6 @@
       }
     },
     {
-      "itemIdentifier": "syke.ebv.phenology.ebv-ontology",
-      "$schema": "metaschema.yaml",
-      "name": "EBV Phenology Ontology",
-      "abstract": "OWL/SKOS ontology with multilingual labels (EN, ES, ZH, RO). Linked from CovJSON observedProperty URIs.",
-      "status": "under-development",
-      "dateTimeAddition": "2024-01-01T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-05-13",
-      "sources": [
-        {
-          "title": "W3C OWL 2",
-          "link": "https://www.w3.org/TR/owl2-overview/"
-        }
-      ],
-      "tags": [
-        "ontology",
-        "owl",
-        "multilingual",
-        "i18n"
-      ],
-      "group": "Semantics",
-      "highlighted": true,
-      "shaclShapes": {},
-      "ontology": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl",
-      "schema": {
-        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml",
-        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json"
-      },
-      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/schema.yaml",
-      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/resolvedProperties.json",
-      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/",
-      "validationPassed": true,
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-ontology"
-        }
-      }
-    },
-    {
       "itemIdentifier": "syke.ebv.phenology.ebv-profile",
       "$schema": "metaschema.yaml",
       "name": "EBV Dataset Profile",
@@ -264,6 +264,61 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-profile"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-parameter",
+      "$schema": "metaschema.yaml",
+      "name": "CovJSON Parameter",
+      "abstract": "Describes what is measured: observed property with multi-language labels, unit of measure, and optional category encoding.",
+      "status": "under-development",
+      "dateTimeAddition": "2024-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "OGC CoverageJSON 21-069r2 \u00a78",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.ebv-ontology"
+      ],
+      "tags": [
+        "covjson",
+        "parameter",
+        "observable",
+        "unit",
+        "i18n"
+      ],
+      "group": "CoverageJSON Primitives",
+      "highlighted": true,
+      "ldContext": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml",
+        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json"
+      },
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter"
         }
       }
     },
@@ -373,10 +428,10 @@
       }
     },
     {
-      "itemIdentifier": "syke.ebv.phenology.covjson-parameter",
+      "itemIdentifier": "syke.ebv.phenology.covjson-parameter-group",
       "$schema": "metaschema.yaml",
-      "name": "CovJSON Parameter",
-      "abstract": "Describes what is measured: observed property with multi-language labels, unit of measure, and optional category encoding.",
+      "name": "CovJSON Parameter Group",
+      "abstract": "Semantic grouping of related parameters, e.g., velocity = speed + direction, or coniferous + deciduous VAP.",
       "status": "under-development",
       "dateTimeAddition": "2024-01-01T00:00:00Z",
       "itemClass": "schema",
@@ -385,45 +440,42 @@
       "dateOfLastChange": "2026-05-13",
       "sources": [
         {
-          "title": "OGC CoverageJSON 21-069r2 \u00a78",
+          "title": "OGC CoverageJSON 21-069r2 \u00a78.3",
           "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
         }
       ],
       "dependsOn": [
-        "syke.ebv.phenology.ebv-ontology"
+        "syke.ebv.phenology.covjson-parameter"
       ],
       "tags": [
         "covjson",
         "parameter",
-        "observable",
-        "unit",
-        "i18n"
+        "group",
+        "semantic"
       ],
       "group": "CoverageJSON Primitives",
-      "highlighted": true,
-      "ldContext": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld",
+      "highlighted": false,
       "shaclShapes": {},
       "schema": {
-        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml",
-        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json"
+        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.yaml",
+        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.json"
       },
-      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/schema.yaml",
-      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/context.jsonld",
-      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/resolvedProperties.json",
-      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter-group"
         }
       }
     },
@@ -481,58 +533,6 @@
       }
     },
     {
-      "itemIdentifier": "syke.ebv.phenology.covjson-parameter-group",
-      "$schema": "metaschema.yaml",
-      "name": "CovJSON Parameter Group",
-      "abstract": "Semantic grouping of related parameters, e.g., velocity = speed + direction, or coniferous + deciduous VAP.",
-      "status": "under-development",
-      "dateTimeAddition": "2024-01-01T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-05-13",
-      "sources": [
-        {
-          "title": "OGC CoverageJSON 21-069r2 \u00a78.3",
-          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
-        }
-      ],
-      "dependsOn": [
-        "syke.ebv.phenology.covjson-parameter"
-      ],
-      "tags": [
-        "covjson",
-        "parameter",
-        "group",
-        "semantic"
-      ],
-      "group": "CoverageJSON Primitives",
-      "highlighted": false,
-      "shaclShapes": {},
-      "schema": {
-        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.yaml",
-        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.json"
-      },
-      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/schema.yaml",
-      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/resolvedProperties.json",
-      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/",
-      "validationPassed": true,
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter-group"
-        }
-      }
-    },
-    {
       "itemIdentifier": "syke.ebv.phenology.covjson-coverage",
       "$schema": "metaschema.yaml",
       "name": "CovJSON Coverage",
@@ -550,8 +550,8 @@
         }
       ],
       "dependsOn": [
-        "syke.ebv.phenology.covjson-range",
         "syke.ebv.phenology.covjson-parameter",
+        "syke.ebv.phenology.covjson-range",
         "syke.ebv.phenology.covjson-domain",
         "syke.ebv.phenology.covjson-parameter-group"
       ],
@@ -587,6 +587,58 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-coverage"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.bioclimatic-zone-coverage",
+      "$schema": "metaschema.yaml",
+      "name": "Bioclimatic Zone Categorical Coverage",
+      "abstract": "Semantic CoverageJSON profile for categorical bioclimatic zones aligned with the Finland phenology grid.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "dependsOn": [
+        "syke.ebv.phenology.covjson-parameter",
+        "syke.ebv.phenology.covjson-range",
+        "syke.ebv.phenology.ebv-ontology",
+        "syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "bioclimatic-zones",
+        "categorical",
+        "coveragejson",
+        "semantic"
+      ],
+      "group": "Environmental Context",
+      "highlighted": true,
+      "ldContext": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-coverage/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.yaml",
+        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-coverage/schema.json"
+      },
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-coverage/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-coverage/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-coverage/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-coverage/",
+      "validationPassed": false,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/bioclimatic-zone-coverage/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/bioclimatic-zone-coverage/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/bioclimatic-zone-coverage/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.bioclimatic-zone-coverage"
         }
       }
     },
@@ -867,6 +919,67 @@
       }
     },
     {
+      "itemIdentifier": "syke.ebv.phenology.bioclimatic-zone-generation-process",
+      "$schema": "metaschema.yaml",
+      "name": "Bioclimatic zone CoverageJSON generation process",
+      "abstract": "Semantic process block for generating or replacing the categorical CoverageJSON of Finland bioclimatic zones.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C PROV",
+          "link": "https://www.w3.org/TR/prov-o/"
+        },
+        {
+          "title": "CoverageJSON",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "syke.ebv.phenology.ebv-ontology",
+        "syke.ebv.phenology.bioclimatic-zone-coverage"
+      ],
+      "tags": [
+        "process",
+        "python",
+        "categorical",
+        "coveragejson",
+        "bioclimatic"
+      ],
+      "group": "Semantic Processing",
+      "highlighted": false,
+      "ldContext": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/context.jsonld",
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.yaml",
+        "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/schema.json"
+      },
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/bioclimatic-zone-generation-process/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/bioclimatic-zone-generation-process/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/bioclimatic-zone-generation-process/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/bioclimatic-zone-generation-process/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/bioclimatic-zone-generation-process/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.bioclimatic-zone-generation-process"
+        }
+      }
+    },
+    {
       "itemIdentifier": "syke.ebv.phenology.ebv-feature-view",
       "$schema": "metaschema.yaml",
       "name": "EBV Feature View",
@@ -884,10 +997,10 @@
         }
       ],
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "syke.ebv.phenology.ebv-profile",
         "syke.ebv.phenology.data-provenance",
-        "syke.ebv.phenology.covjson-coverage"
+        "syke.ebv.phenology.covjson-coverage",
+        "syke.ebv.phenology.ebv-profile",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -998,12 +1111,12 @@
         }
       ],
       "dependsOn": [
-        "syke.ebv.phenology.covjson-range",
-        "syke.ebv.phenology.ebv-ontology",
-        "syke.ebv.phenology.data-provenance",
         "syke.ebv.phenology.covjson-parameter-group",
         "syke.ebv.phenology.covjson-coverage",
-        "syke.ebv.phenology.covjson-parameter"
+        "syke.ebv.phenology.ebv-ontology",
+        "syke.ebv.phenology.covjson-parameter",
+        "syke.ebv.phenology.covjson-range",
+        "syke.ebv.phenology.data-provenance"
       ],
       "tags": [
         "ebv",
