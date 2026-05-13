@@ -1,0 +1,217 @@
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ebv: a owl:Ontology ;
+  dcterms:title "EBV Phenology Vocabulary"@en , "Vocabulario de fenología EBV"@es , "Vocabular de fenologie EBV"@ro , "EBV 物候词汇表"@zh ;
+  dcterms:description "Temporary GitHub Pages vocabulary for EBV phenology feature-view terms."@en ,
+    "Vocabulario temporal en GitHub Pages para términos de vista de entidad de fenología EBV."@es ,
+    "Vocabular temporar GitHub Pages pentru termenii de vizualizare a entităților de fenologie EBV."@ro ,
+    "用于 EBV 物候要素视图术语的 GitHub Pages 临时词汇表。"@zh .
+
+ebv:entity_type a owl:ObjectProperty ;
+  rdfs:label "Forest Entity Type"@en , "Tipo de entidad forestal"@es , "Tip de entitate forestieră"@ro , "森林实体类型"@zh ;
+  skos:prefLabel "Forest Entity Type"@en , "Tipo de entidad forestal"@es , "Tip de entitate forestieră"@ro , "森林实体类型"@zh ;
+  skos:definition "The ecosystem entity type for which the phenology metric is derived. Values may identify forest entities such as coniferous or deciduous forest."@en , "Tipo de entidad ecosistémica para la que se deriva la métrica fenológica. Puede identificar entidades forestales como bosque de coníferas o bosque caducifolio."@es , "Tipul de entitate ecosistemică pentru care este derivată metrica fenologică. Poate identifica entități forestiere precum pădure de conifere sau pădure de foioase."@ro , "用于推导物候指标的生态系统实体类型。其取值可表示针叶林或落叶林等森林实体。"@zh ;
+  rdfs:range "IRI or string" .
+
+ebv:year a owl:DatatypeProperty ;
+  rdfs:label "Observation Year"@en , "Año de observación"@es , "Anul observației"@ro , "观测年份"@zh ;
+  skos:prefLabel "Observation Year"@en , "Año de observación"@es , "Anul observației"@ro , "观测年份"@zh ;
+  skos:definition "Calendar year associated with the phenology observation or derived annual EBV metric."@en , "Año natural asociado con la observación fenológica o con la métrica EBV anual derivada."@es , "Anul calendaristic asociat observației fenologice sau metricii EBV anuale derivate."@ro , "与物候观测或年度 EBV 派生指标相关的公历年份。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:vap_doy a owl:DatatypeProperty ;
+  rdfs:label "Start of VAP (Day of Year)"@en , "Inicio del periodo activo de vegetación (día del año)"@es , "Începutul PAV (ziua anului)"@ro , "植被活跃期开始（年积日）"@zh ;
+  skos:prefLabel "Start of VAP (Day of Year)"@en , "Inicio del periodo activo de vegetación (día del año)"@es , "Începutul PAV (ziua anului)"@ro , "植被活跃期开始（年积日）"@zh ;
+  skos:definition "Integer day of year marking the start of the Vegetation Active Period."@en , "Día del año, expresado como entero, que marca el inicio del Periodo Activo de Vegetación."@es , "Ziua anului, exprimată ca număr întreg, care marchează începutul Perioadei Active a Vegetației."@ro , "以整数表示的一年中的某一天，用于标记植被活跃期的开始。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:mean_doy a owl:DatatypeProperty ;
+  rdfs:label "Mean DOY (spatial average)"@en , "DOY medio (promedio espacial)"@es , "DOY mediu (media spațială)"@ro , "平均 DOY（空间平均）"@zh ;
+  skos:prefLabel "Mean DOY (spatial average)"@en , "DOY medio (promedio espacial)"@es , "DOY mediu (media spațială)"@ro , "平均 DOY（空间平均）"@zh ;
+  skos:definition "Spatial mean day-of-year value calculated across valid grid cells or pixels for the selected feature."@en , "Valor medio espacial del día del año calculado sobre las celdas o píxeles válidos del elemento seleccionado."@es , "Valoarea medie spațială a zilei din an calculată pentru celulele sau pixelii valizi ai elementului selectat."@ro , "针对所选要素，在有效网格单元或像元上计算得到的一年中的平均日期值。"@zh ;
+  rdfs:range xsd:decimal .
+
+ebv:min_doy a owl:DatatypeProperty ;
+  rdfs:label "Minimum DOY"@en , "DOY mínimo"@es , "DOY minim"@ro , "最小 DOY"@zh ;
+  skos:prefLabel "Minimum DOY"@en , "DOY mínimo"@es , "DOY minim"@ro , "最小 DOY"@zh ;
+  skos:definition "Minimum day-of-year value observed across the valid spatial cells for the selected feature."@en , "Valor mínimo del día del año observado en las celdas espaciales válidas del elemento seleccionado."@es , "Valoarea minimă a zilei din an observată în celulele spațiale valide ale elementului selectat."@ro , "在所选要素的有效空间单元中观测到的一年中的最小日期值。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:max_doy a owl:DatatypeProperty ;
+  rdfs:label "Maximum DOY"@en , "DOY máximo"@es , "DOY maxim"@ro , "最大 DOY"@zh ;
+  skos:prefLabel "Maximum DOY"@en , "DOY máximo"@es , "DOY maxim"@ro , "最大 DOY"@zh ;
+  skos:definition "Maximum day-of-year value observed across the valid spatial cells for the selected feature."@en , "Valor máximo del día del año observado en las celdas espaciales válidas del elemento seleccionado."@es , "Valoarea maximă a zilei din an observată în celulele spațiale valide ale elementului selectat."@ro , "在所选要素的有效空间单元中观测到的一年中的最大日期值。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:stddev a owl:DatatypeProperty ;
+  rdfs:label "Standard Deviation of DOY"@en , "Desviación típica del DOY"@es , "Deviația standard a DOY"@ro , "DOY 标准差"@zh ;
+  skos:prefLabel "Standard Deviation of DOY"@en , "Desviación típica del DOY"@es , "Deviația standard a DOY"@ro , "DOY 标准差"@zh ;
+  skos:definition "Standard deviation of day-of-year values across valid spatial cells or pixels."@en , "Desviación típica de los valores de día del año en las celdas o píxeles espaciales válidos."@es , "Deviația standard a valorilor zilei din an pentru celulele sau pixelii spațiali valizi."@ro , "有效空间单元或像元中一年中的日期值的标准差。"@zh ;
+  rdfs:range xsd:decimal .
+
+ebv:valid_percent a owl:DatatypeProperty ;
+  rdfs:label "Valid Pixel Percentage"@en , "Porcentaje de píxeles válidos"@es , "Procent de pixeli valizi"@ro , "有效像元百分比"@zh ;
+  skos:prefLabel "Valid Pixel Percentage"@en , "Porcentaje de píxeles válidos"@es , "Procent de pixeli valizi"@ro , "有效像元百分比"@zh ;
+  skos:definition "Percentage of valid spatial cells or pixels used to compute the phenology summary metric."@en , "Porcentaje de celdas o píxeles espaciales válidos utilizados para calcular la métrica fenológica resumida."@es , "Procentul celulelor sau pixelilor spațiali valizi utilizați pentru calculul metricii fenologice sintetice."@ro , "用于计算物候汇总指标的有效空间单元或像元的百分比。"@zh ;
+  rdfs:range xsd:decimal .
+
+ebv:crs a owl:DatatypeProperty ;
+  rdfs:label "Coordinate Reference System"@en , "Sistema de referencia de coordenadas"@es , "Sistem de referință al coordonatelor"@ro , "坐标参考系统"@zh ;
+  skos:prefLabel "Coordinate Reference System"@en , "Sistema de referencia de coordenadas"@es , "Sistem de referință al coordonatelor"@ro , "坐标参考系统"@zh ;
+  skos:definition "Coordinate reference system used by the spatial representation of the feature or coverage-derived summary."@en , "Sistema de referencia de coordenadas utilizado por la representación espacial del elemento o por el resumen derivado de la cobertura."@es , "Sistemul de referință al coordonatelor utilizat de reprezentarea spațială a elementului sau de rezumatul derivat din coverage."@ro , "要素空间表示或 coverage 派生汇总所使用的坐标参考系统。"@zh ;
+  rdfs:range xsd:string ;
+  skos:exactMatch <https://covjson.org/def/core#referenceSystem> .
+
+ebv:grid_width a owl:DatatypeProperty ;
+  rdfs:label "Grid Width (columns)"@en , "Anchura de la malla (columnas)"@es , "Lățimea grilei (coloane)"@ro , "网格宽度（列）"@zh ;
+  skos:prefLabel "Grid Width (columns)"@en , "Anchura de la malla (columnas)"@es , "Lățimea grilei (coloane)"@ro , "网格宽度（列）"@zh ;
+  skos:definition "Number of columns in the grid used for the coverage-derived phenology data."@en , "Número de columnas de la malla utilizada para los datos fenológicos derivados de la cobertura."@es , "Numărul de coloane din grila utilizată pentru datele fenologice derivate din coverage."@ro , "用于 coverage 派生物候数据的网格列数。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:grid_height a owl:DatatypeProperty ;
+  rdfs:label "Grid Height (rows)"@en , "Altura de la malla (filas)"@es , "Înălțimea grilei (rânduri)"@ro , "网格高度（行）"@zh ;
+  skos:prefLabel "Grid Height (rows)"@en , "Altura de la malla (filas)"@es , "Înălțimea grilei (rânduri)"@ro , "网格高度（行）"@zh ;
+  skos:definition "Number of rows in the grid used for the coverage-derived phenology data."@en , "Número de filas de la malla utilizada para los datos fenológicos derivados de la cobertura."@es , "Numărul de rânduri din grila utilizată pentru datele fenologice derivate din coverage."@ro , "用于 coverage 派生物候数据的网格行数。"@zh ;
+  rdfs:range xsd:integer .
+
+ebv:sensor a owl:DatatypeProperty ;
+  rdfs:label "Source Sensor Platform"@en , "Plataforma sensora de origen"@es , "Platforma senzorului sursă"@ro , "源传感器平台"@zh ;
+  skos:prefLabel "Source Sensor Platform"@en , "Plataforma sensora de origen"@es , "Platforma senzorului sursă"@ro , "源传感器平台"@zh ;
+  skos:definition "Sensor or observation platform used as the source for the phenology derivation."@en , "Sensor o plataforma de observación utilizada como fuente para la derivación fenológica."@es , "Senzorul sau platforma de observație folosită ca sursă pentru derivarea fenologică."@ro , "作为物候推导来源使用的传感器或观测平台。"@zh ;
+  rdfs:range xsd:string ;
+  skos:exactMatch <http://www.w3.org/ns/prov#wasGeneratedBy> .
+
+ebv:algorithm a owl:DatatypeProperty ;
+  rdfs:label "Derivation Algorithm"@en , "Algoritmo de derivación"@es , "Algoritm de derivare"@ro , "推导算法"@zh ;
+  skos:prefLabel "Derivation Algorithm"@en , "Algoritmo de derivación"@es , "Algoritm de derivare"@ro , "推导算法"@zh ;
+  skos:definition "Algorithm or processing method used to derive the phenology metric."@en , "Algoritmo o método de procesamiento utilizado para derivar la métrica fenológica."@es , "Algoritmul sau metoda de procesare utilizată pentru a deriva metrica fenologică."@ro , "用于推导物候指标的算法或处理方法。"@zh ;
+  rdfs:range xsd:string ;
+  skos:exactMatch <http://www.w3.org/ns/prov#used> .
+
+ebv:trend_slope a owl:DatatypeProperty ;
+  rdfs:label "Trend Slope (days/year)"@en , "Pendiente de tendencia (días/año)"@es , "Panta tendinței (zile/an)"@ro , "趋势斜率（天/年）"@zh ;
+  skos:prefLabel "Trend Slope (days/year)"@en , "Pendiente de tendencia (días/año)"@es , "Panta tendinței (zile/an)"@ro , "趋势斜率（天/年）"@zh ;
+  skos:definition "Rate of change of the VAP start date over time, expressed in days per year."@en , "Tasa de cambio de la fecha de inicio del VAP a lo largo del tiempo, expresada en días por año."@es , "Rata de schimbare în timp a datei de început a PAV, exprimată în zile pe an."@ro , "VAP 开始日期随时间变化的速率，以天/年表示。"@zh ;
+  rdfs:range xsd:decimal .
+
+ebv:anomaly a owl:DatatypeProperty ;
+  rdfs:label "Annual Anomaly Status"@en , "Estado de anomalía anual"@es , "Starea anomaliei anuale"@ro , "年度异常状态"@zh ;
+  skos:prefLabel "Annual Anomaly Status"@en , "Estado de anomalía anual"@es , "Starea anomaliei anuale"@ro , "年度异常状态"@zh ;
+  skos:definition "Annual anomaly category relative to a baseline, for example early, normal or late."@en , "Categoría de anomalía anual respecto a una línea base, por ejemplo temprana, normal o tardía."@es , "Categoria anomaliei anuale față de o bază de referință, de exemplu timpurie, normală sau târzie."@ro , "相对于基线的年度异常类别，例如偏早、正常或偏晚。"@zh ;
+  rdfs:range xsd:string .
+
+ebv:ConiferousForest a owl:Class ;
+  rdfs:label "Coniferous Forest"@en , "Bosque de coníferas"@es , "Pădure de conifere"@ro , "针叶林"@zh ;
+  skos:prefLabel "Coniferous Forest"@en , "Bosque de coníferas"@es , "Pădure de conifere"@ro , "针叶林"@zh ;
+  skos:definition "Forest dominated by cone-bearing trees, mainly spruce and pine in the Finnish context."@en , "Bosque dominado por árboles que producen conos, principalmente abeto y pino en el contexto finlandés."@es , "Pădure dominată de arbori coniferi, în principal molid și pin în contextul Finlandei."@ro , "以球果树种为主的森林，在芬兰语境下主要指云杉林和松林。"@zh .
+
+ebv:DeciduousForest a owl:Class ;
+  rdfs:label "Deciduous Forest"@en , "Bosque caducifolio"@es , "Pădure de foioase"@ro , "落叶林"@zh ;
+  skos:prefLabel "Deciduous Forest"@en , "Bosque caducifolio"@es , "Pădure de foioase"@ro , "落叶林"@zh ;
+  skos:definition "Forest dominated by broad-leaved trees that shed leaves seasonally, mainly birch in the Finnish context."@en , "Bosque dominado por árboles de hoja ancha que pierden sus hojas estacionalmente, principalmente abedul en el contexto finlandés."@es , "Pădure dominată de arbori de foioase care își pierd frunzele sezonier, în principal mesteacăn în contextul Finlandei."@ro , "以季节性落叶阔叶树种为主的森林，在芬兰语境下主要指桦树林。"@zh .
+
+# ── Phenological Change Indicator extension ───────────────────────────────────
+ebv:PhenologicalChangeIndicator a owl:Class ;
+  rdfs:subClassOf ebv:EcosystemPhenology ;
+  rdfs:label "Phenological Change Indicator"@en , "Indicador de Cambio Fenológico"@es ;
+  skos:prefLabel "Phenological Change Indicator"@en , "Indicador de Cambio Fenológico"@es ;
+  skos:definition "Indicator describing observed phenological change from a SOS/VAP time series without requiring an external climate variable."@en ,
+                  "Indicador que describe el cambio fenológico observado a partir de una serie SOS/VAP sin requerir una variable climática externa."@es .
+
+ebv:phenological_trend a owl:DatatypeProperty ;
+  rdfs:range xsd:decimal ;
+  rdfs:label "phenological trend"@en , "tendencia fenológica"@es ;
+  skos:definition "Rate of temporal phenological change estimated as the Theil-Sen slope of SOS/VAP against year, expressed in days per year."@en ,
+                  "Velocidad del cambio fenológico temporal estimada como la pendiente Theil-Sen de SOS/VAP frente al año, expresada en días por año."@es .
+
+ebv:phenological_anomaly a owl:DatatypeProperty ;
+  rdfs:range xsd:decimal ;
+  rdfs:label "phenological anomaly"@en , "anomalía fenológica"@es ;
+  skos:definition "Difference between recent mean SOS/VAP and baseline mean SOS/VAP."@en ,
+                  "Diferencia entre la media reciente de SOS/VAP y la media de referencia de SOS/VAP."@es .
+
+ebv:changepoint_year a owl:DatatypeProperty ;
+  rdfs:range xsd:gYear ;
+  rdfs:label "change point year"@en , "año del punto de cambio"@es ;
+  skos:definition "Year of the most probable change point detected with the Pettitt test."@en ,
+                  "Año del punto de cambio más probable detectado mediante el test de Pettitt."@es .
+
+ebv:changepoint_pvalue a owl:DatatypeProperty ;
+  rdfs:range xsd:decimal ;
+  rdfs:label "change point p-value"@en , "valor p del punto de cambio"@es ;
+  skos:definition "Statistical significance of the detected change point according to the Pettitt test."@en ,
+                  "Significancia estadística del punto de cambio detectado según el test de Pettitt."@es .
+
+ebv:TheilSenSlope a owl:Class ;
+  rdfs:label "Theil-Sen slope"@en , "pendiente Theil-Sen"@es ;
+  skos:definition "Robust estimator of a temporal trend calculated as the median of pairwise slopes."@en ,
+                  "Estimador robusto de tendencia temporal calculado como la mediana de las pendientes por pares."@es .
+
+ebv:PettittTest a owl:Class ;
+  rdfs:label "Pettitt test"@en , "test de Pettitt"@es ;
+  skos:definition "Non-parametric test used to detect a single change point in a time series."@en ,
+                  "Test no paramétrico utilizado para detectar un único punto de cambio en una serie temporal."@es .
+
+ebv:BaselineDifference a owl:Class ;
+  rdfs:label "baseline difference"@en , "diferencia respecto a línea base"@es ;
+  skos:definition "Method computing an anomaly as recent-period mean minus baseline-period mean."@en ,
+                  "Método que calcula una anomalía como media del periodo reciente menos media del periodo de referencia."@es .
+
+ebv:bioclimatic_zone a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:label "bioclimatic zone"@en , "zona bioclimática"@es ;
+  skos:definition "Categorical bioclimatic zone associated with a grid cell or spatial feature."@en ,
+                  "Zona bioclimática categórica asociada a una celda de malla o entidad espacial."@es .
+
+
+
+# ── Semantic processing and viewer extension ────────────────────────────────
+ebv:IndicatorComputationProcess a owl:Class ;
+  rdfs:label "Indicator computation process"@en , "Proceso de cálculo de indicador"@es , "Indikaattorin laskentaprosessi"@fi ;
+  skos:definition "Semantic description of an executable process that computes an indicator from declared inputs and methods."@en ,
+                  "Descripción semántica de un proceso ejecutable que calcula un indicador a partir de entradas y métodos declarados."@es ,
+                  "Suoritettavan prosessin semanttinen kuvaus, joka laskee indikaattorin määritellyistä syötteistä ja menetelmistä."@fi .
+
+ebv:CoverageGenerationProcess a owl:Class ;
+  rdfs:label "Coverage generation process"@en , "Proceso de generación de cobertura"@es , "Kattavuuden muodostusprosessi"@fi ;
+  skos:definition "Semantic description of a process that creates or transforms a coverage dataset."@en ,
+                  "Descripción semántica de un proceso que crea o transforma un conjunto de datos de cobertura."@es ,
+                  "Prosessin semanttinen kuvaus, joka luo tai muuntaa kattavuusaineiston."@fi .
+
+ebv:ValidationProcess a owl:Class ;
+  rdfs:label "Validation process"@en , "Proceso de validación"@es , "Validointiprosessi"@fi ;
+  skos:definition "Semantic description of a process used to validate data structure and semantic annotations."@en ,
+                  "Descripción semántica de un proceso utilizado para validar la estructura de datos y las anotaciones semánticas."@es ,
+                  "Prosessin semanttinen kuvaus, jota käytetään tietorakenteen ja semanttisten merkintöjen validointiin."@fi .
+
+ebv:SemanticCoverageJSONViewer a owl:Class ;
+  rdfs:label "Semantic CoverageJSON Viewer"@en , "Visor semántico de CoverageJSON"@es , "Semanttinen CoverageJSON-katselin"@fi ;
+  skos:definition "Catalog-driven web viewer that renders CoverageJSON grids and resolves parameter attributes against a multilingual ontology index."@en ,
+                  "Visor web basado en catálogo que representa mallas CoverageJSON y resuelve los atributos de los parámetros contra un índice ontológico multilingüe."@es ,
+                  "Luettelo-ohjattu verkkokatselin, joka näyttää CoverageJSON-ruudukot ja yhdistää parametrien attribuutit monikieliseen ontologiaindeksiin."@fi .
+
+ebv:implementedBy a owl:ObjectProperty ;
+  rdfs:label "implemented by"@en , "implementado por"@es , "toteutettu kohteella"@fi ;
+  skos:definition "Links a semantic method or process definition to the software implementation that executes it."@en ,
+                  "Vincula una definición semántica de método o proceso con la implementación software que la ejecuta."@es ,
+                  "Yhdistää semanttisen menetelmä- tai prosessikuvauksen ohjelmistototeutukseen, joka suorittaa sen."@fi .
+
+ebv:usesOntology a owl:ObjectProperty ;
+  rdfs:label "uses ontology"@en , "usa ontología"@es , "käyttää ontologiaa"@fi ;
+  skos:definition "Links a data, process or viewer component to the ontology or ontology index used to resolve semantic identifiers."@en ,
+                  "Vincula un componente de datos, proceso o visor con la ontología o índice ontológico utilizado para resolver identificadores semánticos."@es ,
+                  "Yhdistää data-, prosessi- tai katselinkomponentin ontologiaan tai ontologiaindeksiin, jota käytetään semanttisten tunnisteiden ratkaisemiseen."@fi .
+
+
+# Additional Finnish labels for browser-language ontology resolution
+ebv:PhenologicalChangeIndicator rdfs:label "Fenologisen muutoksen indikaattori"@fi ; skos:prefLabel "Fenologisen muutoksen indikaattori"@fi ; skos:definition "Indikaattori, joka kuvaa havaittua fenologista muutosta SOS/VAP-aikasarjasta ilman ulkoista ilmastomuuttujaa."@fi .
+ebv:phenological_trend rdfs:label "fenologinen trendi"@fi ; skos:definition "Ajallisen fenologisen muutoksen nopeus, arvioituna SOS/VAP-arvon Theil-Sen-kulmakertoimena suhteessa vuoteen, yksikkönä päivää vuodessa."@fi .
+ebv:phenological_anomaly rdfs:label "fenologinen poikkeama"@fi ; skos:definition "Viimeaikaisen SOS/VAP-keskiarvon ja vertailujakson SOS/VAP-keskiarvon erotus."@fi .
+ebv:changepoint_year rdfs:label "muutospisteen vuosi"@fi ; skos:definition "Pettittin testillä havaitun todennäköisimmän muutospisteen vuosi."@fi .
+ebv:changepoint_pvalue rdfs:label "muutospisteen p-arvo"@fi ; skos:definition "Pettittin testin mukainen havaitun muutospisteen tilastollinen merkitsevyys."@fi .
+ebv:bioclimatic_zone rdfs:label "bioklimaattinen vyöhyke"@fi ; skos:definition "Ruutuun tai spatiaaliseen kohteeseen liittyvä luokiteltu bioklimaattinen vyöhyke."@fi .
