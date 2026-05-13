@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioClima ontology term</title>
+  <link rel="stylesheet" href="./style.css?v=final-1" />
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 42px 22px;
+      background: #f5f7fb;
+    }
+
+    .ontology-page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px;
+      border: 1px solid #d9e1ea;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .term-uri {
+      overflow-wrap: anywhere;
+      font-size: 0.95rem;
+    }
+
+    dl {
+      grid-template-columns: 170px minmax(0, 1fr);
+      margin-top: 22px;
+    }
+  </style>
+</head>
+<body>
+  <main class="ontology-page">
+    <a class="back-link" id="backLink" href="./">← Back to viewer</a>
+    <h1 id="label">Ontology term</h1>
+    <dl>
+      <dt id="definitionLabel">Definition</dt>
+      <dd id="definition">—</dd>
+
+      <dt id="typeLabel">Ontology type</dt>
+      <dd id="type">—</dd>
+
+      <dt>Building Block</dt>
+      <dd id="buildingBlock">—</dd>
+
+      <dt>Semantic URI</dt>
+      <dd><a id="uriLink" class="term-uri" href="#" target="_blank" rel="noopener">—</a></dd>
+    </dl>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const uri = params.get("uri") || "";
+    const lang = params.get("lang") || (navigator.language || "en").split("-")[0];
+
+    const labels = {
+      es: { back: "← Volver al visor", title: "Término ontológico", definition: "Definición", type: "Tipo ontológico", notFound: "Término no encontrado", noDefinition: "No se ha encontrado una definición para esta URI en data/ontology-index.json." },
+      en: { back: "← Back to viewer", title: "Ontology term", definition: "Definition", type: "Ontology type", notFound: "Term not found", noDefinition: "No definition was found for this URI in data/ontology-index.json." },
+      fi: { back: "← Takaisin katselimeen", title: "Ontologinen termi", definition: "Määritelmä", type: "Ontologinen tyyppi", notFound: "Termiä ei löytynyt", noDefinition: "Tälle URI:lle ei löytynyt määritelmää tiedostosta data/ontology-index.json." },
+      ro: { back: "← Înapoi la vizualizator", title: "Termen ontologic", definition: "Definiție", type: "Tip ontologic", notFound: "Termenul nu a fost găsit", noDefinition: "Nu a fost găsită o definiție pentru acest URI în data/ontology-index.json." },
+      zh: { back: "← 返回查看器", title: "本体术语", definition: "定义", type: "本体类型", notFound: "未找到术语", noDefinition: "在 data/ontology-index.json 中没有找到该 URI 的定义。" }
+    };
+
+    const L = labels[lang] || labels.en;
+    document.documentElement.lang = lang;
+    document.getElementById("backLink").textContent = L.back;
+    document.getElementById("definitionLabel").textContent = L.definition;
+    document.getElementById("typeLabel").textContent = L.type;
+
+    function text(obj) {
+      if (!obj) return "—";
+      if (typeof obj === "string") return obj;
+      return obj[lang] || obj.en || obj.es || obj.fi || obj.ro || obj.zh || Object.values(obj)[0] || "—";
+    }
+
+    function normalizeOntology(ontology) {
+      if (ontology.terms && !Array.isArray(ontology.terms)) return ontology.terms;
+      const list = Array.isArray(ontology.terms) ? ontology.terms : Array.isArray(ontology) ? ontology : [];
+      const terms = {};
+      for (const term of list) {
+        const id = term.id || term.uri || term["@id"];
+        if (id) terms[id] = term;
+      }
+      return list.length ? terms : ontology;
+    }
+
+    function findTerm(terms, uri) {
+      if (!uri || !terms) return null;
+      if (terms[uri]) return terms[uri];
+      const fragment = uri.includes("#") ? uri.split("#").pop() : uri.split("/").pop();
+      if (terms[fragment]) return terms[fragment];
+      return Object.values(terms).find(term => {
+        const id = term.id || term.uri || term["@id"];
+        return id === uri || id?.endsWith(`#${fragment}`) || id?.endsWith(`/${fragment}`);
+      }) || null;
+    }
+
+    async function init() {
+      const response = await fetch("../data/ontology-index.json", { cache: "no-cache" });
+      const ontology = await response.json();
+      const terms = normalizeOntology(ontology);
+      const term = findTerm(terms, uri);
+
+      document.getElementById("uriLink").textContent = uri || "—";
+      document.getElementById("uriLink").href = uri || "#";
+
+      if (!term) {
+        document.getElementById("label").textContent = L.notFound;
+        document.getElementById("definition").textContent = L.noDefinition;
+        document.getElementById("type").textContent = "—";
+        document.getElementById("buildingBlock").textContent = "—";
+        return;
+      }
+
+      document.title = `${text(term.label)} — BioClima ontology`;
+      document.getElementById("label").textContent = text(term.label) || L.title;
+      document.getElementById("definition").textContent = text(term.definition) || text(term.description) || "—";
+      document.getElementById("type").textContent = term.type || term["@type"] || "—";
+      document.getElementById("buildingBlock").textContent = term.buildingBlock || "—";
+    }
+
+    init().catch(error => {
+      document.body.insertAdjacentHTML("afterbegin", `<div class="fatal-error"><strong>Error</strong><br>${String(error.message || error)}</div>`);
+    });
+  </script>
+</body>
+</html>
