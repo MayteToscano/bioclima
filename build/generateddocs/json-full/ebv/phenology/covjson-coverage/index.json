@@ -18,10 +18,10 @@
     }
   ],
   "dependsOn": [
+    "syke.ebv.phenology.covjson-domain",
     "syke.ebv.phenology.covjson-parameter",
     "syke.ebv.phenology.covjson-parameter-group",
-    "syke.ebv.phenology.covjson-range",
-    "syke.ebv.phenology.covjson-domain"
+    "syke.ebv.phenology.covjson-range"
   ],
   "tags": [
     "covjson",
