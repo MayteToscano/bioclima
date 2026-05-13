@@ -22,8 +22,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.phenological-change-indicator",
     "syke.ebv.phenology.data-provenance",
+    "syke.ebv.phenology.phenological-change-indicator",
     "syke.ebv.phenology.ebv-ontology"
   ],
   "tags": [
