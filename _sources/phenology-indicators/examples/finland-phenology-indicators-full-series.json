@@ -1,0 +1,92 @@
+{
+  "type": "PhenologyIndicatorCollection",
+  "title": "Finland EBV phenology indicators derived from 2001-2018 time series",
+  "description": "Compact semantic example describing phenology indicators derived from multi-year vegetation active period coverages. Pixel-level PCI outputs are represented separately as CoverageJSON indicators.",
+  "source_dataset": {
+    "id": "finland-vap-coniferous-2001-2018",
+    "type": "CoverageJSON time series",
+    "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy",
+    "spatial_extent": "Finland crop grid",
+    "temporal_extent": "2001-2018"
+  },
+  "methodology": {
+    "id": "https://maytetoscano.github.io/bblock-ebv-bioclima/methods/pci-method-v1",
+    "baseline_period": "2001-2010",
+    "recent_period": "2011-2018",
+    "trend_method": "Theil-Sen slope of VAP/SOS day-of-year against year",
+    "anomaly_method": "Recent mean minus baseline mean",
+    "change_point_method": "Pettitt test"
+  },
+  "indicators": [
+    {
+      "entity": "coniferous",
+      "entity_label": "Coniferous forest",
+      "time_series": [
+        {
+          "year": 2001,
+          "observed_property": "vap_doy"
+        },
+        {
+          "year": 2018,
+          "observed_property": "vap_doy"
+        }
+      ],
+      "linear_trend": {
+        "parameter": "trend",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_trend",
+        "unit": "days/year",
+        "coverage": "data/indicators/finland-pci-coniferous-2001-2018.covjson"
+      },
+      "anomaly_index": {
+        "parameter": "anomaly",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_anomaly",
+        "unit": "days",
+        "coverage": "data/indicators/finland-pci-coniferous-2001-2018.covjson"
+      },
+      "change_point": {
+        "parameter_year": "changepoint_year",
+        "parameter_pvalue": "changepoint_pvalue",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_changepoint",
+        "coverage": "data/indicators/finland-pci-coniferous-2001-2018.covjson"
+      },
+      "acceleration": {
+        "status": "not computed in PCI v1"
+      }
+    },
+    {
+      "entity": "deciduous",
+      "entity_label": "Deciduous forest",
+      "time_series": [
+        {
+          "year": 2001,
+          "observed_property": "vap_doy"
+        },
+        {
+          "year": 2018,
+          "observed_property": "vap_doy"
+        }
+      ],
+      "linear_trend": {
+        "parameter": "trend",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_trend",
+        "unit": "days/year",
+        "coverage": "data/indicators/finland-pci-deciduous-2001-2018.covjson"
+      },
+      "anomaly_index": {
+        "parameter": "anomaly",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_anomaly",
+        "unit": "days",
+        "coverage": "data/indicators/finland-pci-deciduous-2001-2018.covjson"
+      },
+      "change_point": {
+        "parameter_year": "changepoint_year",
+        "parameter_pvalue": "changepoint_pvalue",
+        "observed_property": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_changepoint",
+        "coverage": "data/indicators/finland-pci-deciduous-2001-2018.covjson"
+      },
+      "acceleration": {
+        "status": "not computed in PCI v1"
+      }
+    }
+  ]
+}
