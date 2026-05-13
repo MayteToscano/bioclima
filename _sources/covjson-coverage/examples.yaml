@@ -1,5 +1,0 @@
-- title: Finland coniferous VAP CoverageJSON crop (2001)
-  content: Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for coniferous forest in 2001. This is intentionally small enough for the Building Blocks examples page.
-  snippets:
-    - language: json
-      ref: examples/finland-vap-coniferous-2001-crop.covjson
