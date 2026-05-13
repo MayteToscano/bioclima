@@ -1,0 +1,41 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.ebv-profile",
+  "$schema": "metaschema.yaml",
+  "name": "EBV Dataset Profile",
+  "abstract": "Identity of an EBV dataset: class, name, entities, metric, scope, DOI. Following GEO BON framework.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "GEO BON EBV Framework",
+      "link": "https://geobon.org/ebvs/"
+    }
+  ],
+  "tags": [
+    "ebv",
+    "profile",
+    "geobon",
+    "identity"
+  ],
+  "group": "EBV Specific",
+  "highlighted": true,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-profile/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-profile/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/ebv-profile/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/ebv-profile/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/ebv-profile/",
+  "validationPassed": true,
+  "description": "# EBV Dataset Profile\n\nIdentity card of an EBV dataset within the GEO BON framework. 6 EBV classes, entities, metric, scope, DOI.\n\n## Finland: Ecosystem functioning \u2192 Ecosystem phenology \u2192 Coniferous/Deciduous \u2192 VAP (DOY)\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: EBV Dataset Profile\ntype: object\nrequired:\n- ebv_class\n- ebv_name\n- entities\nproperties:\n  ebv_class:\n    type: string\n    enum:\n    - Genetic composition\n    - Species populations\n    - Species traits\n    - Community composition\n    - Ecosystem structure\n    - Ecosystem functioning\n  ebv_name:\n    type: string\n  entities:\n    type: array\n    items:\n      type: string\n  metric:\n    type: string\n  scope:\n    type: string\n    enum:\n    - Local\n    - Regional\n    - National\n    - Continental\n    - Global\n  doi:\n    type: string\n  ebv_portal_id:\n    type: integer\n  creator:\n    type: string\n  institution:\n    type: string\n  license:\n    type: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/ebv-profile"
+}

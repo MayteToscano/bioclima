@@ -1,0 +1,41 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.covjson-reference-system",
+  "$schema": "metaschema.yaml",
+  "name": "CovJSON Reference System",
+  "abstract": "Coordinate reference system binding axes to real-world coordinates. Supports GeographicCRS, ProjectedCRS, TemporalRS, VerticalCRS.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "OGC CoverageJSON 21-069r2 \u00a77.4",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "tags": [
+    "covjson",
+    "crs",
+    "reference",
+    "coordinate"
+  ],
+  "group": "CoverageJSON Primitives",
+  "highlighted": false,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-reference-system/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-reference-system/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/covjson-reference-system/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-reference-system/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/covjson-reference-system/",
+  "validationPassed": true,
+  "description": "# CovJSON Reference System\n\nBinds coordinate axes to real-world meaning.\n\n| Type | Use | Example |\n|------|-----|---------|\n| GeographicCRS | lon/lat | OGC CRS84 |\n| ProjectedCRS | projected coords | EPSG:3067 (Finland) |\n| TemporalRS | time axis | Gregorian calendar |\n| VerticalCRS | altitude/depth | EPSG:5714 |\n\n## Finland Phenology\n- **Spatial**: GeographicCRS, id=`http://www.opengis.net/def/crs/OGC/1.3/CRS84`\n- **Temporal**: TemporalRS, calendar=Gregorian\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: CoverageJSON Reference System\ntype: object\nrequired:\n- type\nproperties:\n  type:\n    type: string\n    enum:\n    - GeographicCRS\n    - ProjectedCRS\n    - VerticalCRS\n    - TemporalRS\n    - IdentifierRS\n  id:\n    type: string\n  calendar:\n    type: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/covjson-reference-system"
+}

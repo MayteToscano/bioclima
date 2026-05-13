@@ -1,0 +1,45 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.covjson-domain",
+  "$schema": "metaschema.yaml",
+  "name": "CovJSON Domain",
+  "abstract": "Coverage domain defining spatial/temporal extent via axes and reference systems. Supports Grid, PointSeries, Trajectory and other domain types.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "OGC CoverageJSON 21-069r2 \u00a77",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-axis",
+    "syke.ebv.phenology.covjson-reference-system"
+  ],
+  "tags": [
+    "covjson",
+    "domain",
+    "grid",
+    "spatiotemporal"
+  ],
+  "group": "CoverageJSON Primitives",
+  "highlighted": true,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-domain/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-domain/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/covjson-domain/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-domain/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/covjson-domain/",
+  "validationPassed": true,
+  "description": "# CovJSON Domain\n\nThe domain defines WHERE data exists \u2014 spatial and temporal extent.\n\n## Composition (UML)\n```\nDomain\n\u251c\u2500\u2500 1..* Axis (x, y, t, z)\n\u2514\u2500\u2500 * ReferenceSystem (CRS84, Gregorian, etc.)\n```\n\n## Finland Phenology Domain\n```json\n{\n  \"type\": \"Domain\",\n  \"domainType\": \"Grid\",\n  \"axes\": {\n    \"x\": {\"start\": 14.10, \"stop\": 35.23, \"num\": 320},\n    \"y\": {\"start\": 57.75, \"stop\": 71.17, \"num\": 200},\n    \"t\": {\"values\": [\"2001\",\"2002\",\"...\",\"2018\"]}\n  }\n}\n```\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: CoverageJSON Domain with axes and referencing\ntype: object\nrequired:\n- type\n- axes\nproperties:\n  type:\n    type: string\n    const: Domain\n  domainType:\n    type: string\n    enum:\n    - Grid\n    - PointSeries\n    - Point\n    - MultiPoint\n    - Trajectory\n    - Section\n    - VerticalProfile\n    - Polygon\n    - MultiPolygon\n  axes:\n    type: object\n    additionalProperties:\n      type: object\n  referencing:\n    type: array\n    items:\n      type: object\n      required:\n      - coordinates\n      - system\n      properties:\n        coordinates:\n          type: array\n          items:\n            type: string\n        system:\n          type: object\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/covjson-domain"
+}

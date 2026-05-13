@@ -1,0 +1,41 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.covjson-axis",
+  "$schema": "metaschema.yaml",
+  "name": "CovJSON Axis",
+  "abstract": "Single coordinate axis of a coverage domain: spatial (x,y,z) or temporal (t). Defines start, stop, num for regular axes or explicit values.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "OGC CoverageJSON 21-069r2 \u00a77.2",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "tags": [
+    "covjson",
+    "axis",
+    "coordinate",
+    "grid"
+  ],
+  "group": "CoverageJSON Primitives",
+  "highlighted": false,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-axis/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-axis/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/covjson-axis/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-axis/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/covjson-axis/",
+  "validationPassed": true,
+  "description": "# CovJSON Axis\n\nA single coordinate axis. Two forms:\n\n**Regular axis** (evenly spaced): `{\"start\": 14.10, \"stop\": 35.23, \"num\": 320}`\n\n**Irregular axis** (explicit values): `{\"values\": [\"2001\", \"2002\", ..., \"2018\"]}`\n\n## Finland Phenology Axes\n- **x** (longitude): start=14.10, stop=35.23, num=320\n- **y** (latitude): start=57.75, stop=71.17, num=200\n- **t** (time): values=[\"2001\", \"2002\", ..., \"2018\"]\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: CoverageJSON Axis - regular or irregular coordinate axis\ntype: object\nproperties:\n  start:\n    type: number\n  stop:\n    type: number\n  num:\n    type: integer\n  values:\n    type: array\n    items:\n      oneOf:\n      - type: number\n      - type: string\n  bounds:\n    type: array\n    items:\n      type: number\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/covjson-axis"
+}

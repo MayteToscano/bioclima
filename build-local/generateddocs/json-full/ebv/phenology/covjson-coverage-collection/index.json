@@ -1,0 +1,59 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.covjson-coverage-collection",
+  "$schema": "metaschema.yaml",
+  "name": "CovJSON Coverage Collection",
+  "abstract": "Collection of coverages grouping multiple entities. Maps to the EBV Data Cube with 4 dimensions: lon, lat, time, entity.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [
+    {
+      "title": "OGC CoverageJSON 21-069r2 \u00a76.3",
+      "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+    }
+  ],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage"
+  ],
+  "tags": [
+    "covjson",
+    "collection",
+    "datacube",
+    "entities"
+  ],
+  "group": "CoverageJSON Composites",
+  "highlighted": true,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage-collection/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage-collection/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/covjson-coverage-collection/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/covjson-coverage-collection/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/covjson-coverage-collection/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/build-local/tests/ebv/phenology/covjson-coverage-collection/",
+  "description": "# CovJSON Coverage Collection\n\nGroups multiple coverages = EBV Data Cube.\n\n## [\u2192 Open Interactive Viewer](../../viewer/)\n\n## UML: CoverageCollection 0..1 \u2190 1..* Coverage\n```\nCoverageCollection (EBV Data Cube)\n\u251c\u2500\u2500 Coverage: Coniferous VAP (320\u00d7200\u00d718)\n\u251c\u2500\u2500 Coverage: Deciduous VAP (320\u00d7200\u00d718)\n\u2514\u2500\u2500 ParameterGroup: \"Ecosystem Phenology\"\n    \u251c\u2500\u2500 member: VAP_coniferous\n    \u2514\u2500\u2500 member: VAP_deciduous\n```\n\n## 4 Dimensions of the EBV Cube\n1. **x** (longitude): 14.10\u00b0 \u2013 35.23\u00b0\n2. **y** (latitude): 57.75\u00b0 \u2013 71.17\u00b0\n3. **t** (time): 2001\u20132018 annual\n4. **entity**: Coniferous, Deciduous (one Coverage per entity)\n",
+  "examples": [
+    {
+      "title": "Finland VAP collection (coniferous + deciduous)",
+      "content": "CoverageCollection with two entity coverages. ParameterGroup semantically links \nboth under EcosystemPhenology. Maps to the EBV Data Cube (lon, lat, time, entity).\n",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "http://localhost:9090/register/_sources/covjson-coverage-collection/examples/finland-vap-all-entities.json",
+          "code": "{\n  \"type\": \"CoverageCollection\",\n  \"domainType\": \"Grid\",\n  \"parameters\": {\n    \"VAP\": {\n      \"type\": \"Parameter\",\n      \"description\": {\n        \"en\": \"Start of Vegetation Active Period\",\n        \"es\": \"Inicio del Periodo Activo de Vegetaci\u00f3n\",\n        \"zh\": \"\u690d\u88ab\u6d3b\u8dc3\u671f\u8d77\u59cb\",\n        \"ro\": \"\u00cenceputul Perioadei Active a Vegeta\u021biei\"\n      },\n      \"unit\": {\n        \"label\": {\"en\": \"Day of Year\"},\n        \"symbol\": {\"value\": \"d\"}\n      },\n      \"observedProperty\": {\n        \"id\": \"https://w3id.org/ogc/hosted/ebv-phenology/StartOfVAP\",\n        \"label\": {\"en\": \"Start of VAP\", \"es\": \"Inicio del PAV\", \"zh\": \"VAP\u8d77\u59cb\", \"ro\": \"\u00cenceputul VAP\"}\n      }\n    }\n  },\n  \"parameterGroups\": [\n    {\n      \"type\": \"ParameterGroup\",\n      \"label\": {\"en\": \"Phenology by forest type\", \"es\": \"Fenolog\u00eda por tipo de bosque\"},\n      \"observedProperty\": {\n        \"id\": \"https://w3id.org/ogc/hosted/ebv-phenology/EcosystemPhenology\",\n        \"label\": {\"en\": \"Ecosystem Phenology\", \"es\": \"Fenolog\u00eda del Ecosistema\"}\n      },\n      \"members\": [\"VAP_coniferous\", \"VAP_deciduous\"]\n    }\n  ],\n  \"coverages\": [\n    {\n      \"type\": \"Coverage\",\n      \"domain\": {\n        \"type\": \"Domain\", \"domainType\": \"Grid\",\n        \"axes\": {\n          \"x\": {\"start\":14.10,\"stop\":35.23,\"num\":320},\n          \"y\": {\"start\":57.75,\"stop\":71.17,\"num\":200},\n          \"t\": {\"values\":[\"2001\",\"2002\",\"2003\",\"2004\",\"2005\",\"2006\",\"2007\",\"2008\",\"2009\",\"2010\",\"2011\",\"2012\",\"2013\",\"2014\",\"2015\",\"2016\",\"2017\",\"2018\"]}\n        },\n        \"referencing\": [{\"coordinates\":[\"x\",\"y\"],\"system\":{\"type\":\"GeographicCRS\",\"id\":\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}},{\"coordinates\":[\"t\"],\"system\":{\"type\":\"TemporalRS\",\"calendar\":\"Gregorian\"}}]\n      },\n      \"ranges\": {\"VAP\": {\"type\":\"NdArray\",\"dataType\":\"integer\",\"axisNames\":[\"t\",\"y\",\"x\"],\"shape\":[18,200,320]}}\n    },\n    {\n      \"type\": \"Coverage\",\n      \"domain\": {\n        \"type\": \"Domain\", \"domainType\": \"Grid\",\n        \"axes\": {\n          \"x\": {\"start\":14.10,\"stop\":35.23,\"num\":320},\n          \"y\": {\"start\":57.75,\"stop\":71.17,\"num\":200},\n          \"t\": {\"values\":[\"2001\",\"2002\",\"2003\",\"2004\",\"2005\",\"2006\",\"2007\",\"2008\",\"2009\",\"2010\",\"2011\",\"2012\",\"2013\",\"2014\",\"2015\",\"2016\",\"2017\",\"2018\"]}\n        },\n        \"referencing\": [{\"coordinates\":[\"x\",\"y\"],\"system\":{\"type\":\"GeographicCRS\",\"id\":\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"}},{\"coordinates\":[\"t\"],\"system\":{\"type\":\"TemporalRS\",\"calendar\":\"Gregorian\"}}]\n      },\n      \"ranges\": {\"VAP\": {\"type\":\"NdArray\",\"dataType\":\"integer\",\"axisNames\":[\"t\",\"y\",\"x\"],\"shape\":[18,200,320]}}\n    }\n  ]\n}\n",
+          "url": "http://localhost:9090/register/build-local/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: CoverageJSON CoverageCollection - groups multiple entity coverages\ntype: object\nrequired:\n- type\n- coverages\nproperties:\n  type:\n    type: string\n    const: CoverageCollection\n  domainType:\n    type: string\n  parameters:\n    type: object\n  parameterGroups:\n    type: array\n    items:\n      type: object\n  coverages:\n    type: array\n    items:\n      type: object\n      required:\n      - type\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/covjson-coverage-collection"
+}

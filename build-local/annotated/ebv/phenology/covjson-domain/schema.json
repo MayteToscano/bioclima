@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "CoverageJSON Domain with axes and referencing",
+  "type": "object",
+  "required": [
+    "type",
+    "axes"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "Domain"
+    },
+    "domainType": {
+      "type": "string",
+      "enum": [
+        "Grid",
+        "PointSeries",
+        "Point",
+        "MultiPoint",
+        "Trajectory",
+        "Section",
+        "VerticalProfile",
+        "Polygon",
+        "MultiPolygon"
+      ]
+    },
+    "axes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "referencing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "coordinates",
+          "system"
+        ],
+        "properties": {
+          "coordinates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "system": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

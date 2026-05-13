@@ -1,0 +1,38 @@
+
+
+{
+  "itemIdentifier": "syke.ebv.phenology.data-quality",
+  "$schema": "metaschema.yaml",
+  "name": "Data Quality",
+  "abstract": "Uncertainty, validation, bias, gaps.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2026-04-30",
+  "sources": [],
+  "dependsOn": [
+    "syke.ebv.phenology.covjson-coverage"
+  ],
+  "tags": [
+    "quality",
+    "uncertainty",
+    "validation"
+  ],
+  "group": "EBV Specific",
+  "highlighted": false,
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "http://localhost:9090/register/build-local/annotated/ebv/phenology/data-quality/schema.yaml",
+    "application/json": "http://localhost:9090/register/build-local/annotated/ebv/phenology/data-quality/schema.json"
+  },
+  "sourceSchema": "http://localhost:9090/register/_sources/data-quality/schema.yaml",
+  "resolvedSchemaProperties": "http://localhost:9090/register/build-local/annotated/ebv/phenology/data-quality/resolvedProperties.json",
+  "sourceFiles": "http://localhost:9090/register/_sources/data-quality/",
+  "validationPassed": true,
+  "description": "# Data Quality\n\u00b19 days accuracy, ~3 days late bias, pre-2005 gaps.\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Data quality metrics\ntype: object\nproperties:\n  accuracy_days:\n    type: number\n  bias_days:\n    type: number\n  validation_method:\n    type: string\n  known_limitations:\n    type: array\n    items:\n      type: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitPath": "_sources/data-quality"
+}
