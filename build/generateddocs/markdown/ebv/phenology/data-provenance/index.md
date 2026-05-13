@@ -754,17 +754,17 @@ examples/finland-phenology-indicators-provenance.json
         [ a "prov:Activity" ],
         [ a "prov:Activity" ],
         [ a "prov:Activity" ] ;
-    prov:Agent [ a "SoftwareAgent" ],
-        [ a "InstrumentPlatform" ],
-        [ a "Person" ],
+    prov:Agent [ a "InstrumentPlatform" ],
         [ a "SoftwareAgent" ],
+        [ a "SoftwareAgent" ],
+        [ a "Person" ],
         [ a "Organization" ] ;
     prov:Entity [ a "prov:Entity" ],
         [ a "prov:Entity" ],
-        [ a "prov:Entity" ],
-        [ a "prov:Entity" ],
         [ a "prov:Entity" ;
             dcterms:description "Remote sensing observations used as source input for the original VAP products." ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
         [ a "prov:Entity" ;
             dcterms:description "Intermediate table with one national-scale annual mean VAP day-of-year per EBV entity." ] ;
     prov:wasDerivedFrom [ ],

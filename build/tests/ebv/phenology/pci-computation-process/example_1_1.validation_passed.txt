@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.pci-computation-process - PCI computation process
-Generated 2026-05-13T17:03:54.631614+00:00
+Generated 2026-05-13T17:15:13.203279+00:00
 === Files ===
 Using examples/pci-computation-process.jsonld from examples
 JSON-LD context is present - uplifting
