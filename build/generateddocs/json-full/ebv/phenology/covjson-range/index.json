@@ -18,8 +18,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.covjson-ndarray",
-    "syke.ebv.phenology.covjson-tiled-ndarray"
+    "syke.ebv.phenology.covjson-tiled-ndarray",
+    "syke.ebv.phenology.covjson-ndarray"
   ],
   "tags": [
     "covjson",
