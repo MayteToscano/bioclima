@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -47,13 +47,13 @@ jobs:
             --register-file build/register.json \
             --items-dir _sources \
             --generated-docs-path build/generateddocs \
-            --base-url "https://maytetoscano.github.io/bioclima/" \
+            --base-url "https://maytetoscano.github.io/visor_bioclima/" \
             --fail-on-error true \
             --annotated-path build/annotated \
             --clean true \
             --config-file bblocks-config.yaml \
             --test-outputs build/tests \
-            --github-base-url "https://github.com/MayteToscano/bioclima/blob/main/"
+            --github-base-url "https://github.com/MayteToscano/visor_bioclima/blob/main/"
 
       - name: Copy custom viewer and data into generated site
         run: |
@@ -72,6 +72,7 @@ jobs:
           test -f build/generateddocs/viewer/style.css
           test -f build/generateddocs/viewer/ontology.html
           test -f build/generateddocs/data/catalog.json
+          test -f build/generateddocs/viewer/data/catalog.json
           test -f build/generateddocs/data/ontology-index.json
 
           echo "Checking temporal CoverageJSON files:"
