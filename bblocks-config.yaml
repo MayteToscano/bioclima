@@ -1,0 +1,60 @@
+# A short, descriptive name of this Block collection
+name: BioClima EBV Phenology Finland OGC Blocks
+
+# Short abstract for this collection (optional)
+abstract: |
+  Complete OGC Blocks for EBV phenology raster data, semantic CoverageJSON indicators, processing workflows and a multilingual ontology-aware viewer.
+  Multi-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.
+description: |
+  ## About this Register: BioClima EBV Phenology Finland OGC Blocks
+
+  This register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.
+
+  This register specifically focuses on EBV Phenology, utilizing a dataset of vegetation trends in Finland to demonstrate how complex environmental observations can be structured using OGC standards and CoverageJSON. By integrating EBV-specific blocks, the repository aligns raw scientific data with global policy frameworks like the Sustainable Development Goals and international biodiversity targets. Ultimately, the resource provides a sophisticated framework for documenting data provenance, quality, and ontology, ensuring that ecological indicators are interoperable and accessible across different languages and platforms.
+
+  ### **Who is this register for?**
+  This register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:
+  *   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.
+  *   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.
+  *   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.
+  *   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.
+
+  ### **What does this register contain?**
+  The register includes generic CoverageJSON blocks, EBV-specific blocks, semantic indicator blocks, processing workflow blocks and a multilingual ontology-aware viewer block. It features:
+  *   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.
+  *   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).
+  *   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.
+  *   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.
+
+  ### **When should this register be used?**
+  This register is most relevant in the following scenarios and workflows:
+  *   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.
+  *   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.
+  *   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.
+  *   **Reporting:** When aligning environmental data with international frameworks such as **GBF**  
+
+  ### **Where does this register fit?**
+  This register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable "building blocks". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.
+
+  ### **Why does this register exist?**
+  The register exists to fill critical gaps in current environmental monitoring:
+  *   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.
+  *   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.
+  *   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.
+
+  ### **How is this register structured and implemented?**
+  The register is structured as a series of modular **OGC Blocks** managed via GitHub:
+  *   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).
+  *   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.
+  *   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.
+  *   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.
+
+  ### **For Developers**
+  *   **[GitHub Repository](https://github.com/ogcincubator/bblocks-ebv-bioclima)**
+  *   **[OGC Blocks Documentation](https://ogcincubator.github.io/bblocks-docs/)**
+  *   **[OGC Blocks Tutorials](https://ogcincubator.github.io/bblocks-tutorial/)**
+  *   **[OGC Blocks Examples](https://ogcincubator.github.io/bblocks-examples/)**
+  
+identifier-prefix: syke.ebv.phenology.
+imports:
+  - default
