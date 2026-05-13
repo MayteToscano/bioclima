@@ -18,8 +18,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.covjson-axis",
-    "syke.ebv.phenology.covjson-reference-system"
+    "syke.ebv.phenology.covjson-reference-system",
+    "syke.ebv.phenology.covjson-axis"
   ],
   "tags": [
     "covjson",
