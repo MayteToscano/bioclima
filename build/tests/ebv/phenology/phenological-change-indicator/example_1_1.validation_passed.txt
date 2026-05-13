@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage
-Generated 2026-05-13T14:56:56.154263+00:00
+Generated 2026-05-13T15:32:19.049790+00:00
 === Files ===
 Using examples/finland-pci-coniferous-2001-2018.covjson from examples
 JSON-LD context is present - uplifting
