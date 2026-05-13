@@ -1,0 +1,10 @@
+{
+  "@context": [
+    "https://covjson.org/context.jsonld",
+    {
+      "ebv": "https://w3id.org/ogc/hosted/ebv-phenology/",
+      "qudt": "http://qudt.org/schema/qudt/",
+      "prov": "http://www.w3.org/ns/prov#"
+    }
+  ]
+}
