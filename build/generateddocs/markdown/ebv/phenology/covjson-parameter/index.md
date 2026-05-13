@@ -225,8 +225,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml)
+* YAML version: [schema.yaml](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json)
+* JSON version: [schema.json](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml)
 
 
 # JSON-LD Context
@@ -408,7 +408,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld)
+[context.jsonld](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld)
 
 ## Sources
 
@@ -418,6 +418,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ebv-bioclima](https://github.com/ogcincubator/bblocks-ebv-bioclima)
+* URL: [https://github.com/MayteToscano/bioclima](https://github.com/MayteToscano/bioclima)
 * Path: `_sources/covjson-parameter`
 

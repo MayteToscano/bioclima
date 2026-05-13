@@ -1,0 +1,182 @@
+{
+  "title": "Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage",
+  "bblockName": "Phenological Change Indicator Coverage",
+  "bblockId": "syke.ebv.phenology.phenological-change-indicator",
+  "generated": "2026-05-13T14:45:42.336312+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_1_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/finland-pci-coniferous-2001-2018.covjson from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 6,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_2_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/finland-pci-deciduous-2001-2018.covjson from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 6,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_3_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using method/pci-method.jsonld from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_3_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_3_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_3_1.ttl",
+              "size": 23,
+              "isError": false,
+              "message": "Output Turtle example_3_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'type' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'type' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'ndarray': {'properties': {'axisNames': {'type': 'array'},\n                                          'dataType': {'type': 'string'},\n                                          'shape': {'type': 'array'},\n                                          'type': {'const': 'NdArray'},\n                                          'values': {'type': 'array'}},\n                           'required': ['type',\n                                        'dataType',\n                                        'axisNames',\n                                        'shape',\n                                        'values'],\n                           'type': 'object'},\n               'semanticParameter': {'properties': {'observedProperty': {'required': ['id',\n                                                                                      'label'],\n                                                                         'type': 'object',\n                                                                         'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},\n                                                    'type': {'const': 'Parameter'},\n                                                    'unit': {'type': 'object'}},\n                                     'required': ['type',\n                                                  'observedProperty'],\n                                     'type': 'object'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Semantic CoverageJSON profile for a Phenological '\n                    'Change Indicator coverage.',\n     'properties': {'domain': {'type': 'object'},\n                    'parameterGroups': {'items': {'properties': {'members': {'contains': {'const': 'trend'},\n                                                                             'type': 'array',\n                                                                             'x-jsonld-id': 'https://covjson.org/def/core#members'},\n                                                                 'observedProperty': {'required': ['id'],\n                                                                                      'type': 'object',\n                                                                                      'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},\n                                                                 'type': {'const': 'ParameterGroup'}},\n                                                  'required': ['type',\n                                                               'observedProperty',\n                                                               'members'],\n                                                  'type': 'object'},\n                                        'minItems': 1,\n                                        'type': 'array',\n                                        'x-jsonld-id': 'https://covjson.org/def/core#parameterGroups'},\n                    'parameters': {'properties': {'anomaly': {'$ref': '#/$defs/semanticParameter'},\n                                                  'changepoint_pvalue': {'$ref': '#/$defs/semanticParameter'},\n                                                  'changepoint_year': {'$ref': '#/$defs/semanticParameter'},\n                                                  'trend': {'$ref': '#/$defs/semanticParameter'}},\n                                   'required': ['trend',\n                                                'anomaly',\n                                                'changepoint_year',\n                                                'changepoint_pvalue'],\n                                   'type': 'object'},\n                    'ranges': {'properties': {'anomaly': {'$ref': '#/$defs/ndarray'},\n                                              'changepoint_pvalue': {'$ref': '#/$defs/ndarray'},\n                                              'changepoint_year': {'$ref': '#/$defs/ndarray'},\n                                              'trend': {'$ref': '#/$defs/ndarray'}},\n                               'required': ['trend',\n                                            'anomaly',\n                                            'changepoint_year',\n                                            'changepoint_pvalue'],\n                               'type': 'object'},\n                    'type': {'const': 'Coverage', 'type': 'string'}},\n     'required': ['type',\n                  'domain',\n                  'parameters',\n                  'parameterGroups',\n                  'ranges'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'covjson': 'https://covjson.org/def/core#',\n                           'dct': 'http://purl.org/dc/terms/',\n                           'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                           'prov': 'http://www.w3.org/ns/prov#'}}\n\nOn instance:\n    {'@context': {'dct': 'http://purl.org/dc/terms/',\n                  'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                  'prov': 'http://www.w3.org/ns/prov#',\n                  'schema': 'https://schema.org/'},\n     '@id': 'ebv:pci_method_v1',\n     '@type': ['prov:Plan', 'ebv:IndicatorComputationMethod'],\n     'dct:title': {'en': 'Phenological Change Indicator computation method',\n                   'es': 'M\u00e9todo de c\u00e1lculo del Indicador de Cambio '\n                         'Fenol\u00f3gico'},\n     'ebv:baselinePeriod': {'ebv:endYear': 2010, 'ebv:startYear': 2001},\n     'ebv:components': [{'@id': 'ebv:phenological_trend',\n                         'ebv:algorithm': 'ebv:TheilSenSlope',\n                         'ebv:unit': 'days/year'},\n                        {'@id': 'ebv:phenological_anomaly',\n                         'ebv:algorithm': 'ebv:BaselineDifference',\n                         'ebv:unit': 'days'},\n                        {'@id': 'ebv:changepoint_year',\n                         'ebv:algorithm': 'ebv:PettittTest',\n                         'ebv:unit': 'year'},\n                        {'@id': 'ebv:changepoint_pvalue',\n                         'ebv:algorithm': 'ebv:PettittTestPValue',\n                         'ebv:unit': '1'}],\n     'ebv:inputObservedProperty': 'ebv:vap_doy',\n     'ebv:outputIndicator': 'ebv:PhenologicalChangeIndicator',\n     'ebv:recentPeriod': {'ebv:endYear': 2018, 'ebv:startYear': 2011}}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 3,
+    "passed": 2,
+    "failed": 1
+  }
+}

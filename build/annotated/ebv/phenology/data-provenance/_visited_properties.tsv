@@ -1,0 +1,11 @@
+path	@id	schema
+/type	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/source_dataset	http://purl.org/dc/terms/source	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/agents	http://www.w3.org/ns/prov#Agent	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/entities	http://www.w3.org/ns/prov#Entity	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/activities	http://www.w3.org/ns/prov#Activity	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/lineage	http://www.w3.org/ns/prov#wasDerivedFrom	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/derived_indicator_summary	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#derived_indicator_summary	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml
+/quality_and_limitations	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#quality_and_limitations	/github/workspace/build/annotated/ebv/phenology/data-provenance/schema.yaml

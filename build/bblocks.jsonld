@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://ogcincubator.github.io/bblocks-ebv-bioclima"
+      "@base": "https://maytetoscano.github.io/bioclima"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -192,9 +192,9 @@
     }
   ],
   "name": "Building Blocks - BioClima EBV Phenology Finland OGC Blocks",
-  "abstract": "Complete OGC Blocks for EBV phenology raster data. Models the full \nCoverageJSON UML (9 classes) plus 7 EBV-specific blocks = 17 total.\nMulti-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.\n",
-  "description": "## About this Register: BioClima EBV Phenology Finland OGC Blocks\n\nThis register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.\n\nThis register specifically focuses on EBV Phenology, utilizing a dataset of vegetation trends in Finland to demonstrate how complex environmental observations can be structured using OGC standards and CoverageJSON. By integrating EBV-specific blocks, the repository aligns raw scientific data with global policy frameworks like the Sustainable Development Goals and international biodiversity targets. Ultimately, the resource provides a sophisticated framework for documenting data provenance, quality, and ontology, ensuring that ecological indicators are interoperable and accessible across different languages and platforms.\n\n### **Who is this register for?**\nThis register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:\n*   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.\n*   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.\n*   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.\n*   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.\n\n### **What does this register contain?**\nThe register includes **17 OGC Blocks** designed to provide a comprehensive framework for environmental data. It features:\n*   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.\n*   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).\n*   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.\n*   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.\n\n### **When should this register be used?**\nThis register is most relevant in the following scenarios and workflows:\n*   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.\n*   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.\n*   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.\n*   **Reporting:** When aligning environmental data with international frameworks such as **GBF**  \n\n### **Where does this register fit?**\nThis register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable \"building blocks\". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.\n\n### **Why does this register exist?**\nThe register exists to fill critical gaps in current environmental monitoring:\n*   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.\n*   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.\n*   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.\n\n### **How is this register structured and implemented?**\nThe register is structured as a series of modular **OGC Blocks** managed via GitHub:\n*   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).\n*   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.\n*   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.\n*   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.\n\n### **For Developers**\n*   **[GitHub Repository](https://github.com/ogcincubator/bblocks-ebv-bioclima)**\n*   **[OGC Blocks Documentation](https://ogcincubator.github.io/bblocks-docs/)**\n*   **[OGC Blocks Tutorials](https://ogcincubator.github.io/bblocks-tutorial/)**\n*   **[OGC Blocks Examples](https://ogcincubator.github.io/bblocks-examples/)**\n",
-  "modified": "2026-05-13T07:21:43.737245",
+  "abstract": "Complete OGC Blocks for EBV phenology raster data, semantic CoverageJSON indicators, processing workflows and a multilingual ontology-aware viewer.\nMulti-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.\n",
+  "description": "## About this Register: BioClima EBV Phenology Finland OGC Blocks\n\nThis register is a key component of the **BioClima** project, a pioneering EU-China collaboration aimed at transforming biodiversity and climate monitoring through **artificial intelligence**, ground-based data, and remote sensing. This specific repository serves as an incubator for **OGC Blocks** tailored for **Essential Biodiversity Variables (EBVs)** and **Essential Climate Variables (ECVs)**.\n\nThis register specifically focuses on EBV Phenology, utilizing a dataset of vegetation trends in Finland to demonstrate how complex environmental observations can be structured using OGC standards and CoverageJSON. By integrating EBV-specific blocks, the repository aligns raw scientific data with global policy frameworks like the Sustainable Development Goals and international biodiversity targets. Ultimately, the resource provides a sophisticated framework for documenting data provenance, quality, and ontology, ensuring that ecological indicators are interoperable and accessible across different languages and platforms.\n\n### **Who is this register for?**\nThis register is intended to support a diverse range of **communities and roles** involved in environmental monitoring and data science:\n*   **Developers and Standards Implementers:** Those building software and platforms that require interoperable environmental data.\n*   **Data Providers:** Agencies and researchers needing to publish biodiversity datasets (such as vegetation phenology) in a standardized, machine-readable format.\n*   **Domain Experts:** Scientists and ecologists focused on **terrestrial ecosystems** who require high-precision monitoring tools.\n*   **Policy-Makers:** Individuals seeking **science-backed strategies** and robust data to inform national and international environmental policies.\n\n### **What does this register contain?**\nThe register includes generic CoverageJSON blocks, EBV-specific blocks, semantic indicator blocks, processing workflow blocks and a multilingual ontology-aware viewer block. It features:\n*   **Standardized Modelling:** A 1:1 mapping of the **CoverageJSON UML** (OGC 21-069r2) for representation of spatio-temporal data.\n*   **EBV-Specific Blocks:** Custom blocks including the **EBV Dataset Profile** (class, name, entities), **Phenology Indicators** (trends, anomalies), and an **EBV Phenology Ontology** available in four languages (English, Spanish, Chinese, and Romanian).\n*   **Metadata and Quality:** Blocks for **Data Provenance** (using W3C PROV) and **Data Quality** metrics.\n*   **Strategic Alignment:** Blocks that link data to **Policy Alignment** (e.g., SDG 15, GBF Goal A) and **Ecosystem Services** like carbon sequestration and pollination.\n\n### **When should this register be used?**\nThis register is most relevant in the following scenarios and workflows:\n*   **Data Harmonization:** When developing **harmonized monitoring systems** to ensure data interoperability between different regions, specifically between **Europe and China**.\n*   **Implementation Phases:** During the design and deployment of **AI-enhanced analytical models** for terrestrial ecosystem monitoring.\n*   **Standardization Workflows:** When there is a need to follow **EuropaBON** goals for standardized biodiversity monitoring.\n*   **Reporting:** When aligning environmental data with international frameworks such as **GBF**  \n\n### **Where does this register fit?**\nThis register fits within the **broader OGC (Open Geospatial Consortium) ecosystem** as an incubator project for reusable \"building blocks\". It relates to existing OGC standards by extending the **CoverageJSON** specification to meet the specific needs of the biodiversity community. Furthermore, it acts as a bridge between technical architectural layers and high-level policy goals, such as the **UN Sustainable Development Goals**.\n\n### **Why does this register exist?**\nThe register exists to fill critical gaps in current environmental monitoring:\n*   **Gap in Integration:** It addresses the need for better integration between **climate and biodiversity** data, which are often monitored in silos.\n*   **Technical Standardisation:** It provides a structured way to handle **Essential Biodiversity Variables**, adding value beyond generic OGC blocks by including specific phenology and provenance schemas.\n*   **Informed Decision-Making:** By providing **AI-driven insights** and verified data models, it empowers more resilient environmental management and addresses the global **biodiversity funding gap** through better-documented impacts.\n\n### **How is this register structured and implemented?**\nThe register is structured as a series of modular **OGC Blocks** managed via GitHub:\n*   **Base Standards:** It reuses the **CoverageJSON UML** for its core data structure and the **W3C PROV** standard for documenting data lineages (e.g., from MODIS to Phenology indicators).\n*   **Ontologies:** Implementation includes **OWL/SKOS** ontologies to provide semantic clarity across multiple languages.\n*   **Automation:** The register uses **GitHub Actions** for the automated processing and post-processing of the building blocks.\n*   **Custom Extensions:** It introduces unique schemas for **Phenology Indicators** (tracking trends like -0.45 days/year) and links to ecosystem service impacts.\n\n### **For Developers**\n*   **[GitHub Repository](https://github.com/ogcincubator/bblocks-ebv-bioclima)**\n*   **[OGC Blocks Documentation](https://ogcincubator.github.io/bblocks-docs/)**\n*   **[OGC Blocks Tutorials](https://ogcincubator.github.io/bblocks-tutorial/)**\n*   **[OGC Blocks Examples](https://ogcincubator.github.io/bblocks-examples/)**\n",
+  "modified": "2026-05-13T14:45:34.090603",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6b01f188cc614cc2e65f4bf86a2623f98f101dfd",
@@ -202,32 +202,32 @@
       "date": "2026-05-12T22:31:51+00:00\""
     }
   },
-  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
-  "gitHubRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/",
-  "baseURL": "https://ogcincubator.github.io/bblocks-ebv-bioclima/",
-  "viewerURL": "https://ogcincubator.github.io/bblocks-ebv-bioclima/",
-  "validationReport": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/report.html",
-  "validationReportJson": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/report.json",
+  "gitRepository": "https://github.com/MayteToscano/bioclima",
+  "gitHubRepository": "https://github.com/MayteToscano/bioclima/blob/main/",
+  "baseURL": "https://maytetoscano.github.io/bioclima/",
+  "viewerURL": "https://maytetoscano.github.io/bioclima/",
+  "validationReport": "https://maytetoscano.github.io/bioclima/build/tests/report.html",
+  "validationReportJson": "https://maytetoscano.github.io/bioclima/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
-  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/_cache",
+  "remoteCacheDir": "https://maytetoscano.github.io/bioclima/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/register.json",
+      "href": "https://maytetoscano.github.io/bioclima/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/bblocks.ttl",
+      "href": "https://maytetoscano.github.io/bioclima/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/bblocks.jsonld",
+      "href": "https://maytetoscano.github.io/bioclima/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -267,34 +267,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-axis/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-axis/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-axis/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-axis/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-axis/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-axis/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-axis/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-axis/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-axis/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-axis/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-axis/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-axis"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-axis"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-axis",
@@ -312,7 +312,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -343,34 +343,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-reference-system/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-reference-system/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-reference-system/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-reference-system/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-reference-system/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-reference-system"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-reference-system"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-reference-system",
@@ -388,7 +388,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -420,34 +420,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-ndarray/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-ndarray/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-ndarray/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-ndarray/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-ndarray/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-ndarray/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-ndarray/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-ndarray"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-ndarray"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-ndarray",
@@ -465,7 +465,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -495,41 +495,41 @@
       "highlighted": true,
       "shaclShapes": null,
       "ontology": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl",
         "prof:hasRole": "role:specification",
         "dct:format": "text/turtle",
         "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-ontology/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-ontology/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-ontology/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ebv-ontology/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ebv-ontology/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ebv-ontology/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-ontology"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-ontology"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.ebv-ontology",
@@ -546,7 +546,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -577,34 +577,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-profile/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-profile/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-profile/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-profile/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-profile/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ebv-profile/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-profile/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ebv-profile/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-profile/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ebv-profile/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-profile/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ebv-profile/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-profile"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-profile"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.ebv-profile",
@@ -622,7 +622,7 @@
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -643,8 +643,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-axis",
-        "bblocks://syke.ebv.phenology.covjson-reference-system"
+        "bblocks://syke.ebv.phenology.covjson-reference-system",
+        "bblocks://syke.ebv.phenology.covjson-axis"
       ],
       "tags": [
         "covjson",
@@ -657,34 +657,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-domain/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-domain/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-domain/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-domain/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-domain/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-domain/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-domain/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-domain/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-domain/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-domain/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-domain/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-domain"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-domain"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-domain",
@@ -701,7 +701,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -735,34 +735,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-tiled-ndarray/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-tiled-ndarray/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-tiled-ndarray/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-tiled-ndarray/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-tiled-ndarray"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-tiled-ndarray"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-tiled-ndarray",
@@ -779,7 +779,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -812,7 +812,7 @@
       "group": "CoverageJSON Primitives",
       "highlighted": true,
       "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
@@ -820,35 +820,35 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-parameter",
@@ -864,7 +864,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -885,8 +885,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-ndarray",
-        "bblocks://syke.ebv.phenology.covjson-tiled-ndarray"
+        "bblocks://syke.ebv.phenology.covjson-tiled-ndarray",
+        "bblocks://syke.ebv.phenology.covjson-ndarray"
       ],
       "tags": [
         "covjson",
@@ -899,34 +899,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-range/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-range/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-range/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-range/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-range/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-range/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-range"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-range"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-range",
@@ -943,7 +943,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -977,34 +977,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter-group/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter-group/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-parameter-group/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-parameter-group/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-parameter-group/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter-group"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-parameter-group"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-parameter-group",
@@ -1021,7 +1021,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1042,10 +1042,10 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-domain",
+        "bblocks://syke.ebv.phenology.covjson-range",
         "bblocks://syke.ebv.phenology.covjson-parameter",
-        "bblocks://syke.ebv.phenology.covjson-parameter-group",
-        "bblocks://syke.ebv.phenology.covjson-range"
+        "bblocks://syke.ebv.phenology.covjson-domain",
+        "bblocks://syke.ebv.phenology.covjson-parameter-group"
       ],
       "tags": [
         "covjson",
@@ -1056,7 +1056,7 @@
       "group": "CoverageJSON Composites",
       "highlighted": true,
       "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
@@ -1064,36 +1064,36 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-coverage/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/covjson-coverage/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-coverage/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage/",
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-coverage"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-coverage",
@@ -1109,7 +1109,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1143,35 +1143,35 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage-collection/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-coverage-collection/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-coverage-collection/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage-collection/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-coverage-collection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage-collection/",
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/covjson-coverage-collection/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage-collection"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-coverage-collection"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.covjson-coverage-collection",
@@ -1188,7 +1188,98 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.covjson-validation-process",
+      "$schema": "metaschema.yaml",
+      "name": "Semantic CoverageJSON validation process",
+      "abstract": "Semantic process block for validating that CoverageJSON files expose domain, parameters, ranges and observedProperty URIs.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C PROV",
+          "link": "https://www.w3.org/TR/prov-o/"
+        },
+        {
+          "title": "CoverageJSON",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://syke.ebv.phenology.ebv-ontology",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "process",
+        "python",
+        "validation",
+        "coveragejson",
+        "semantic"
+      ],
+      "group": "Semantic Processing",
+      "highlighted": false,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-validation-process/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-validation-process/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-validation-process/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-validation-process/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/covjson-validation-process/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-validation-process/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-validation-process/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/covjson-validation-process/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/covjson-validation-process/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/covjson-validation-process/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.covjson-validation-process"
+        }
+      },
+      "@id": "bblocks://syke.ebv.phenology.covjson-validation-process",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Semantic CoverageJSON validation process",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1221,43 +1312,43 @@
       "highlighted": true,
       "shaclShapes": null,
       "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-provenance/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/data-provenance/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/data-provenance/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/data-provenance/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/data-provenance/",
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/data-provenance/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/data-provenance/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/data-provenance/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/data-provenance/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/data-provenance/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.data-provenance"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.data-provenance"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.data-provenance",
@@ -1273,7 +1364,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1301,34 +1392,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-quality/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-quality/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-quality/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-quality/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/data-quality/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/data-quality/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-quality/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/data-quality/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/data-quality/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/data-quality/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/data-quality/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/data-quality/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.data-quality"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.data-quality"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.data-quality",
@@ -1345,7 +1436,98 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.semantic-coveragejson-viewer",
+      "$schema": "metaschema.yaml",
+      "name": "Semantic CoverageJSON map viewer",
+      "abstract": "Catalog-driven map viewer that renders CoverageJSON grids and resolves parameter attributes against a multilingual ontology index.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C PROV",
+          "link": "https://www.w3.org/TR/prov-o/"
+        },
+        {
+          "title": "CoverageJSON",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://syke.ebv.phenology.ebv-ontology",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
+      ],
+      "tags": [
+        "viewer",
+        "coveragejson",
+        "ontology",
+        "multilingual",
+        "map"
+      ],
+      "group": "Applications",
+      "highlighted": false,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/semantic-coveragejson-viewer/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/semantic-coveragejson-viewer/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/semantic-coveragejson-viewer/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/semantic-coveragejson-viewer/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/semantic-coveragejson-viewer/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/semantic-coveragejson-viewer/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/semantic-coveragejson-viewer/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/semantic-coveragejson-viewer/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/semantic-coveragejson-viewer/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/semantic-coveragejson-viewer/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.semantic-coveragejson-viewer"
+        }
+      },
+      "@id": "bblocks://syke.ebv.phenology.semantic-coveragejson-viewer",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Semantic CoverageJSON map viewer",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1366,10 +1548,10 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.ebv-profile",
         "bblocks://ogc.geo.features.feature",
-        "bblocks://syke.ebv.phenology.covjson-coverage",
-        "bblocks://syke.ebv.phenology.data-provenance"
+        "bblocks://syke.ebv.phenology.ebv-profile",
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
       ],
       "tags": [
         "feature",
@@ -1380,7 +1562,7 @@
       "group": "EBV Specific",
       "highlighted": true,
       "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
@@ -1398,36 +1580,36 @@
       ],
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ebv-feature-view/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ebv-feature-view/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/ebv-feature-view/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ebv-feature-view/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/ebv-feature-view/",
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/ebv-feature-view/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-feature-view/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ebv-feature-view/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ebv-feature-view"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ebv-feature-view"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.ebv-feature-view",
@@ -1443,7 +1625,7 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1459,8 +1641,8 @@
       "dateOfLastChange": "2026-05-13",
       "sources": [],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-coverage",
-        "bblocks://syke.ebv.phenology.data-provenance"
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
       ],
       "tags": [
         "ecosystem-services",
@@ -1473,34 +1655,34 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ecosystem-services/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ecosystem-services/schema.yaml",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ecosystem-services/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/ecosystem-services/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/ecosystem-services/schema.yaml",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ecosystem-services/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/ecosystem-services/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ecosystem-services/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/ecosystem-services/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.ecosystem-services"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.ecosystem-services"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.ecosystem-services",
@@ -1517,7 +1699,103 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.phenological-change-indicator",
+      "$schema": "metaschema.yaml",
+      "name": "Phenological Change Indicator Coverage",
+      "abstract": "Semantic CoverageJSON profile for the Phenological Change Indicator (PCI), represented as one Coverage with four parameters: trend, anomaly, changepoint_year and changepoint_pvalue.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "CoverageJSON",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        },
+        {
+          "title": "W3C PROV",
+          "link": "https://www.w3.org/TR/prov-o/"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://syke.ebv.phenology.covjson-range",
+        "bblocks://syke.ebv.phenology.ebv-ontology",
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-parameter-group",
+        "bblocks://syke.ebv.phenology.covjson-coverage",
+        "bblocks://syke.ebv.phenology.covjson-parameter"
+      ],
+      "tags": [
+        "ebv",
+        "phenology",
+        "indicator",
+        "coveragejson",
+        "semantic",
+        "pci"
+      ],
+      "group": "EBV Indicators",
+      "highlighted": true,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/phenological-change-indicator/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/phenological-change-indicator/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/phenological-change-indicator/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/phenological-change-indicator/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/phenological-change-indicator/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/phenological-change-indicator/",
+      "validationPassed": false,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/phenological-change-indicator/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/phenological-change-indicator/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/phenological-change-indicator/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.phenological-change-indicator"
+        }
+      },
+      "@id": "bblocks://syke.ebv.phenology.phenological-change-indicator",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Phenological Change Indicator Coverage",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     },
     {
@@ -1533,8 +1811,8 @@
       "dateOfLastChange": "2026-05-13",
       "sources": [],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-coverage",
-        "bblocks://syke.ebv.phenology.data-provenance"
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
       ],
       "tags": [
         "policy",
@@ -1545,7 +1823,7 @@
       "group": "Policy",
       "highlighted": true,
       "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
@@ -1553,36 +1831,36 @@
       "shaclShapes": null,
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json",
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/context.jsonld",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/policy-alignment/",
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/policy-alignment/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/policy-alignment/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/policy-alignment/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-ebv-bioclima/blob/main/build/tests/ebv/phenology/policy-alignment/",
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/policy-alignment/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/policy-alignment/index.json"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/policy-alignment/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/policy-alignment/index.md"
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/policy-alignment/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/bblock/syke.ebv.phenology.policy-alignment"
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.policy-alignment"
         }
       },
       "@id": "bblocks://syke.ebv.phenology.policy-alignment",
@@ -1598,7 +1876,99 @@
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-ebv-bioclima/"
+        "@id": "https://maytetoscano.github.io/bioclima/"
+      }
+    },
+    {
+      "itemIdentifier": "syke.ebv.phenology.pci-computation-process",
+      "$schema": "metaschema.yaml",
+      "name": "PCI computation process",
+      "abstract": "Semantic process block for computing the Phenological Change Indicator from SOS/VAP time-series CoverageJSON or binary grid sources.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-13T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-05-13",
+      "sources": [
+        {
+          "title": "W3C PROV",
+          "link": "https://www.w3.org/TR/prov-o/"
+        },
+        {
+          "title": "CoverageJSON",
+          "link": "https://docs.ogc.org/cs/21-069r2/21-069r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://syke.ebv.phenology.ebv-ontology",
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.phenological-change-indicator"
+      ],
+      "tags": [
+        "process",
+        "python",
+        "pci",
+        "semantic",
+        "provenance"
+      ],
+      "group": "Semantic Processing",
+      "highlighted": false,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/pci-computation-process/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "shaclShapes": null,
+      "schema": [
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/pci-computation-process/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/pci-computation-process/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/pci-computation-process/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bioclima/_sources/pci-computation-process/context.jsonld",
+      "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/pci-computation-process/resolvedProperties.json",
+      "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/pci-computation-process/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bioclima/blob/main/build/tests/ebv/phenology/pci-computation-process/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/json-full/ebv/phenology/pci-computation-process/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://maytetoscano.github.io/bioclima/build/generateddocs/markdown/ebv/phenology/pci-computation-process/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://maytetoscano.github.io/bioclima/bblock/syke.ebv.phenology.pci-computation-process"
+        }
+      },
+      "@id": "bblocks://syke.ebv.phenology.pci-computation-process",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "PCI computation process",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://maytetoscano.github.io/bioclima/"
       }
     }
   ],
@@ -1640,10 +2010,16 @@
       "@id": "bblocks://syke.ebv.phenology.covjson-coverage-collection"
     },
     {
+      "@id": "bblocks://syke.ebv.phenology.covjson-validation-process"
+    },
+    {
       "@id": "bblocks://syke.ebv.phenology.data-provenance"
     },
     {
       "@id": "bblocks://syke.ebv.phenology.data-quality"
+    },
+    {
+      "@id": "bblocks://syke.ebv.phenology.semantic-coveragejson-viewer"
     },
     {
       "@id": "bblocks://syke.ebv.phenology.ebv-feature-view"
@@ -1652,7 +2028,13 @@
       "@id": "bblocks://syke.ebv.phenology.ecosystem-services"
     },
     {
+      "@id": "bblocks://syke.ebv.phenology.phenological-change-indicator"
+    },
+    {
       "@id": "bblocks://syke.ebv.phenology.policy-alignment"
+    },
+    {
+      "@id": "bblocks://syke.ebv.phenology.pci-computation-process"
     }
   ]
 }

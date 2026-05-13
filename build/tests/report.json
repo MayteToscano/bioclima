@@ -1,8 +1,8 @@
 {
   "summary": {
-    "total": 17,
-    "passed": 16,
-    "failed": 1,
+    "total": 21,
+    "passed": 19,
+    "failed": 2,
     "result": false
   },
   "bblocks": {
@@ -10,7 +10,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-axis - CovJSON Axis",
       "bblockName": "CovJSON Axis",
       "bblockId": "syke.ebv.phenology.covjson-axis",
-      "generated": "2026-05-13T07:21:45.782611+00:00",
+      "generated": "2026-05-13T14:45:37.254953+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-reference-system - CovJSON Reference System",
       "bblockName": "CovJSON Reference System",
       "bblockId": "syke.ebv.phenology.covjson-reference-system",
-      "generated": "2026-05-13T07:21:45.787984+00:00",
+      "generated": "2026-05-13T14:45:37.260735+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +38,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-ndarray - CovJSON NdArray",
       "bblockName": "CovJSON NdArray",
       "bblockId": "syke.ebv.phenology.covjson-ndarray",
-      "generated": "2026-05-13T07:21:45.794150+00:00",
+      "generated": "2026-05-13T14:45:37.266972+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -52,7 +52,7 @@
       "title": "Validation report for syke.ebv.phenology.ebv-ontology - EBV Phenology Ontology",
       "bblockName": "EBV Phenology Ontology",
       "bblockId": "syke.ebv.phenology.ebv-ontology",
-      "generated": "2026-05-13T07:21:45.798927+00:00",
+      "generated": "2026-05-13T14:45:37.271888+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -66,7 +66,7 @@
       "title": "Validation report for syke.ebv.phenology.ebv-profile - EBV Dataset Profile",
       "bblockName": "EBV Dataset Profile",
       "bblockId": "syke.ebv.phenology.ebv-profile",
-      "generated": "2026-05-13T07:21:45.805948+00:00",
+      "generated": "2026-05-13T14:45:37.279083+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -80,7 +80,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-domain - CovJSON Domain",
       "bblockName": "CovJSON Domain",
       "bblockId": "syke.ebv.phenology.covjson-domain",
-      "generated": "2026-05-13T07:21:45.812645+00:00",
+      "generated": "2026-05-13T14:45:37.285810+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -94,7 +94,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-tiled-ndarray - CovJSON TiledNdArray",
       "bblockName": "CovJSON TiledNdArray",
       "bblockId": "syke.ebv.phenology.covjson-tiled-ndarray",
-      "generated": "2026-05-13T07:21:45.819786+00:00",
+      "generated": "2026-05-13T14:45:37.292931+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -108,7 +108,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-parameter - CovJSON Parameter",
       "bblockName": "CovJSON Parameter",
       "bblockId": "syke.ebv.phenology.covjson-parameter",
-      "generated": "2026-05-13T07:21:45.830121+00:00",
+      "generated": "2026-05-13T14:45:37.303330+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -122,7 +122,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-range - CovJSON Range",
       "bblockName": "CovJSON Range",
       "bblockId": "syke.ebv.phenology.covjson-range",
-      "generated": "2026-05-13T07:21:45.838741+00:00",
+      "generated": "2026-05-13T14:45:37.311841+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -136,7 +136,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-parameter-group - CovJSON Parameter Group",
       "bblockName": "CovJSON Parameter Group",
       "bblockId": "syke.ebv.phenology.covjson-parameter-group",
-      "generated": "2026-05-13T07:21:45.845032+00:00",
+      "generated": "2026-05-13T14:45:37.318318+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -150,7 +150,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-coverage - CovJSON Coverage",
       "bblockName": "CovJSON Coverage",
       "bblockId": "syke.ebv.phenology.covjson-coverage",
-      "generated": "2026-05-13T07:21:45.876335+00:00",
+      "generated": "2026-05-13T14:45:37.350798+00:00",
       "result": true,
       "items": [
         {
@@ -158,7 +158,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/covjson-coverage/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/covjson-coverage/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/covjson-coverage/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -220,7 +220,7 @@
       "title": "Validation report for syke.ebv.phenology.covjson-coverage-collection - CovJSON Coverage Collection",
       "bblockName": "CovJSON Coverage Collection",
       "bblockId": "syke.ebv.phenology.covjson-coverage-collection",
-      "generated": "2026-05-13T07:21:45.884465+00:00",
+      "generated": "2026-05-13T14:45:37.359438+00:00",
       "result": true,
       "items": [
         {
@@ -228,7 +228,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -267,11 +267,81 @@
         "failed": 0
       }
     },
+    "syke.ebv.phenology.covjson-validation-process": {
+      "title": "Validation report for syke.ebv.phenology.covjson-validation-process - Semantic CoverageJSON validation process",
+      "bblockName": "Semantic CoverageJSON validation process",
+      "bblockId": "syke.ebv.phenology.covjson-validation-process",
+      "generated": "2026-05-13T14:45:37.372257+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/covjson-validation-process/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/covjson-validation-process/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/covjson-validation-process.jsonld from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 11,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "syke.ebv.phenology.data-provenance": {
       "title": "Validation report for syke.ebv.phenology.data-provenance - Data Provenance",
       "bblockName": "Data Provenance",
       "bblockId": "syke.ebv.phenology.data-provenance",
-      "generated": "2026-05-13T07:21:45.916382+00:00",
+      "generated": "2026-05-13T14:45:37.405042+00:00",
       "result": true,
       "items": [
         {
@@ -279,7 +349,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/data-provenance/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/data-provenance/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/data-provenance/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -334,7 +404,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/data-provenance/example_2_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/data-provenance/example_2_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/data-provenance/example_2_1.json",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "application/json"
@@ -396,7 +466,7 @@
       "title": "Validation report for syke.ebv.phenology.data-quality - Data Quality",
       "bblockName": "Data Quality",
       "bblockId": "syke.ebv.phenology.data-quality",
-      "generated": "2026-05-13T07:21:45.923763+00:00",
+      "generated": "2026-05-13T14:45:37.413000+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -406,11 +476,81 @@
         "failed": 0
       }
     },
+    "syke.ebv.phenology.semantic-coveragejson-viewer": {
+      "title": "Validation report for syke.ebv.phenology.semantic-coveragejson-viewer - Semantic CoverageJSON map viewer",
+      "bblockName": "Semantic CoverageJSON map viewer",
+      "bblockId": "syke.ebv.phenology.semantic-coveragejson-viewer",
+      "generated": "2026-05-13T14:45:37.426033+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/semantic-coveragejson-viewer/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/semantic-coveragejson-viewer/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/semantic-coveragejson-viewer.jsonld from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 13,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "syke.ebv.phenology.ebv-feature-view": {
       "title": "Validation report for syke.ebv.phenology.ebv-feature-view - EBV Feature View",
       "bblockName": "EBV Feature View",
       "bblockId": "syke.ebv.phenology.ebv-feature-view",
-      "generated": "2026-05-13T07:21:47.307791+00:00",
+      "generated": "2026-05-13T14:45:39.189302+00:00",
       "result": false,
       "items": [
         {
@@ -418,7 +558,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -488,18 +628,18 @@
                     "geojson:LinkShape": {
                       "nodes": []
                     },
-                    "geojson:GeometryShape": {
+                    "geojson:FeatureShape": {
                       "nodes": []
                     },
                     "geojson:GeometryShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "geojson:FeatureShape": {
+                    "geojson:GeometryShape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n"
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
                 }
               ]
             }
@@ -510,7 +650,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "application/json"
@@ -574,7 +714,7 @@
       "title": "Validation report for syke.ebv.phenology.ecosystem-services - Ecosystem Services Link",
       "bblockName": "Ecosystem Services Link",
       "bblockId": "syke.ebv.phenology.ecosystem-services",
-      "generated": "2026-05-13T07:21:47.315732+00:00",
+      "generated": "2026-05-13T14:45:39.197610+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -584,11 +724,193 @@
         "failed": 0
       }
     },
+    "syke.ebv.phenology.phenological-change-indicator": {
+      "title": "Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage",
+      "bblockName": "Phenological Change Indicator Coverage",
+      "bblockId": "syke.ebv.phenology.phenological-change-indicator",
+      "generated": "2026-05-13T14:45:42.336312+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-pci-coniferous-2001-2018.covjson from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 6,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_2_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/finland-pci-deciduous-2001-2018.covjson from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 6,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/phenological-change-indicator/example_3_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/phenological-change-indicator/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using method/pci-method.jsonld from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 23,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'type' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'type' is a required property\n\nFailed validating 'required' in schema:\n    {'$defs': {'ndarray': {'properties': {'axisNames': {'type': 'array'},\n                                          'dataType': {'type': 'string'},\n                                          'shape': {'type': 'array'},\n                                          'type': {'const': 'NdArray'},\n                                          'values': {'type': 'array'}},\n                           'required': ['type',\n                                        'dataType',\n                                        'axisNames',\n                                        'shape',\n                                        'values'],\n                           'type': 'object'},\n               'semanticParameter': {'properties': {'observedProperty': {'required': ['id',\n                                                                                      'label'],\n                                                                         'type': 'object',\n                                                                         'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},\n                                                    'type': {'const': 'Parameter'},\n                                                    'unit': {'type': 'object'}},\n                                     'required': ['type',\n                                                  'observedProperty'],\n                                     'type': 'object'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'Semantic CoverageJSON profile for a Phenological '\n                    'Change Indicator coverage.',\n     'properties': {'domain': {'type': 'object'},\n                    'parameterGroups': {'items': {'properties': {'members': {'contains': {'const': 'trend'},\n                                                                             'type': 'array',\n                                                                             'x-jsonld-id': 'https://covjson.org/def/core#members'},\n                                                                 'observedProperty': {'required': ['id'],\n                                                                                      'type': 'object',\n                                                                                      'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},\n                                                                 'type': {'const': 'ParameterGroup'}},\n                                                  'required': ['type',\n                                                               'observedProperty',\n                                                               'members'],\n                                                  'type': 'object'},\n                                        'minItems': 1,\n                                        'type': 'array',\n                                        'x-jsonld-id': 'https://covjson.org/def/core#parameterGroups'},\n                    'parameters': {'properties': {'anomaly': {'$ref': '#/$defs/semanticParameter'},\n                                                  'changepoint_pvalue': {'$ref': '#/$defs/semanticParameter'},\n                                                  'changepoint_year': {'$ref': '#/$defs/semanticParameter'},\n                                                  'trend': {'$ref': '#/$defs/semanticParameter'}},\n                                   'required': ['trend',\n                                                'anomaly',\n                                                'changepoint_year',\n                                                'changepoint_pvalue'],\n                                   'type': 'object'},\n                    'ranges': {'properties': {'anomaly': {'$ref': '#/$defs/ndarray'},\n                                              'changepoint_pvalue': {'$ref': '#/$defs/ndarray'},\n                                              'changepoint_year': {'$ref': '#/$defs/ndarray'},\n                                              'trend': {'$ref': '#/$defs/ndarray'}},\n                               'required': ['trend',\n                                            'anomaly',\n                                            'changepoint_year',\n                                            'changepoint_pvalue'],\n                               'type': 'object'},\n                    'type': {'const': 'Coverage', 'type': 'string'}},\n     'required': ['type',\n                  'domain',\n                  'parameters',\n                  'parameterGroups',\n                  'ranges'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'covjson': 'https://covjson.org/def/core#',\n                           'dct': 'http://purl.org/dc/terms/',\n                           'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                           'prov': 'http://www.w3.org/ns/prov#'}}\n\nOn instance:\n    {'@context': {'dct': 'http://purl.org/dc/terms/',\n                  'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',\n                  'prov': 'http://www.w3.org/ns/prov#',\n                  'schema': 'https://schema.org/'},\n     '@id': 'ebv:pci_method_v1',\n     '@type': ['prov:Plan', 'ebv:IndicatorComputationMethod'],\n     'dct:title': {'en': 'Phenological Change Indicator computation method',\n                   'es': 'M\u00e9todo de c\u00e1lculo del Indicador de Cambio '\n                         'Fenol\u00f3gico'},\n     'ebv:baselinePeriod': {'ebv:endYear': 2010, 'ebv:startYear': 2001},\n     'ebv:components': [{'@id': 'ebv:phenological_trend',\n                         'ebv:algorithm': 'ebv:TheilSenSlope',\n                         'ebv:unit': 'days/year'},\n                        {'@id': 'ebv:phenological_anomaly',\n                         'ebv:algorithm': 'ebv:BaselineDifference',\n                         'ebv:unit': 'days'},\n                        {'@id': 'ebv:changepoint_year',\n                         'ebv:algorithm': 'ebv:PettittTest',\n                         'ebv:unit': 'year'},\n                        {'@id': 'ebv:changepoint_pvalue',\n                         'ebv:algorithm': 'ebv:PettittTestPValue',\n                         'ebv:unit': '1'}],\n     'ebv:inputObservedProperty': 'ebv:vap_doy',\n     'ebv:outputIndicator': 'ebv:PhenologicalChangeIndicator',\n     'ebv:recentPeriod': {'ebv:endYear': 2018, 'ebv:startYear': 2011}}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 2,
+        "failed": 1
+      }
+    },
     "syke.ebv.phenology.policy-alignment": {
       "title": "Validation report for syke.ebv.phenology.policy-alignment - Policy Alignment",
       "bblockName": "Policy Alignment",
       "bblockId": "syke.ebv.phenology.policy-alignment",
-      "generated": "2026-05-13T07:21:47.326686+00:00",
+      "generated": "2026-05-13T14:45:42.350382+00:00",
       "result": true,
       "items": [
         {
@@ -596,7 +918,7 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/ebv/phenology/policy-alignment/example_1_1.json",
-            "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/policy-alignment/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/policy-alignment/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -627,6 +949,76 @@
                   "empty": false,
                   "filename": "example_1_1.ttl",
                   "size": 16,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "syke.ebv.phenology.pci-computation-process": {
+      "title": "Validation report for syke.ebv.phenology.pci-computation-process - PCI computation process",
+      "bblockName": "PCI computation process",
+      "bblockId": "syke.ebv.phenology.pci-computation-process",
+      "generated": "2026-05-13T14:45:42.363997+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/ebv/phenology/pci-computation-process/example_1_1.json",
+            "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/pci-computation-process/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/pci-computation-process.jsonld from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 17,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }

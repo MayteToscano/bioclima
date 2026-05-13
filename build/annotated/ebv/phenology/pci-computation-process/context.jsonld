@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "title": "dct:title",
+    "description": "dct:description",
+    "usesOntology": "ebv:usesOntology",
+    "input": "ebv:input",
+    "output": "ebv:output",
+    "implementedBy": {
+      "@context": {
+        "language": "dct:format",
+        "path": "dct:identifier",
+        "role": "dct:type"
+      },
+      "@id": "ebv:implementedBy"
+    },
+    "method": "ebv:method",
+    "provenance": "prov:wasGeneratedBy",
+    "dct": "http://purl.org/dc/terms/",
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@version": 1.1
+  }
+}

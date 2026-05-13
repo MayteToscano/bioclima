@@ -1,0 +1,54 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Semantic process or software component definition encoded as JSON-LD.
+type: object
+required:
+- '@context'
+- '@id'
+- '@type'
+- title
+- implementedBy
+properties:
+  '@context': {}
+  '@id':
+    type: string
+  '@type': {}
+  title:
+    x-jsonld-id: http://purl.org/dc/terms/title
+  description:
+    x-jsonld-id: http://purl.org/dc/terms/description
+  usesOntology:
+    type: string
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#usesOntology
+  input:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#input
+  output:
+    type: array
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#output
+  implementedBy:
+    type: object
+    required:
+    - language
+    - path
+    properties:
+      language:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/format
+      path:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/identifier
+      role:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/type
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#implementedBy
+  method:
+    type: string
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#method
+  provenance:
+    type: string
+    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy
+additionalProperties: true
+x-jsonld-prefixes:
+  dct: http://purl.org/dc/terms/
+  ebv: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#
+  prov: http://www.w3.org/ns/prov#

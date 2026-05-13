@@ -1,0 +1,8 @@
+@prefix covjson: <https://covjson.org/def/core#> .
+
+[] covjson:parameterGroups [ covjson:members "anomaly",
+                "changepoint_pvalue",
+                "changepoint_year",
+                "trend" ;
+            covjson:observedProperty [ ] ] .
+

@@ -1,0 +1,17 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+ebv:SemanticCoverageJSONViewer a prov:SoftwareAgent,
+        ebv:SemanticCoverageJSONViewer ;
+    dct:description [ ] ;
+    dct:title [ ] ;
+    ebv:implementedBy [ dct:format "javascript/html/css" ;
+            dct:identifier "viewer/" ;
+            dct:type "browser application" ] ;
+    ebv:input "CoverageJSON files",
+        "data/catalog.json" ;
+    ebv:output "interactive map layer",
+        "multilingual semantic description" ;
+    ebv:usesOntology "data/ontology-index.json" .
+

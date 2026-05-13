@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/semantic-coveragejson-viewer/context.jsonld",
+    {
+      "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@id": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#SemanticCoverageJSONViewer",
+  "@type": [
+    "ebv:SemanticCoverageJSONViewer",
+    "prov:SoftwareAgent"
+  ],
+  "title": {
+    "en": "Semantic CoverageJSON map viewer",
+    "es": "Visor cartogr\u00e1fico sem\u00e1ntico de CoverageJSON",
+    "fi": "Semanttinen CoverageJSON-karttakatselin"
+  },
+  "description": {
+    "en": "The viewer loads data/catalog.json, reads CoverageJSON parameters, resolves observedProperty.id against data/ontology-index.json and selects the interface language from the browser locale with manual override.",
+    "es": "El visor carga data/catalog.json, lee los par\u00e1metros CoverageJSON, resuelve observedProperty.id contra data/ontology-index.json y selecciona el idioma de la interfaz a partir del idioma del navegador con opci\u00f3n de cambio manual.",
+    "fi": "Katselin lataa data/catalog.json-tiedoston, lukee CoverageJSON-parametrit, yhdist\u00e4\u00e4 observedProperty.id-arvon data/ontology-index.json-tiedostoon ja valitsee k\u00e4ytt\u00f6liittym\u00e4n kielen selaimen kieliasetuksen perusteella manuaalisella ohituksella."
+  },
+  "usesOntology": "data/ontology-index.json",
+  "input": [
+    "data/catalog.json",
+    "CoverageJSON files"
+  ],
+  "output": [
+    "interactive map layer",
+    "multilingual semantic description"
+  ],
+  "implementedBy": {
+    "language": "javascript/html/css",
+    "path": "viewer/",
+    "role": "browser application"
+  }
+}

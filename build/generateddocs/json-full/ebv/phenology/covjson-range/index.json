@@ -18,8 +18,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.covjson-ndarray",
-    "syke.ebv.phenology.covjson-tiled-ndarray"
+    "syke.ebv.phenology.covjson-tiled-ndarray",
+    "syke.ebv.phenology.covjson-ndarray"
   ],
   "tags": [
     "covjson",
@@ -31,15 +31,15 @@
   "highlighted": false,
   "shaclShapes": {},
   "schema": {
-    "application/yaml": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml",
-    "application/json": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json"
+    "application/yaml": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml",
+    "application/json": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.json"
   },
-  "sourceSchema": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/schema.yaml",
-  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/resolvedProperties.json",
-  "sourceFiles": "https://ogcincubator.github.io/bblocks-ebv-bioclima/_sources/covjson-range/",
+  "sourceSchema": "https://maytetoscano.github.io/bioclima/_sources/covjson-range/schema.yaml",
+  "resolvedSchemaProperties": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/resolvedProperties.json",
+  "sourceFiles": "https://maytetoscano.github.io/bioclima/_sources/covjson-range/",
   "validationPassed": true,
   "description": "# CovJSON Range\n\nThe data values for one parameter. Either inline (NdArray) or tiled (TiledNdArray).\n\n## UML\n```\nRange\n\u251c\u2500\u2500 1..* NdArray (inline values)\n\u2514\u2500\u2500 0..1 TiledNdArray (tiled via URI templates)\n```\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: CoverageJSON Range - data values container (NdArray or TiledNdArray)\ntype: object\noneOf:\n- required:\n  - type\n  - dataType\n  - axisNames\n  - shape\n  properties:\n    type:\n      type: string\n      const: NdArray\n    dataType:\n      type: string\n    axisNames:\n      type: array\n      items:\n        type: string\n    shape:\n      type: array\n      items:\n        type: integer\n    values:\n      type: array\n- required:\n  - type\n  - dataType\n  - axisNames\n  - shape\n  - tileSets\n  properties:\n    type:\n      type: string\n      const: TiledNdArray\n    dataType:\n      type: string\n    axisNames:\n      type: array\n      items:\n        type: string\n    shape:\n      type: array\n      items:\n        type: integer\n    tileSets:\n      type: array\n",
-  "gitRepository": "https://github.com/ogcincubator/bblocks-ebv-bioclima",
+  "gitRepository": "https://github.com/MayteToscano/bioclima",
   "gitPath": "_sources/covjson-range"
 }

@@ -1,0 +1,25 @@
+path	@id	schema
+/type		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/domain		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/trend		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/trend/type		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/trend/observedProperty	https://covjson.org/def/core#observedProperty	/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/trend/unit		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/anomaly		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/changepoint_year		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameters/changepoint_pvalue		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameterGroups	https://covjson.org/def/core#parameterGroups	/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameterGroups/type		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameterGroups/observedProperty	https://covjson.org/def/core#observedProperty	/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/parameterGroups/members	https://covjson.org/def/core#members	/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend/type		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend/dataType		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend/axisNames		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend/shape		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/trend/values		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/anomaly		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/changepoint_year		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml
+/ranges/changepoint_pvalue		/github/workspace/build/annotated/ebv/phenology/phenological-change-indicator/schema.yaml

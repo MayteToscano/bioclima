@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
   "type": "Coverage",
   "domain": {
     "type": "Domain",

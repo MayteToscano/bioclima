@@ -1,0 +1,21 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ebv: <https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+ebv:pci-computation-process a prov:Plan,
+        ebv:IndicatorComputationProcess ;
+    dct:description [ ] ;
+    dct:title [ ] ;
+    prov:wasGeneratedBy "data/provenance/pci-provenance.jsonld" ;
+    ebv:implementedBy [ dct:format "python" ;
+            dct:identifier "scripts/compute_pci.py" ;
+            dct:type "execution engine" ] ;
+    ebv:input "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy" ;
+    ebv:method "data/methods/pci-method.jsonld" ;
+    ebv:output "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#PhenologicalChangeIndicator",
+        "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#changepoint_pvalue",
+        "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#changepoint_year",
+        "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_anomaly",
+        "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_trend" ;
+    ebv:usesOntology "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#" .
+

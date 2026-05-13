@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
   "type": "FeatureCollection",
   "name": "EBV_Phenology_Finland_VAP_Real",
   "features": [

@@ -1,0 +1,6 @@
+path	@id	schema
+/type	@type	/github/workspace/build/annotated/ebv/phenology/covjson-coverage/schema.yaml
+/domain	https://covjson.org/def/core#domain	/github/workspace/build/annotated/ebv/phenology/covjson-coverage/schema.yaml
+/parameters	https://covjson.org/def/core#parameter	/github/workspace/build/annotated/ebv/phenology/covjson-coverage/schema.yaml
+/parameterGroups		/github/workspace/build/annotated/ebv/phenology/covjson-coverage/schema.yaml
+/ranges	https://covjson.org/def/core#range	/github/workspace/build/annotated/ebv/phenology/covjson-coverage/schema.yaml

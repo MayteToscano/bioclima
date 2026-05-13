@@ -1,0 +1,13 @@
+Validation report for syke.ebv.phenology.pci-computation-process - PCI computation process
+Generated 2026-05-13T14:45:42.363730+00:00
+=== Files ===
+Using examples/pci-computation-process.jsonld from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

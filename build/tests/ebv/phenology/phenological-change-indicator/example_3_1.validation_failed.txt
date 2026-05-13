@@ -1,0 +1,111 @@
+Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage
+Generated 2026-05-13T14:45:42.336240+00:00
+=== Files ===
+Using method/pci-method.jsonld from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_3_1.jsonld created
+Output Turtle example_3_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'type' is a required property
+
+Failed validating 'required' in schema:
+    {'$defs': {'ndarray': {'properties': {'axisNames': {'type': 'array'},
+                                          'dataType': {'type': 'string'},
+                                          'shape': {'type': 'array'},
+                                          'type': {'const': 'NdArray'},
+                                          'values': {'type': 'array'}},
+                           'required': ['type',
+                                        'dataType',
+                                        'axisNames',
+                                        'shape',
+                                        'values'],
+                           'type': 'object'},
+               'semanticParameter': {'properties': {'observedProperty': {'required': ['id',
+                                                                                      'label'],
+                                                                         'type': 'object',
+                                                                         'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},
+                                                    'type': {'const': 'Parameter'},
+                                                    'unit': {'type': 'object'}},
+                                     'required': ['type',
+                                                  'observedProperty'],
+                                     'type': 'object'}},
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'description': 'Semantic CoverageJSON profile for a Phenological '
+                    'Change Indicator coverage.',
+     'properties': {'domain': {'type': 'object'},
+                    'parameterGroups': {'items': {'properties': {'members': {'contains': {'const': 'trend'},
+                                                                             'type': 'array',
+                                                                             'x-jsonld-id': 'https://covjson.org/def/core#members'},
+                                                                 'observedProperty': {'required': ['id'],
+                                                                                      'type': 'object',
+                                                                                      'x-jsonld-id': 'https://covjson.org/def/core#observedProperty'},
+                                                                 'type': {'const': 'ParameterGroup'}},
+                                                  'required': ['type',
+                                                               'observedProperty',
+                                                               'members'],
+                                                  'type': 'object'},
+                                        'minItems': 1,
+                                        'type': 'array',
+                                        'x-jsonld-id': 'https://covjson.org/def/core#parameterGroups'},
+                    'parameters': {'properties': {'anomaly': {'$ref': '#/$defs/semanticParameter'},
+                                                  'changepoint_pvalue': {'$ref': '#/$defs/semanticParameter'},
+                                                  'changepoint_year': {'$ref': '#/$defs/semanticParameter'},
+                                                  'trend': {'$ref': '#/$defs/semanticParameter'}},
+                                   'required': ['trend',
+                                                'anomaly',
+                                                'changepoint_year',
+                                                'changepoint_pvalue'],
+                                   'type': 'object'},
+                    'ranges': {'properties': {'anomaly': {'$ref': '#/$defs/ndarray'},
+                                              'changepoint_pvalue': {'$ref': '#/$defs/ndarray'},
+                                              'changepoint_year': {'$ref': '#/$defs/ndarray'},
+                                              'trend': {'$ref': '#/$defs/ndarray'}},
+                               'required': ['trend',
+                                            'anomaly',
+                                            'changepoint_year',
+                                            'changepoint_pvalue'],
+                               'type': 'object'},
+                    'type': {'const': 'Coverage', 'type': 'string'}},
+     'required': ['type',
+                  'domain',
+                  'parameters',
+                  'parameterGroups',
+                  'ranges'],
+     'type': 'object',
+     'x-jsonld-prefixes': {'covjson': 'https://covjson.org/def/core#',
+                           'dct': 'http://purl.org/dc/terms/',
+                           'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',
+                           'prov': 'http://www.w3.org/ns/prov#'}}
+
+On instance:
+    {'@context': {'dct': 'http://purl.org/dc/terms/',
+                  'ebv': 'https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#',
+                  'prov': 'http://www.w3.org/ns/prov#',
+                  'schema': 'https://schema.org/'},
+     '@id': 'ebv:pci_method_v1',
+     '@type': ['prov:Plan', 'ebv:IndicatorComputationMethod'],
+     'dct:title': {'en': 'Phenological Change Indicator computation method',
+                   'es': 'Método de cálculo del Indicador de Cambio '
+                         'Fenológico'},
+     'ebv:baselinePeriod': {'ebv:endYear': 2010, 'ebv:startYear': 2001},
+     'ebv:components': [{'@id': 'ebv:phenological_trend',
+                         'ebv:algorithm': 'ebv:TheilSenSlope',
+                         'ebv:unit': 'days/year'},
+                        {'@id': 'ebv:phenological_anomaly',
+                         'ebv:algorithm': 'ebv:BaselineDifference',
+                         'ebv:unit': 'days'},
+                        {'@id': 'ebv:changepoint_year',
+                         'ebv:algorithm': 'ebv:PettittTest',
+                         'ebv:unit': 'year'},
+                        {'@id': 'ebv:changepoint_pvalue',
+                         'ebv:algorithm': 'ebv:PettittTestPValue',
+                         'ebv:unit': '1'}],
+     'ebv:inputObservedProperty': 'ebv:vap_doy',
+     'ebv:outputIndicator': 'ebv:PhenologicalChangeIndicator',
+     'ebv:recentPeriod': {'ebv:endYear': 2018, 'ebv:startYear': 2011}}
+=== End JSON Schema ===
+

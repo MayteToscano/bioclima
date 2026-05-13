@@ -2,7 +2,7 @@
   "title": "Validation report for syke.ebv.phenology.ebv-feature-view - EBV Feature View",
   "bblockName": "EBV Feature View",
   "bblockId": "syke.ebv.phenology.ebv-feature-view",
-  "generated": "2026-05-13T07:21:47.307791+00:00",
+  "generated": "2026-05-13T14:45:39.189302+00:00",
   "result": false,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/ebv-feature-view/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -80,18 +80,18 @@
                 "geojson:LinkShape": {
                   "nodes": []
                 },
-                "geojson:GeometryShape": {
+                "geojson:FeatureShape": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:first": {
                   "nodes": []
                 },
-                "geojson:FeatureShape": {
+                "geojson:GeometryShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
             }
           ]
         }
@@ -102,7 +102,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/ebv-feature-view/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "application/json"

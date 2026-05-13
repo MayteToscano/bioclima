@@ -1,0 +1,14 @@
+path
+/type
+/domain
+/parameters
+/parameters/trend
+/parameters/anomaly
+/parameters/changepoint_year
+/parameters/changepoint_pvalue
+/parameterGroups/type
+/ranges
+/ranges/trend
+/ranges/anomaly
+/ranges/changepoint_year
+/ranges/changepoint_pvalue

@@ -2764,7 +2764,7 @@ Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for co
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld",
   "type": "Coverage",
   "domain": {
     "type": "Domain",
@@ -5504,9 +5504,9 @@ Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for co
                 [ ],
                 [ ] ;
             covjson:domainType covjsondt:Grid ;
-            covjson:referencing [ covjson:referenceSystem <http://www.opengis.net/def/crs/OGC/1.3/CRS84> ],
-                [ covjson:referenceSystem [ a inspiregloss:TemporalReferenceSystem ;
-                            covjson:calendar <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ] ] ] ;
+            covjson:referencing [ covjson:referenceSystem [ a inspiregloss:TemporalReferenceSystem ;
+                            covjson:calendar <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ] ],
+                [ covjson:referenceSystem <http://www.opengis.net/def/crs/OGC/1.3/CRS84> ] ] ;
     covjson:parameter [ a covjson:Parameter ;
             dct:description "Start of Vegetation Active Period for coniferous forests derived from MODIS Fractional Snow Cover."@en,
                 "Inicio del Periodo Activo de Vegetación para bosques de coníferas derivado de cobertura fraccional de nieve MODIS."@es,
@@ -5693,8 +5693,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.yaml)
+* YAML version: [schema.yaml](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.json)
+* JSON version: [schema.json](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/schema.yaml)
 
 
 # JSON-LD Context
@@ -5861,7 +5861,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld)
+[context.jsonld](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-coverage/context.jsonld)
 
 ## Sources
 
@@ -5871,6 +5871,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ebv-bioclima](https://github.com/ogcincubator/bblocks-ebv-bioclima)
+* URL: [https://github.com/MayteToscano/bioclima](https://github.com/MayteToscano/bioclima)
 * Path: `_sources/covjson-coverage`
 

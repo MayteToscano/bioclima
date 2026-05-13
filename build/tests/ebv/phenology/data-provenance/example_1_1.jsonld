@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
   "type": "PhenologyIndicatorProvenance",
   "title": "Provenance for Finland EBV phenology indicators",
   "description": "Lineage record describing how the Phenology Indicators example was derived from the original NetCDF EBV phenology dataset using national-scale annual spatial aggregation and temporal analysis.",

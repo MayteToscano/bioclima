@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/pci-computation-process/context.jsonld",
+    {
+      "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dct": "http://purl.org/dc/terms/"
+    }
+  ],
+  "@id": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#pci-computation-process",
+  "@type": [
+    "prov:Plan",
+    "ebv:IndicatorComputationProcess"
+  ],
+  "title": {
+    "en": "PCI computation process",
+    "es": "Proceso de c\u00e1lculo del PCI"
+  },
+  "description": {
+    "en": "Computes trend, anomaly, changepoint_year and changepoint_pvalue and writes one semantic CoverageJSON with a ParameterGroup.",
+    "es": "Calcula trend, anomaly, changepoint_year y changepoint_pvalue y genera un \u00fanico CoverageJSON sem\u00e1ntico con un ParameterGroup."
+  },
+  "usesOntology": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
+  "method": "data/methods/pci-method.jsonld",
+  "input": [
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy"
+  ],
+  "output": [
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#PhenologicalChangeIndicator",
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_trend",
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#phenological_anomaly",
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#changepoint_year",
+    "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#changepoint_pvalue"
+  ],
+  "implementedBy": {
+    "language": "python",
+    "path": "scripts/compute_pci.py",
+    "role": "execution engine"
+  },
+  "provenance": "data/provenance/pci-provenance.jsonld"
+}

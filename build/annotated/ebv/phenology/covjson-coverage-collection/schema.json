@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "CoverageJSON CoverageCollection - groups multiple entity coverages",
+  "type": "object",
+  "required": [
+    "type",
+    "coverages"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "CoverageCollection"
+    },
+    "domainType": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "parameterGroups": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "coverages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ]
+      }
+    }
+  }
+}

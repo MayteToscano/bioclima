@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
   "type": "PolicyAlignment",
   "title": "Policy alignment for Finland EBV phenology data",
   "description": "Illustrative policy alignment record for the EBV phenology dataset 'Vegetation Phenology in Finland'. The record explains how the dataset may support policy-relevant monitoring, while clearly distinguishing between technical interoperability examples and policy-grade indicators.",

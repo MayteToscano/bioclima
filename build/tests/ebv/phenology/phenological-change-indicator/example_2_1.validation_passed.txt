@@ -1,0 +1,13 @@
+Validation report for syke.ebv.phenology.phenological-change-indicator - Phenological Change Indicator Coverage
+Generated 2026-05-13T14:45:42.330003+00:00
+=== Files ===
+Using examples/finland-pci-deciduous-2001-2018.covjson from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

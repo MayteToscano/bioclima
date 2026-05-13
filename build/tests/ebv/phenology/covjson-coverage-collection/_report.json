@@ -2,7 +2,7 @@
   "title": "Validation report for syke.ebv.phenology.covjson-coverage-collection - CovJSON Coverage Collection",
   "bblockName": "CovJSON Coverage Collection",
   "bblockId": "syke.ebv.phenology.covjson-coverage-collection",
-  "generated": "2026-05-13T07:21:45.884465+00:00",
+  "generated": "2026-05-13T14:45:37.359438+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
+        "url": "https://maytetoscano.github.io/bioclima/build/tests/ebv/phenology/covjson-coverage-collection/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"

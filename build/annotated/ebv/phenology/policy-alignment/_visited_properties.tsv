@@ -1,0 +1,10 @@
+path	@id	schema
+/type	http://www.w3.org/1999/02/22-rdf-syntax-ns#type	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/source_dataset	http://purl.org/dc/terms/source	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/policy_relevance	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#policy_relevance	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/aligned_policy_themes	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#aligned_policy_theme	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/linked_building_blocks	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#linked_building_block	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/interpretation_guidance	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#interpretation_guidance	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml
+/representativeness_assessment	https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#representativeness_assessment	/github/workspace/build/annotated/ebv/phenology/policy-alignment/schema.yaml

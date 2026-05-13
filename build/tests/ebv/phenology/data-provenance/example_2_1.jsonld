@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+    "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
     {
       "prov": "http://www.w3.org/ns/prov#",
       "dcterms": "http://purl.org/dc/terms/",

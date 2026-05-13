@@ -164,7 +164,7 @@ examples/finland-phenology-policy-alignment.json
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
   "type": "PolicyAlignment",
   "title": "Policy alignment for Finland EBV phenology data",
   "description": "Illustrative policy alignment record for the EBV phenology dataset 'Vegetation Phenology in Finland'. The record explains how the dataset may support policy-relevant monitoring, while clearly distinguishing between technical interoperability examples and policy-grade indicators.",
@@ -363,8 +363,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml)
+* YAML version: [schema.yaml](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json)
+* JSON version: [schema.json](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml)
 
 
 # JSON-LD Context
@@ -389,13 +389,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld)
+[context.jsonld](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ebv-bioclima](https://github.com/ogcincubator/bblocks-ebv-bioclima)
+* URL: [https://github.com/MayteToscano/bioclima](https://github.com/MayteToscano/bioclima)
 * Path: `_sources/policy-alignment`
 

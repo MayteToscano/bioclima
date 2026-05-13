@@ -386,7 +386,7 @@ examples/finland-phenology-indicators-provenance.json
 #### jsonld
 ```jsonld
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
   "type": "PhenologyIndicatorProvenance",
   "title": "Provenance for Finland EBV phenology indicators",
   "description": "Lineage record describing how the Phenology Indicators example was derived from the original NetCDF EBV phenology dataset using national-scale annual spatial aggregation and temporal analysis.",
@@ -754,18 +754,18 @@ examples/finland-phenology-indicators-provenance.json
         [ a "prov:Activity" ],
         [ a "prov:Activity" ],
         [ a "prov:Activity" ] ;
-    prov:Agent [ a "Organization" ],
+    prov:Agent [ a "InstrumentPlatform" ],
         [ a "SoftwareAgent" ],
-        [ a "InstrumentPlatform" ],
-        [ a "SoftwareAgent" ],
-        [ a "Person" ] ;
-    prov:Entity [ a "prov:Entity" ],
-        [ a "prov:Entity" ;
+        [ a "Person" ],
+        [ a "Organization" ],
+        [ a "SoftwareAgent" ] ;
+    prov:Entity [ a "prov:Entity" ;
             dcterms:description "Remote sensing observations used as source input for the original VAP products." ],
-        [ a "prov:Entity" ],
-        [ a "prov:Entity" ],
         [ a "prov:Entity" ;
             dcterms:description "Intermediate table with one national-scale annual mean VAP day-of-year per EBV entity." ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
         [ a "prov:Entity" ] ;
     prov:wasDerivedFrom [ ],
         [ ],
@@ -1176,7 +1176,7 @@ examples/finland-phenology-indicators-provenance.jsonld
 ```jsonld
 {
   "@context": [
-    "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+    "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
     {
       "prov": "http://www.w3.org/ns/prov#",
       "dcterms": "http://purl.org/dc/terms/",
@@ -1727,8 +1727,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml)
+* YAML version: [schema.yaml](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/schema.json)
+* JSON version: [schema.json](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml)
 
 
 # JSON-LD Context
@@ -1755,7 +1755,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld)
+[context.jsonld](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld)
 
 ## Sources
 
@@ -1765,6 +1765,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ebv-bioclima](https://github.com/ogcincubator/bblocks-ebv-bioclima)
+* URL: [https://github.com/MayteToscano/bioclima](https://github.com/MayteToscano/bioclima)
 * Path: `_sources/data-provenance`
 

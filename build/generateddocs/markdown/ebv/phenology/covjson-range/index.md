@@ -75,8 +75,8 @@ oneOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml)
+* YAML version: [schema.yaml](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.json)
+* JSON version: [schema.json](https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml)
 
 ## Sources
 
@@ -86,6 +86,6 @@ Links to the schema:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/bblocks-ebv-bioclima](https://github.com/ogcincubator/bblocks-ebv-bioclima)
+* URL: [https://github.com/MayteToscano/bioclima](https://github.com/MayteToscano/bioclima)
 * Path: `_sources/covjson-range`
 

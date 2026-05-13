@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
+  "@context": "https://maytetoscano.github.io/bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld",
   "type": "FeatureCollection",
   "name": "EBV Phenology Finland \u2014 detailed raster-cell crop",
   "description": "Full-resolution 50 \u00d7 50 raster-cell crop generated from the original NetCDF. Each feature is one valid raster cell for coniferous forest in 2001. This is intended as a detailed but manageable Building Blocks Feature View example.",
