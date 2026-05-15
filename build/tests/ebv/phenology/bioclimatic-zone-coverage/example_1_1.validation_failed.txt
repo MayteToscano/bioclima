@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.bioclimatic-zone-coverage - Bioclimatic Zone Categorical Coverage
-Generated 2026-05-13T19:41:26.436381+00:00
+Generated 2026-05-15T08:32:37.238916+00:00
 === Files ===
 Using examples/finland-bioclimatic-zones.covjson from examples
 JSON-LD context is present - uplifting

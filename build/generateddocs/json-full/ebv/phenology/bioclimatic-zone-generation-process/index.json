@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2026-05-13",
+  "dateOfLastChange": "2026-05-15",
   "sources": [
     {
       "title": "W3C PROV",
@@ -22,8 +22,8 @@
     }
   ],
   "dependsOn": [
-    "syke.ebv.phenology.bioclimatic-zone-coverage",
-    "syke.ebv.phenology.ebv-ontology"
+    "syke.ebv.phenology.ebv-ontology",
+    "syke.ebv.phenology.bioclimatic-zone-coverage"
   ],
   "tags": [
     "process",
